@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="اختبر معلوماتك في تاريخ الأندلس من خلال مجموعة شاملة من الأسئلة التفاعلية">
+    <title>اختبار تاريخ الأندلس والمغرب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-mosque"></i>
+            </div>
+            <h1>اختبار تاريخ الأندلس والمغرب</h1>
+            <p class="description">
+                اختبر معرفتك في تاريخ الأندلس والمغرب من خلال مجموعة شاملة من الأسئلة
+                تغطي الفترة من الفتح الإسلامي حتى سقوط غرناطة
+            </p>
+        </header>
+
+        <div class="setup-container" id="setup-container">
+            <div class="setup-card">
+                <h2>إعدادات الاختبار</h2>
+                <div class="setup-options">
+                    <div class="setup-group">
+                        <label for="questionCount">عدد الأسئلة:</label>
+                        <select id="questionCount" class="setup-select">
+                            <option value="10">10 أسئلة</option>
+                            <option value="20">20 سؤال</option>
+                            <option value="30">30 سؤال</option>
+                            <option value="40">40 سؤال</option>
+                            <option value="50">50 سؤال</option>
+                        </select>
+                    </div>
+                    <div class="setup-group">
+                        <label for="questionType">نوع الأسئلة:</label>
+                        <select id="questionType" class="setup-select">
+                            <option value="all">جميع الأنواع</option>
+                            <option value="mcq">اختيار من متعدد</option>
+                            <option value="tf">صح وخطأ</option>
+                        </select>
+                    </div>
+                    <div class="setup-group">
+                        <label for="category">التصنيف:</label>
+                        <select id="category" class="setup-select">
+                            <option value="all">جميع التصنيفات</option>
+                            <option value="history">تاريخ وأحداث</option>
+                            <option value="culture">حضارة وثقافة</option>
+                            <option value="science">علوم ومعارف</option>
+                            <option value="society">مجتمع وحياة</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="start-button" class="primary-button">
+                    <i class="fas fa-play"></i>
+                    يلااا بيينا
+                </button>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container hidden">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <div class="progress-text">
+                        <span>تقدمك في الاختبار</span>
+                        <span id="progress-number">0/0</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="timer" id="timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="time-remaining">00:00</span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="category-badge" id="question-category"></span>
+                    <span class="question-number" id="question-number"></span>
+                </div>
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+                <div id="feedback" class="feedback hidden"></div>
+            </div>
+
+            <div class="controls">
+                <button id="next-button" class="control-button hidden">
+                    السؤال التالي
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="results" class="results-container hidden">
+            <div class="results-card">
+                <div class="results-header">
+                    <i class="fas fa-trophy"></i>
+                    <h2>نتائج  بص كده</h2>
+                </div>
+                <div class="results-summary">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="result-number" id="total-questions">0</div>
+                        <div class="result-label">إجمالي الأسئلة متحسبهااااش</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="result-number" id="correct-answers">0</div>
+                        <div class="result-label">إجابات صحيحة عاش ياعم</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="result-number" id="success-rate">0%</div>
+                        <div class="result-label">نسبة النجاح</div>
+                    </div>
+                </div>
+                <div class="score-message"></div>
+                <div class="results-actions">
+                    <button id="show-answers" class="secondary-button">
+                        <i class="fas fa-list"></i>
+                        عرض الإجابات
+                    </button>
+                    <button id="restart-button" class="primary-button">
+                        <i class="fas fa-redo"></i>
+                إعادة الاختبار 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="answers-review" class="answers-review hidden">
+            <div class="review-card">
+                <h3>مراجعة الإجابات راجع يا بودي</h3>
+                <div id="answers-list" class="answers-list"></div>
+                <button id="close-review" class="secondary-button">
+                    <i class="fas fa-times"></i>
+                    إغلاق
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>تم التطوير بواسطة <span class="heart">أخوك الميكس</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
