@@ -1,160 +1,375 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="اختبر معلوماتك في تاريخ الأندلس من خلال مجموعة شاملة من الأسئلة التفاعلية">
-    <title>اختبار تاريخ الأندلس والمغرب</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Test your knowledge of Expert Systems through a comprehensive interactive quiz">
+    <title>Expert Systems Knowledge Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+            --secondary-color: #4f46e5;
+            --text-color: #1e293b;
+            --light-text: #64748b;
+            --white: #fff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --border-radius: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+
+        .quiz-header {
+            background: var(--primary-gradient);
+            color: var(--white);
+            padding: 3rem 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .quiz-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .quiz-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .setup-container, .quiz-container, #results, #answers-review {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .setup-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-gradient);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: 600;
+        }
+
+        .step.active .step-number {
+            background: var(--primary-gradient);
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            gap: 0.75rem;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .primary-button {
+            background: var(--primary-gradient);
+            color: var(--white);
+        }
+
+        .success-button {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: var(--white);
+        }
+
+        .button:hover:not(.disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+        }
+
+        .button.disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .timer {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .option {
+            padding: 1.25rem;
+            border: 2px solid #e2e8f0;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            background: var(--white);
+        }
+
+        .option:hover:not(.disabled) {
+            border-color: var(--primary-color);
+            background: rgba(79, 70, 229, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .option.correct {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            border-color: transparent;
+        }
+
+        .option.incorrect {
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+            color: white;
+            border-color: transparent;
+        }
+
+        .feedback-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .feedback-popup.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--light-text);
+            margin-top: auto;
+        }
+
+        .heart {
+            color: #ef4444;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Error message styles */
+        .error-message {
+            background: #fee2e2;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin: 1rem 0;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <i class="fas fa-mosque"></i>
-            </div>
-            <h1>اختبار تاريخ الأندلس والمغرب</h1>
-            <p class="description">
-                اختبر معرفتك في تاريخ الأندلس والمغرب من خلال مجموعة شاملة من الأسئلة
-                تغطي الفترة من الفتح الإسلامي حتى سقوط غرناطة
-            </p>
-        </header>
+        <div class="quiz-header">
+            <h1>Expert Systems Knowledge Quiz</h1>
+            <p>Test your knowledge of Expert Systems through a comprehensive set of questions covering fundamentals, components, applications, and key concepts.</p>
+        </div>
 
-        <div class="setup-container" id="setup-container">
-            <div class="setup-card">
-                <h2>إعدادات الاختبار</h2>
-                <div class="setup-options">
-                    <div class="setup-group">
-                        <label for="questionCount">عدد الأسئلة:</label>
-                        <select id="questionCount" class="setup-select">
-                            <option value="10">10 أسئلة</option>
-                            <option value="20">20 سؤال</option>
-                            <option value="30">30 سؤال</option>
-                            <option value="40">40 سؤال</option>
-                            <option value="50">50 سؤال</option>
-                        </select>
-                    </div>
-                    <div class="setup-group">
-                        <label for="questionType">نوع الأسئلة:</label>
-                        <select id="questionType" class="setup-select">
-                            <option value="all">جميع الأنواع</option>
-                            <option value="mcq">اختيار من متعدد</option>
-                            <option value="tf">صح وخطأ</option>
-                        </select>
-                    </div>
-                    <div class="setup-group">
-                        <label for="category">التصنيف:</label>
-                        <select id="category" class="setup-select">
-                            <option value="all">جميع التصنيفات</option>
-                            <option value="history">تاريخ وأحداث</option>
-                            <option value="culture">حضارة وثقافة</option>
-                            <option value="science">علوم ومعارف</option>
-                            <option value="society">مجتمع وحياة</option>
-                        </select>
-                    </div>
+        <!-- Error message container -->
+        <div id="error-message" class="error-message"></div>
+
+        <div id="setup-container" class="setup-container">
+            <div class="setup-steps">
+                <div class="step active" id="step1">
+                    <div class="step-number">1</div>
+                    <div class="step-text">Setup Quiz</div>
                 </div>
-                <button id="start-button" class="primary-button">
+                <div class="step" id="step2">
+                    <div class="step-number">2</div>
+                    <div class="step-text">Prepare Quiz</div>
+                </div>
+                <div class="step" id="step3">
+                    <div class="step-number">3</div>
+                    <div class="step-text">Start Quiz</div>
+                </div>
+            </div>
+
+            <div class="setup-options">
+                <div class="form-group">
+                    <label for="questionCount">Number of Questions:</label>
+                    <select id="questionCount" class="form-control">
+                        <option value="">Select number of questions</option>
+                        <option value="5">5 Questions</option>
+                        <option value="10">10 Questions</option>
+                        <option value="15">15 Questions</option>
+                        <option value="20">20 Questions</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="questionType">Question Type:</label>
+                    <select id="questionType" class="form-control">
+                        <option value="">Select question type</option>
+                        <option value="mcq">Multiple Choice</option>
+                        <option value="tf">True/False</option>
+                        <option value="mixed">Mixed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="difficultyLevel">Difficulty Level:</label>
+                    <select id="difficultyLevel" class="form-control">
+                        <option value="">Select difficulty</option>
+                        <option value="all">All Levels</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div id="timer" class="timer">00:00</div>
+
+                <button id="prepare-button" class="button primary-button" disabled>
+                    <i class="fas fa-cog"></i>
+                    Prepare Quiz
+                </button>
+
+                <button id="start-button" class="button success-button hidden" disabled>
                     <i class="fas fa-play"></i>
-                    يلااا بيينا
+                    Start Quiz
                 </button>
             </div>
         </div>
 
         <div id="quiz-container" class="quiz-container hidden">
-            <div class="quiz-header">
-                <div class="progress-info">
-                    <div class="progress-text">
-                        <span>تقدمك في الاختبار</span>
-                        <span id="progress-number">0/0</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                </div>
-                <div class="timer" id="timer">
-                    <i class="fas fa-clock"></i>
-                    <span id="time-remaining">00:00</span>
-                </div>
-            </div>
-
-            <div class="question-card">
-                <div class="question-header">
-                    <span class="category-badge" id="question-category"></span>
-                    <span class="question-number" id="question-number"></span>
-                </div>
-                <h2 id="question-text" class="question-text"></h2>
-                <div id="options-container" class="options-container"></div>
-                <div id="feedback" class="feedback hidden"></div>
-            </div>
-
-            <div class="controls">
-                <button id="next-button" class="control-button hidden">
-                    السؤال التالي
-                    <i class="fas fa-arrow-left"></i>
-                </button>
+            <div class="question-container">
+                <!-- Questions will be dynamically inserted here -->
             </div>
         </div>
 
-        <div id="results" class="results-container hidden">
-            <div class="results-card">
-                <div class="results-header">
-                    <i class="fas fa-trophy"></i>
-                    <h2>نتائج  بص كده</h2>
-                </div>
-                <div class="results-summary">
-                    <div class="result-item">
-                        <div class="result-icon">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <div class="result-number" id="total-questions">0</div>
-                        <div class="result-label">إجمالي الأسئلة متحسبهااااش</div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-icon">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="result-number" id="correct-answers">0</div>
-                        <div class="result-label">إجابات صحيحة عاش ياعم</div>
-                    </div>
-                    <div class="result-item">
-                        <div class="result-icon">
-                            <i class="fas fa-percentage"></i>
-                        </div>
-                        <div class="result-number" id="success-rate">0%</div>
-                        <div class="result-label">نسبة النجاح</div>
-                    </div>
-                </div>
-                <div class="score-message"></div>
-                <div class="results-actions">
-                    <button id="show-answers" class="secondary-button">
-                        <i class="fas fa-list"></i>
-                        عرض الإجابات
-                    </button>
-                    <button id="restart-button" class="primary-button">
-                        <i class="fas fa-redo"></i>
-                إعادة الاختبار 
-                    </button>
-                </div>
-            </div>
+        <div id="results" class="results hidden">
+            <!-- Results will be dynamically inserted here -->
         </div>
 
         <div id="answers-review" class="answers-review hidden">
-            <div class="review-card">
-                <h3>مراجعة الإجابات راجع يا بودي</h3>
-                <div id="answers-list" class="answers-list"></div>
-                <button id="close-review" class="secondary-button">
-                    <i class="fas fa-times"></i>
-                    إغلاق
-                </button>
-            </div>
+            <!-- Review answers will be dynamically inserted here -->
         </div>
     </div>
 
     <footer>
-        <p>تم التطوير بواسطة <span class="heart">أخوك الميكس</span></p>
+        <p>Made with <span class="heart">❤</span> for Expert Systems enthusiasts</p>
     </footer>
 
+    <!-- Load scripts -->
+    <script>
+        // Error handling function
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.classList.add('show');
+            setTimeout(() => {
+                errorDiv.classList.remove('show');
+            }, 5000);
+        }
+    </script>
+    
+    <!-- Load application scripts -->
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
