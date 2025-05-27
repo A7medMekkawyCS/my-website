@@ -2,113 +2,223 @@
 const questionsData = {
     "mcqQuestions": [
         {
-            "question": "ما هو الهدف الرئيسي من النظام الخبير؟",
+            "question": "Intelligent Tutoring Systems (ITS) utilize AI and knowledge-based techniques to emulate the role of a:",
             "options": [
-                "محاكاة عملية صنع القرار للخبراء البشريين",
-                "استبدال جميع الخبراء البشريين",
-                "تخزين كميات كبيرة من البيانات",
-                "إجراء العمليات الحسابية الأساسية"
+                "Database administrator",
+                "System analyst",
+                "Human tutor",
+                "Software developer"
             ],
-            "answer": "محاكاة عملية صنع القرار للخبراء البشريين",
+            "answer": "Human tutor",
             "difficulty": "easy"
         },
         {
-            "question": "ما هي المكونات الرئيسية للنظام الخبير؟",
+            "question": "What do Intelligent Tutoring Systems provide to learners?",
             "options": [
-                "قاعدة المعرفة، محرك الاستدلال، وواجهة المستخدم",
-                "المعالج، الذاكرة، والتخزين",
-                "المدخلات، المعالجة، والمخرجات",
-                "الأجهزة، البرمجيات، والشبكة"
+                "Access to raw data only",
+                "General-purpose software tools",
+                "Customized instruction and feedback",
+                "Hardware troubleshooting assistance"
             ],
-            "answer": "قاعدة المعرفة، محرك الاستدلال، وواجهة المستخدم",
+            "answer": "Customized instruction and feedback",
             "difficulty": "medium"
         },
         {
-            "question": "ما هو دور محرك الاستدلال في النظام الخبير؟",
+            "question": "Which is NOT listed as a component of an Intelligent Tutoring System?",
             "options": [
-                "معالجة القواعد والحقائق للوصول إلى استنتاجات",
-                "تخزين المعرفة",
-                "التفاعل مع المستخدمين",
-                "إدارة ذاكرة النظام"
+                "Domain Knowledge Module (Expert Module)",
+                "Student Model",
+                "Fuzzy Inference Engine",
+                "Tutoring Model (Instructional Module)"
             ],
-            "answer": "معالجة القواعد والحقائق للوصول إلى استنتاجات",
+            "answer": "Fuzzy Inference Engine",
             "difficulty": "medium"
         },
         {
-            "question": "ما هي قاعدة المعرفة في النظام الخبير؟",
+            "question": "The Domain Knowledge Module in an ITS is also known as the:",
             "options": [
-                "مجموعة من الحقائق والقواعد في مجال محدد",
-                "قاعدة بيانات عادية",
-                "برنامج كمبيوتر",
-                "نظام تشغيل"
+                "Student Model",
+                "Expert Module",
+                "Instructional Module",
+                "Communication Module"
             ],
-            "answer": "مجموعة من الحقائق والقواعد في مجال محدد",
+            "answer": "Expert Module",
             "difficulty": "medium"
         },
         {
-            "question": "كيف يختلف النظام الخبير عن البرامج التقليدية؟",
+            "question": "What does the Student Model in an ITS represent?",
             "options": [
-                "يحاكي التفكير البشري وصنع القرار",
-                "يعمل بشكل أسرع",
-                "يعمل بشكل أبطأ",
-                "لا يوجد فرق"
+                "The teaching strategies used by the system",
+                "The subject matter being taught",
+                "The learner's current understanding and progress",
+                "The interaction interface with the learner"
             ],
-            "answer": "يحاكي التفكير البشري وصنع القرار",
+            "answer": "The learner's current understanding and progress",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems are described as intelligent computer programs and a field of:",
+            "options": [
+                "Database Management",
+                "Network Security",
+                "Artificial Intelligence (AI)",
+                "Operating System Design"
+            ],
+            "answer": "Artificial Intelligence (AI)",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Expert Systems are designed to emulate or mimic the decision-making abilities of a:",
+            "options": [
+                "Computer programmer",
+                "Novice user",
+                "Human expert within a specific domain",
+                "General-purpose algorithm"
+            ],
+            "answer": "Human expert within a specific domain",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Many Expert Systems are called Rule-Based Systems because they use a set of:",
+            "options": [
+                "Frames and slots",
+                "\"If-then\" rules",
+                "Past case solutions",
+                "Neural networks"
+            ],
+            "answer": "\"If-then\" rules",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems are sometimes referred to as Inference Systems because what is a core component?",
+            "options": [
+                "The User Interface",
+                "The Knowledge Base",
+                "The Inference Engine",
+                "The Database"
+            ],
+            "answer": "The Inference Engine",
+            "difficulty": "medium"
+        },
+        {
+            "question": "While not all Decision Support Systems (DSS) are Expert Systems, many Expert Systems function as DSS by:",
+            "options": [
+                "Storing large volumes of data",
+                "Assisting users in making informed decisions",
+                "Managing network communications",
+                "Providing general computational tools"
+            ],
+            "answer": "Assisting users in making informed decisions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the stated goal of an Expert System regarding the knowledge of a human expert?",
+            "options": [
+                "To replace the human expert entirely",
+                "To make the expert's knowledge available to a less experienced user",
+                "To limit access to the expert's knowledge",
+                "To convert expert knowledge into simple algorithms"
+            ],
+            "answer": "To make the expert's knowledge available to a less experienced user",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do Expert Systems contribute to \"Improving Decision-Making\"?",
+            "options": [
+                "By making decisions slower but more thorough",
+                "By providing consistent and rationale-based advice",
+                "By eliminating the need for any human judgment",
+                "By always providing a single, definitive answer"
+            ],
+            "answer": "By providing consistent and rationale-based advice",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What does \"Accessibility\" refer to in the context of why Expert Systems are important?",
+            "options": [
+                "Making expertise available only to a select few",
+                "Making expert knowledge more widely and easily available",
+                "The physical accessibility of the computer hardware",
+                "The ease of programming the expert system"
+            ],
+            "answer": "Making expert knowledge more widely and easily available",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems perform \"Reasoning Over Representations of Human Knowledge\" and are typically composed of two distinct modules: a Knowledge Base and an:",
+            "options": [
+                "Algorithm Unit",
+                "User Profile",
+                "Inference Engine",
+                "Data Input Module"
+            ],
+            "answer": "Inference Engine",
+            "difficulty": "medium"
+        },
+        {
+            "question": "In an Expert System, the Knowledge Base:",
+            "options": [
+                "Applies logical rules",
+                "Stores facts and rules related to the domain",
+                "Facilitates user interaction",
+                "Generates new knowledge autonomously"
+            ],
+            "answer": "Stores facts and rules related to the domain",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The Inference Engine in an Expert System:",
+            "options": [
+                "Stores facts and rules",
+                "Applies logical rules to the knowledge base to derive conclusions",
+                "Is the primary interface for user input",
+                "Contains the original source documents of knowledge"
+            ],
+            "answer": "Applies logical rules to the knowledge base to derive conclusions",
             "difficulty": "hard"
         },
         {
-            "question": "ما هي أنواع المشاكل التي تناسب الأنظمة الخبيرة؟",
+            "question": "\"High-Quality Performance\" as a characteristic of Expert Systems means they:",
             "options": [
-                "المشاكل المحددة بوضوح مع قواعد وحدود واضحة",
-                "المشاكل الإبداعية والفنية",
-                "مهام العمل البدني",
-                "الحوسبة العامة"
+                "Always perform better than human experts",
+                "Are expected to perform at a competent or expert level in their specific domain",
+                "Never make mistakes",
+                "Can operate without any errors in their knowledge base"
             ],
-            "answer": "المشاكل المحددة بوضوح مع قواعد وحدود واضحة",
+            "answer": "Are expected to perform at a competent or expert level in their specific domain",
             "difficulty": "medium"
         },
         {
-            "question": "ما هو الغرض من مرفق الشرح في الأنظمة الخبيرة؟",
+            "question": "What kind of knowledge is characteristic of an Expert System?",
             "options": [
-                "شرح عملية التفكير وتبرير الاستنتاجات",
-                "إنشاء وثائق النظام",
-                "تدريب خبراء جدد",
-                "تصحيح أخطاء النظام"
+                "General common sense knowledge",
+                "Vast Domain-Specific Knowledge",
+                "Knowledge about unrelated fields",
+                "Limited and superficial knowledge"
             ],
-            "answer": "شرح عملية التفكير وتبرير الاستنتاجات",
+            "answer": "Vast Domain-Specific Knowledge",
             "difficulty": "medium"
         },
         {
-            "question": "ما هي خاصية النظام الخبير الجيد؟",
+            "question": "The \"Application of Heuristics\" in Expert Systems refers to using:",
             "options": [
-                "أداء عالي في مجال محدد",
-                "القدرة على حل أي نوع من المشاكل",
-                "الاستقلال التام عن الخبراء البشريين",
-                "متطلبات صيانة منخفضة"
+                "Formal mathematical proofs for all decisions",
+                "Rules of thumb or experiential knowledge to guide problem-solving",
+                "Only explicitly documented procedures",
+                "Random chance to explore solutions"
             ],
-            "answer": "أداء عالي في مجال محدد",
-            "difficulty": "easy"
+            "answer": "Rules of thumb or experiential knowledge to guide problem-solving",
+            "difficulty": "hard"
         },
         {
-            "question": "ما هو نوع المعرفة المستخدم في قاعدة المعرفة؟",
+            "question": "\"Adaptability and Flexibility\" in an Expert System implies it can be:",
             "options": [
-                "المعرفة الصريحة والقواعد",
-                "المعرفة الضمنية فقط",
-                "البيانات العشوائية",
-                "الخوارزميات فقط"
+                "Never changed after initial development",
+                "Modified or updated, for example, by adding new rules",
+                "Used for any problem domain without changes",
+                "Resistant to new data or knowledge"
             ],
-            "answer": "المعرفة الصريحة والقواعد",
-            "difficulty": "medium"
-        },
-        {
-            "question": "كيف يتم تحديث قاعدة المعرفة في النظام الخبير؟",
-            "options": [
-                "من خلال إضافة معرفة جديدة وتحديث القواعد",
-                "تلقائياً دون تدخل",
-                "لا يمكن تحديثها",
-                "فقط من خلال إعادة البرمجة الكاملة"
-            ],
-            "answer": "من خلال إضافة معرفة جديدة وتحديث القواعد",
+            "answer": "Modified or updated, for example, by adding new rules",
             "difficulty": "medium"
         },
         {
@@ -200,7 +310,7 @@ const questionsData = {
             "difficulty": "easy"
         },
         {
-            "question": "What does Knowledge Management ensure is effectively utilized to improve decision-making, enhance efficiency, and foster innovation?",
+            "question": "What does Knowledge Management ensure is effectively utilized to improve decision-making?",
             "options": [
                 "Valuable knowledge",
                 "Financial resources",
@@ -396,633 +506,6 @@ const questionsData = {
             ],
             "answer": "Knowledge about how to perform specific tasks or procedures",
             "difficulty": "medium"
-        },
-        {
-            "question": "What is Declarative Knowledge? / كيف يتم تمثيل المعرفة التصريحية؟",
-            "options": [
-                "Facts and information that describe what is known / كحقائق وتأكيدات أو علاقات",
-                "Step-by-step procedures / كخطوات متسلسلة",
-                "Programming code only / كخوارزميات",
-                "Mathematical formulas only / كخوارزميات"
-            ],
-            "answer": "Facts and information that describe what is known / كحقائق وتأكيدات أو علاقات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "An example of Declarative Knowledge is: / مثال على المعرفة التصريحية هو:",
-            "options": [
-                "A recipe for baking a cake / وصفة لصنع كعكة",
-                "The process of diagnosing an illness / عملية تشخيص مرض",
-                "\"Water boils at 100°C at sea level\" / الماء يغلي عند 100 درجة مئوية عند مستوى سطح البحر",
-                "A rule of thumb for investing / قاعدة تجريبية للاستثمار"
-            ],
-            "answer": "\"Water boils at 100°C at sea level\" / الماء يغلي عند 100 درجة مئوية عند مستوى سطح البحر",
-            "difficulty": "medium"
-        },
-        {
-            "question": "In KBS, Declarative Knowledge is typically: / في نظم المعرفة، المعرفة التصريحية عادة:",
-            "options": [
-                "Encoded in the inference engine / مشفرة في محرك الاستدلال",
-                "Stored as facts or rules in the knowledge base / مخزنة كحقائق أو قواعد في قاعدة المعرفة",
-                "Used to capture skills and experience / تستخدم لالتقاط المهارات والخبرات",
-                "Represented as algorithms / ممثلة كخوارزميات"
-            ],
-            "answer": "Stored as facts or rules in the knowledge base / مخزنة كحقائق أو قواعد في قاعدة المعرفة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is Meta-Knowledge? / ما هي المعرفة الفوقية (ما وراء المعرفة)؟",
-            "options": [
-                "Knowledge about performing tasks / معرفة حول أداء المهام",
-                "Factual statements about the world / عبارات واقعية عن العالم",
-                "Knowledge about knowledge / معرفة عن المعرفة",
-                "Rules of thumb based on experience / قواعد تجريبية مبنية على الخبرة"
-            ],
-            "answer": "Knowledge about knowledge / معرفة عن المعرفة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Meta-Knowledge describes how knowledge is: / المعرفة الفوقية تصف كيف يتم:",
-            "options": [
-                "Created from scratch / إنشاء المعرفة من الصفر",
-                "Applied in procedural steps / تطبيق المعرفة في خطوات إجرائية",
-                "Organized, used, or validated / تنظيم واستخدام والتحقق من صحة المعرفة",
-                "Observed in the real world / ملاحظة المعرفة في العالم الحقيقي"
-            ],
-            "answer": "Organized, used, or validated / تنظيم واستخدام والتحقق من صحة المعرفة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Meta-Knowledge often provides context or rules for: / المعرفة الفوقية غالباً ما توفر السياق أو القواعد لـ:",
-            "options": [
-                "Defining basic facts / تعريف الحقائق الأساسية",
-                "Executing algorithms / تنفيذ الخوارزميات",
-                "Using other types of knowledge / استخدام أنواع أخرى من المعرفة",
-                "Storing data in databases / تخزين البيانات في قواعد البيانات"
-            ],
-            "answer": "Using other types of knowledge / استخدام أنواع أخرى من المعرفة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Meta-Knowledge is often used to: / المعرفة الفوقية غالباً ما تستخدم لـ:",
-            "options": [
-                "Define explicit facts / تعريف الحقائق الصريحة",
-                "Document tacit experiences / توثيق الخبرات الضمنية",
-                "Guide reasoning processes / توجيه عمليات الاستدلال",
-                "Perform routine calculations / إجراء العمليات الحسابية الروتينية"
-            ],
-            "answer": "Guide reasoning processes / توجيه عمليات الاستدلال",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which is an example of Meta-Knowledge? / ما هو مثال على المعرفة الفوقية؟",
-            "options": [
-                "\"A car has four wheels.\" / السيارة لها أربع عجلات",
-                "\"To sort a list, use the quicksort algorithm.\" / لترتيب قائمة، استخدم خوارزمية الترتيب السريع",
-                "\"Rule X should be applied before rule Y.\" / يجب تطبيق القاعدة X قبل القاعدة Y",
-                "\"Paris is the capital of France.\" / باريس هي عاصمة فرنسا"
-            ],
-            "answer": "\"Rule X should be applied before rule Y.\" / يجب تطبيق القاعدة X قبل القاعدة Y",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is Meta-Knowledge used in KBS? / كيف تستخدم المعرفة الفوقية في نظم المعرفة؟",
-            "options": [
-                "To store primary facts and rules / لتخزين الحقائق والقواعد الأساسية",
-                "To perform task-specific procedures / لأداء إجراءات محددة",
-                "To guide the reasoning process / لتوجيه عملية الاستدلال",
-                "To capture user interactions / لالتقاط تفاعلات المستخدم"
-            ],
-            "answer": "To guide the reasoning process / لتوجيه عملية الاستدلال",
-            "difficulty": "hard"
-        },
-        {
-            "question": "كيف يتم تمثيل المعرفة التصريحية؟",
-            "options": [
-                "كتدفقات عمل أو نصوص برمجية",
-                "كحقائق وتأكيدات أو علاقات",
-                "كخطوات متسلسلة",
-                "كخوارزميات"
-            ],
-            "answer": "كحقائق وتأكيدات أو علاقات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو مثال على المعرفة التصريحية؟",
-            "options": [
-                "وصفة لصنع كعكة",
-                "عملية تشخيص مرض",
-                "الماء يغلي عند 100 درجة مئوية عند مستوى سطح البحر",
-                "قاعدة تجريبية للاستثمار"
-            ],
-            "answer": "الماء يغلي عند 100 درجة مئوية عند مستوى سطح البحر",
-            "difficulty": "medium"
-        },
-        {
-            "question": "في نظم المعرفة، المعرفة التصريحية عادة:",
-            "options": [
-                "مشفرة في محرك الاستدلال",
-                "مخزنة كحقائق أو قواعد في قاعدة المعرفة",
-                "تستخدم لالتقاط المهارات والخبرات",
-                "ممثلة كخوارزميات"
-            ],
-            "answer": "مخزنة كحقائق أو قواعد في قاعدة المعرفة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هي المعرفة الفوقية (ما وراء المعرفة)؟",
-            "options": [
-                "معرفة حول أداء المهام",
-                "عبارات واقعية عن العالم",
-                "معرفة عن المعرفة",
-                "قواعد تجريبية مبنية على الخبرة"
-            ],
-            "answer": "معرفة عن المعرفة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "المعرفة الفوقية تصف كيف يتم:",
-            "options": [
-                "إنشاء المعرفة من الصفر",
-                "تطبيق المعرفة في خطوات إجرائية",
-                "تنظيم واستخدام والتحقق من صحة المعرفة",
-                "ملاحظة المعرفة في العالم الحقيقي"
-            ],
-            "answer": "تنظيم واستخدام والتحقق من صحة المعرفة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "المعرفة الفوقية غالباً ما توفر السياق أو القواعد لـ:",
-            "options": [
-                "تعريف الحقائق الأساسية",
-                "تنفيذ الخوارزميات",
-                "استخدام أنواع أخرى من المعرفة",
-                "تخزين البيانات في قواعد البيانات"
-            ],
-            "answer": "استخدام أنواع أخرى من المعرفة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "المعرفة الفوقية غالباً ما تستخدم لـ:",
-            "options": [
-                "تعريف الحقائق الصريحة",
-                "توثيق الخبرات الضمنية",
-                "توجيه عمليات الاستدلال",
-                "إجراء العمليات الحسابية الروتينية"
-            ],
-            "answer": "توجيه عمليات الاستدلال",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو مثال على المعرفة الفوقية؟",
-            "options": [
-                "السيارة لها أربع عجلات",
-                "لترتيب قائمة، استخدم خوارزمية الترتيب السريع",
-                "يجب تطبيق القاعدة X قبل القاعدة Y",
-                "باريس هي عاصمة فرنسا"
-            ],
-            "answer": "يجب تطبيق القاعدة X قبل القاعدة Y",
-            "difficulty": "medium"
-        },
-        {
-            "question": "كيف تستخدم المعرفة الفوقية في نظم المعرفة؟",
-            "options": [
-                "لتخزين الحقائق والقواعد الأساسية",
-                "لأداء إجراءات محددة",
-                "لتوجيه عملية الاستدلال",
-                "لالتقاط تفاعلات المستخدم"
-            ],
-            "answer": "لتوجيه عملية الاستدلال",
-            "difficulty": "hard"
-        },
-        {
-            "question": "المعرفة الاستدلالية تتكون من:",
-            "options": [
-                "حقائق رسمية قابلة للإثبات",
-                "إجراءات خطوة بخطوة",
-                "قواعد تجريبية مبنية على الخبرة أو البديهة",
-                "معرفة عن هيكل المعرفة"
-            ],
-            "answer": "قواعد تجريبية مبنية على الخبرة أو البديهة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "المعرفة الاستدلالية غالباً ما تكون:",
-            "options": [
-                "دقيقة وحتمية",
-                "تقريبية أو احتمالية",
-                "سهلة التوثيق والترميز",
-                "ثابتة ووصفية"
-            ],
-            "answer": "تقريبية أو احتمالية",
-            "difficulty": "medium"
-        },
-        {
-            "question": "متى تكون المعرفة الاستدلالية مفيدة بشكل خاص؟",
-            "options": [
-                "عندما تكون الحلول الدقيقة سهلة الحساب",
-                "لحل المشكلات حيث يصعب حساب الحلول الدقيقة",
-                "لتعريف العبارات الواقعية",
-                "لتمثيل الخطوات الإجرائية"
-            ],
-            "answer": "لحل المشكلات حيث يصعب حساب الحلول الدقيقة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "كيف تستخدم المعرفة الاستدلالية في نظم المعرفة؟",
-            "options": [
-                "لتعريف المعرفة الفوقية",
-                "لتخزين الحقائق التصريحية",
-                "في النظم القائمة على القواعد أو النظم الخبيرة",
-                "لتمثيل العلاقات الهيكلية"
-            ],
-            "answer": "في النظم القائمة على القواعد أو النظم الخبيرة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "المعرفة الهيكلية تمثل:",
-            "options": [
-                "إجراءات خطوة بخطوة",
-                "قواعد تجريبية",
-                "العلاقات بين المفاهيم أو الكائنات في مجال معين",
-                "معرفة عن كيفية استخدام المعرفة الأخرى"
-            ],
-            "answer": "العلاقات بين المفاهيم أو الكائنات في مجال معين",
-            "difficulty": "medium"
-        },
-        {
-            "question": "المعرفة الهيكلية تركز على:",
-            "options": [
-                "العمليات والإجراءات",
-                "توليد معرفة جديدة",
-                "تنظيم وتسلسل المعرفة",
-                "تطبيق القواعد التجريبية"
-            ],
-            "answer": "تنظيم وتسلسل المعرفة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "كيف يتم تمثيل المعرفة الهيكلية غالباً؟",
-            "options": [
-                "كخوارزميات أو نصوص برمجية",
-                "باستخدام الشبكات الدلالية والأنطولوجيا والتصنيفات",
-                "كقواعد إذا-ثم",
-                "كحالات تاريخية"
-            ],
-            "answer": "باستخدام الشبكات الدلالية والأنطولوجيا والتصنيفات",
-            "difficulty": "hard"
-        },
-        {
-            "question": "النظم القائمة على القواعد تستخدم ماذا لتمثيل المعرفة واتخاذ القرارات؟",
-            "options": [
-                "الإطارات والفتحات",
-                "قواعد 'إذا-ثم'",
-                "الحالات السابقة",
-                "الشبكات العصبية"
-            ],
-            "answer": "قواعد 'إذا-ثم'",
-            "difficulty": "medium"
-        },
-        {
-            "question": "المكونان الرئيسيان للنظام القائم على القواعد هما قاعدة المعرفة و:",
-            "options": [
-                "واجهة المستخدم",
-                "وحدة الخبير",
-                "محرك الاستدلال",
-                "قاعدة الحالات"
-            ],
-            "answer": "محرك الاستدلال",
-            "difficulty": "medium"
-        },
-        {
-            "question": "في النظام القائم على القواعد، قاعدة المعرفة هي مجموعة من:",
-            "options": [
-                "الخوارزميات",
-                "حلول المشكلات السابقة",
-                "القواعد (عبارات إذا-ثم)",
-                "استعلامات المستخدم"
-            ],
-            "answer": "القواعد (عبارات إذا-ثم)",
-            "difficulty": "medium"
-        },
-        {
-            "question": "محرك الاستدلال في النظام القائم على القواعد هو آلية:",
-            "options": [
-                "تخزن الحقائق المتعلقة بالمجال",
-                "تطبق القواعد على الحقائق المعروفة للوصول إلى استنتاجات",
-                "تسمح للمستخدمين بالتفاعل مع النظام",
-                "تمثل المعرفة باستخدام الإطارات"
-            ],
-            "answer": "تطبق القواعد على الحقائق المعروفة للوصول إلى استنتاجات",
-            "difficulty": "hard"
-        },
-        {
-            "question": "النظم الخبيرة هي نوع من:",
-            "options": [
-                "نظم إدارة قواعد البيانات",
-                "نظم التشغيل",
-                "النظم القائمة على المعرفة",
-                "بروتوكولات الشبكة"
-            ],
-            "answer": "النظم القائمة على المعرفة",
-            "difficulty": "easy"
-        },
-        {
-            "question": "النظم الخبيرة مصممة لمحاكاة قدرات صنع القرار لدى:",
-            "options": [
-                "المستخدمين المبتدئين",
-                "الخبراء البشريين في مجال معين",
-                "الذكاء الاصطناعي العام",
-                "موظفي إدخال البيانات"
-            ],
-            "answer": "الخبراء البشريين في مجال معين",
-            "difficulty": "medium"
-        },
-        {
-            "question": "أي مما يلي ليس من مكونات النظام الخبير؟",
-            "options": [
-                "قاعدة المعرفة",
-                "محرك الاستدلال",
-                "واجهة المستخدم",
-                "مكتبة الخوارزميات"
-            ],
-            "answer": "مكتبة الخوارزميات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "قاعدة المعرفة في النظام الخبير هي مجموعة من:",
-            "options": [
-                "سجلات تفاعل المستخدم",
-                "المعرفة المتخصصة في المجال",
-                "خوارزميات حل المشكلات العامة",
-                "مواصفات الأجهزة"
-            ],
-            "answer": "المعرفة المتخصصة في المجال",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو دور محرك الاستدلال في النظام الخبير؟",
-            "options": [
-                "تخزين الحقائق والقواعد",
-                "تسهيل التفاعل بين المستخدم والنظام",
-                "العملية التي تستخدم قاعدة المعرفة لاتخاذ القرارات أو التوصيات",
-                "تمثيل المفاهيم كإطارات"
-            ],
-            "answer": "العملية التي تستخدم قاعدة المعرفة لاتخاذ القرارات أو التوصيات",
-            "difficulty": "hard"
-        },
-        {
-            "question": "واجهة المستخدم في النظام الخبير:",
-            "options": [
-                "تطبق القواعد المنطقية على قاعدة المعرفة",
-                "تخزن المعرفة المتخصصة في المجال",
-                "تسهل التفاعل بين المستخدم والنظام",
-                "تحتوي على خوارزميات الاستدلال الأساسية"
-            ],
-            "answer": "تسهل التفاعل بين المستخدم والنظام",
-            "difficulty": "easy"
-        },
-        {
-            "question": "النظم القائمة على الإطارات تستخدم أي هياكل بيانات لتخزين المعلومات والعلاقات؟",
-            "options": [
-                "قواعد 'إذا-ثم'",
-                "'إطارات'",
-                "حالات سابقة",
-                "شبكات عصبية"
-            ],
-            "answer": "'إطارات'",
-            "difficulty": "medium"
-        },
-        {
-            "question": "في النظم القائمة على الإطارات، الإطارات تخزن معلومات عن كائن و:",
-            "options": [
-                "تاريخ التنفيذ",
-                "علاقته بالكائنات الأخرى",
-                "أذونات وصول المستخدم",
-                "حالة التجميع"
-            ],
-            "answer": "علاقته بالكائنات الأخرى",
-            "difficulty": "medium"
-        },
-        {
-            "question": "أي من هذه مكون من مكونات النظم القائمة على الإطارات؟",
-            "options": [
-                "القواعد الضبابية",
-                "مقياس التشابه",
-                "الإطارات",
-                "بيانات التدريب"
-            ],
-            "answer": "الإطارات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "في النظم القائمة على الإطارات، 'الفتحات' هي:",
-            "options": [
-                "تمثيلات للمفاهيم أو الكائنات",
-                "سمات أو خصائص الإطارات",
-                "آليات لتطبيق القواعد",
-                "طرق لمقارنة المشكلات الحالية مع الحالات السابقة"
-            ],
-            "answer": "سمات أو خصائص الإطارات",
-            "difficulty": "hard"
-        },
-        {
-            "question": "ماذا يتيح 'الوراثة' في النظم القائمة على الإطارات؟",
-            "options": [
-                "للإطارات تنفيذ الشفرة الإجرائية",
-                "للإطارات الفرعية وراثة خصائص من الإطارات الأصل",
-                "تطبيق القواعد في تسلسل محدد",
-                "للمستخدمين الاستعلام عن النظام باستخدام اللغة الطبيعية"
-            ],
-            "answer": "للإطارات الفرعية وراثة خصائص من الإطارات الأصل",
-            "difficulty": "hard"
-        },
-        {
-            "question": "نظم الاستدلال القائم على الحالات تحل المشكلات الجديدة عن طريق:",
-            "options": [
-                "تطبيق مجموعة من قواعد 'إذا-ثم'",
-                "استخدام درجات الحقيقة بدلاً من المنطق الثنائي",
-                "استرجاع حلول لمشكلات مماثلة سابقة من قاعدة الحالات",
-                "نمذجة الأنماط المعقدة باستخدام الشبكات العصبية"
-            ],
-            "answer": "استرجاع حلول لمشكلات مماثلة سابقة من قاعدة الحالات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو مكون من مكونات نظام الاستدلال القائم على الحالات؟",
-            "options": [
-                "محرك الاستدلال الضبابي",
-                "قاعدة الحالات",
-                "الشبكة العصبية",
-                "وحدة الخبير"
-            ],
-            "answer": "قاعدة الحالات",
-            "difficulty": "medium"
-        },
-        {
-            "question": "'قاعدة الحالات' في نظام الاستدلال القائم على الحالات هي مجموعة من:",
-            "options": [
-                "قواعد 'إذا-ثم'",
-                "الحالات والحلول السابقة",
-                "المصطلحات والشروط الضبابية",
-                "العقد أو العصبونات المترابطة"
-            ],
-            "answer": "الحالات والحلول السابقة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو استخدام 'مقياس التشابه' في نظام الاستدلال القائم على الحالات؟",
-            "options": [
-                "لتحديد سمات الإطارات",
-                "لتطبيق القواعد الضبابية للوصول إلى استنتاجات",
-                "طريقة لمقارنة المشكلة الحالية مع الحالات السابقة",
-                "لتدريب شبكة عصبية"
-            ],
-            "answer": "طريقة لمقارنة المشكلة الحالية مع الحالات السابقة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "النظم المنطقية الضبابية تتعامل مع الاستدلال باستخدام:",
-            "options": [
-                "اليقين والدقة المطلقة",
-                "المنطق الثنائي صح/خطأ فقط",
-                "عدم اليقين وعدم الدقة باستخدام درجات الحقيقة",
-                "البيانات الهيكلية والهرمية بشكل أساسي"
-            ],
-            "answer": "عدم اليقين وعدم الدقة باستخدام درجات الحقيقة",
-            "difficulty": "hard"
-        },
-        {
-            "question": "بدلاً من المنطق الثنائي صح/خطأ، تستخدم النظم المنطقية الضبابية:",
-            "options": [
-                "قواعد 'إذا-ثم' حصراً",
-                "درجات الحقيقة",
-                "حلول الحالات السابقة",
-                "الإطارات والفتحات"
-            ],
-            "answer": "درجات الحقيقة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "ما هو مكون من مكونات النظم المنطقية الضبابية؟",
-            "options": [
-                "قاعدة الحالات",
-                "الفتحات",
-                "القواعد الضبابية",
-                "بيانات التدريب"
-            ],
-            "answer": "القواعد الضبابية",
-            "difficulty": "medium"
-        },
-        {
-            "question": "'القواعد الضبابية' في النظم المنطقية الضبابية هي قواعد ذات:",
-            "options": [
-                "شروط معبر عنها بمصطلحات دقيقة وثنائية",
-                "شروط معبر عنها بمصطلحات ضبابية",
-                "حلول مسترجعة من حالات سابقة",
-                "سمات موروثة من الإطارات الأصل"
-            ],
-            "answer": "شروط معبر عنها بمصطلحات ضبابية",
-            "difficulty": "hard"
-        },
-        {
-            "question": "'محرك الاستدلال الضبابي' يؤدي أي وظيفة؟",
-            "options": [
-                "يقارن المشكلات الحالية مع الحالات السابقة",
-                "يطبق القواعد الضبابية للوصول إلى استنتاجات",
-                "يسمح للإطارات الفرعية بوراثة الخصائص",
-                "يدرب الشبكات العصبية باستخدام البيانات"
-            ],
-            "answer": "يطبق القواعد الضبابية للوصول إلى استنتاجات",
-            "difficulty": "hard"
-        },
-        {
-            "question": "النظم الهجينة تتميز بـ:",
-            "options": [
-                "استخدام تقنية نظم معرفة واحدة محددة",
-                "الجمع بين تقنيات نظم المعرفة المتعددة",
-                "التركيز فقط على الاستدلال القائم على القواعد",
-                "استخدام الاستدلال القائم على الحالات حصراً"
-            ],
-            "answer": "الجمع بين تقنيات نظم المعرفة المتعددة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "الغرض من دمج التقنيات في النظم الهجينة هو:",
-            "options": [
-                "تبسيط النظام بتقليل المكونات",
-                "تحسين الأداء والمرونة",
-                "الالتزام بطريقة تمثيل معرفة واحدة",
-                "تقليل الحاجة إلى قاعدة المعرفة"
-            ],
-            "answer": "تحسين الأداء والمرونة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "مكونات النظم الهجينة تشمل:",
-            "options": [
-                "القواعد الضبابية ومحرك الاستدلال الضبابي فقط",
-                "قاعدة الحالات ومقياس التشابه فقط",
-                "مجموعة من آليات الاستدلال المختلفة (مثل القواعد والشبكات العصبية)",
-                "الإطارات والفتحات والوراثة فقط"
-            ],
-            "answer": "مجموعة من آليات الاستدلال المختلفة (مثل القواعد والشبكات العصبية)",
-            "difficulty": "hard"
-        },
-        {
-            "question": "أي مما يلي مثال على ما يمكن دمجه في النظام الهجين؟",
-            "options": [
-                "المعرفة الإجرائية حصراً",
-                "المعرفة التصريحية فقط",
-                "دمج طرق تمثيل المعرفة المتعددة",
-                "نوع واحد من محركات الاستدلال"
-            ],
-            "answer": "دمج طرق تمثيل المعرفة المتعددة",
-            "difficulty": "medium"
-        },
-        {
-            "question": "النظم القائمة على الشبكات العصبية تستخدم ماذا لنمذجة الأنماط المعقدة وعمليات صنع القرار؟",
-            "options": [
-                "قواعد 'إذا-ثم'",
-                "الإطارات والفتحات",
-                "الشبكات العصبية الاصطناعية",
-                "قواعد الحالات"
-            ],
-            "answer": "الشبكات العصبية الاصطناعية",
-            "difficulty": "medium"
-        },
-        {
-            "question": "مكونات النظم القائمة على الشبكات العصبية هي الشبكات العصبية و:",
-            "options": [
-                "القواعد الضبابية",
-                "مقياس التشابه",
-                "بيانات التدريب",
-                "وحدة الخبير"
-            ],
-            "answer": "بيانات التدريب",
-            "difficulty": "medium"
-        },
-        {
-            "question": "في النظم القائمة على الشبكات العصبية، الشبكات العصبية توصف بأنها:",
-            "options": [
-                "مجموعات من الحالات والحلول السابقة",
-                "هياكل بيانات تخزن سمات الكائنات",
-                "طبقات من العقد (العصبونات) المترابطة التي تعالج بيانات الإدخال",
-                "قواعد ذات شروط معبر عنها بمصطلحات ضبابية"
-            ],
-            "answer": "طبقات من العقد (العصبونات) المترابطة التي تعالج بيانات الإدخال",
-            "difficulty": "hard"
-        },
-        {
-            "question": "ما هو استخدام 'بيانات التدريب' في النظم القائمة على الشبكات العصبية؟",
-            "options": [
-                "لتحديد التسلسل الهرمي للوراثة في الإطارات",
-                "لتعليم الشبكة التعرف على الأنماط",
-                "لإنشاء القواعد في نظام قائم على القواعد",
-                "لقياس التشابه بين الحالات في الاستدلال القائم على الحالات"
-            ],
-            "answer": "لتعليم الشبكة التعرف على الأنماط",
-            "difficulty": "hard"
         },
         {
             "question": "How is Declarative Knowledge represented?",
@@ -1254,72 +737,6 @@ const questionsData = {
             ],
             "answer": "Applies rules to known facts to draw conclusions",
             "difficulty": "hard"
-        },
-        {
-            "question": "Expert Systems are a type of:",
-            "options": [
-                "Database management system",
-                "Operating system",
-                "Knowledge-based system",
-                "Network protocol"
-            ],
-            "answer": "Knowledge-based system",
-            "difficulty": "easy"
-        },
-        {
-            "question": "Expert Systems are designed to emulate the decision-making abilities of:",
-            "options": [
-                "Novice users",
-                "Human experts in a particular domain",
-                "General-purpose AI",
-                "Data entry clerks"
-            ],
-            "answer": "Human experts in a particular domain",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is NOT a component of an Expert System?",
-            "options": [
-                "Knowledge Base",
-                "Inference Engine",
-                "User Interface",
-                "Algorithm Library"
-            ],
-            "answer": "Algorithm Library",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The Knowledge Base in an Expert System is a collection of:",
-            "options": [
-                "User interaction logs",
-                "Domain-specific knowledge",
-                "General problem-solving algorithms",
-                "Hardware specifications"
-            ],
-            "answer": "Domain-specific knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the role of the Inference Engine in an Expert System?",
-            "options": [
-                "To store facts and rules",
-                "To facilitate interaction between the user and the system",
-                "The process that uses the knowledge base to make decisions or recommendations",
-                "To represent concepts as frames"
-            ],
-            "answer": "The process that uses the knowledge base to make decisions or recommendations",
-            "difficulty": "hard"
-        },
-        {
-            "question": "The User Interface in an Expert System:",
-            "options": [
-                "Applies logical rules to the knowledge base",
-                "Stores domain-specific knowledge",
-                "Facilitates interaction between the user and the system",
-                "Contains the core reasoning algorithms"
-            ],
-            "answer": "Facilitates interaction between the user and the system",
-            "difficulty": "easy"
         },
         {
             "question": "Frame-Based Systems use what data structures to store information and relationships?",
@@ -1562,39 +979,919 @@ const questionsData = {
             ],
             "answer": "To teach the network to recognize patterns",
             "difficulty": "hard"
-        }
-    ],
-    "trueFalseQuestions": [
-        {
-            "question": "النظام الخبير يمكن أن يحل محل الخبراء البشريين تماماً",
-            "options": ["صح", "خطأ"],
-            "answer": "خطأ",
-            "difficulty": "easy"
         },
         {
-            "question": "تتطلب الأنظمة الخبيرة تحديثات وصيانة منتظمة للبقاء فعالة",
-            "options": ["صح", "خطأ"],
-            "answer": "صح",
-            "difficulty": "medium"
-        },
-        {
-            "question": "يمكن للأنظمة الخبيرة العمل بنفس الكفاءة في جميع المجالات",
-            "options": ["صح", "خطأ"],
-            "answer": "خطأ",
-            "difficulty": "medium"
-        },
-        {
-            "question": "يمكن للأنظمة الخبيرة العمل بفعالية مع المعلومات غير المكتملة",
-            "options": ["صح", "خطأ"],
-            "answer": "صح",
+            "question": "\"Symbolic Reasoning\" as a characteristic of Expert Systems involves manipulating:",
+            "options": [
+                "Numerical data exclusively",
+                "Symbols that represent concepts and knowledge",
+                "Hardware components directly",
+                "User interface elements primarily"
+            ],
+            "answer": "Symbols that represent concepts and knowledge",
             "difficulty": "hard"
         },
         {
-            "question": "قاعدة المعرفة في النظام الخبير ثابتة ولا يمكن تحديثها",
-            "options": ["صح", "خطأ"],
-            "answer": "خطأ",
+            "question": "The \"Explanation Capability\" of an Expert System allows it to:",
+            "options": [
+                "Explain its reasoning process or justify its conclusions",
+                "Automatically correct errors in its knowledge base",
+                "Translate its code into different programming languages",
+                "Generate complex graphical outputs"
+            ],
+            "answer": "Explain its reasoning process or justify its conclusions",
             "difficulty": "medium"
         },
+        {
+            "question": "Which of these is a reason for the \"Need for Expert Systems\"?",
+            "options": [
+                "Abundance of Human Expertise",
+                "Scarcity of Human Expertise",
+                "Humans never experiencing fatigue",
+                "Perfect consistency in human decision-making"
+            ],
+            "answer": "Scarcity of Human Expertise",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How does \"Fatigue from Physical or mental workload\" contribute to the need for Expert Systems?",
+            "options": [
+                "Expert systems also experience fatigue",
+                "Expert systems can perform consistently without tiring",
+                "Humans work better when fatigued",
+                "Expert systems require human experts to be fatigued to function"
+            ],
+            "answer": "Expert systems can perform consistently without tiring",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Forgetfulness of Crucial Details\" by humans is a need addressed by Expert Systems because ES can:",
+            "options": [
+                "Also forget details",
+                "Reliably store and recall vast amounts of information",
+                "Teach humans not to forget",
+                "Only handle a few details at a time"
+            ],
+            "answer": "Reliably store and recall vast amounts of information",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems can address \"Inconsistency in Decision-Making\" by:",
+            "options": [
+                "Introducing more variables into decisions",
+                "Applying rules and knowledge consistently for similar inputs",
+                "Making random decisions",
+                "Relying on human intuition for consistency"
+            ],
+            "answer": "Applying rules and knowledge consistently for similar inputs",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The human limitation of \"Limited Working Memory\" supports the need for ES because ES can:",
+            "options": [
+                "Also have limited working memory",
+                "Process and hold more information than human short-term memory",
+                "Reduce the need for any memory",
+                "Train humans to have better working memory"
+            ],
+            "answer": "Process and hold more information than human short-term memory",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Inability to Comprehend Large Data Quickly\" by humans is a factor for ES development because ES can:",
+            "options": [
+                "Also struggle with large data",
+                "Analyze and process large datasets efficiently",
+                "Refuse to process large data",
+                "Simplify large data into trivial information"
+            ],
+            "answer": "Analyze and process large datasets efficiently",
+            "difficulty": "hard"
+        },
+        {
+            "question": "How do Expert Systems address the human \"Inability to Retain Large Amounts of Data\"?",
+            "options": [
+                "By having an even smaller data retention capacity",
+                "By providing persistent storage and retrieval for extensive knowledge",
+                "By forcing humans to retain more data",
+                "By deleting data frequently to save space"
+            ],
+            "answer": "By providing persistent storage and retrieval for extensive knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Recall of Information\" can be a challenge for humans, which ES can help with by:",
+            "options": [
+                "Making information harder to recall",
+                "Providing systematic and quick access to stored knowledge",
+                "Having a flawed recall mechanism",
+                "Depending on human recall primarily"
+            ],
+            "answer": "Providing systematic and quick access to stored knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Human \"Susceptibility to Bias\" is a need ES can address by:",
+            "options": [
+                "Incorporating even more biases",
+                "Making decisions based on programmed knowledge and rules, potentially reducing personal bias",
+                "Learning biases from users",
+                "Having no mechanism to avoid bias"
+            ],
+            "answer": "Making decisions based on programmed knowledge and rules, potentially reducing personal bias",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Avoidance of Decision Responsibilities\" by some humans can be mitigated by ES that:",
+            "options": [
+                "Also avoid responsibilities",
+                "Can be programmed to make decisions or recommendations based on set criteria",
+                "Require constant human oversight for every step",
+                "Refuse to make any decisions"
+            ],
+            "answer": "Can be programmed to make decisions or recommendations based on set criteria",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Human Fallibility\" contributes to the need for ES because ES:",
+            "options": [
+                "Are also inherently fallible in the same ways",
+                "Can reduce errors by consistent application of knowledge, though they are not infallible",
+                "Are designed to make mistakes to simulate humans",
+                "Have no error-checking mechanisms"
+            ],
+            "answer": "Can reduce errors by consistent application of knowledge, though they are not infallible",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A limitation of Expert Systems is \"Restricted Domain Knowledge,\" meaning they:",
+            "options": [
+                "Possess common sense applicable to many areas",
+                "Are typically knowledgeable only in a narrow, specific field",
+                "Can easily acquire knowledge from any domain",
+                "Have unlimited knowledge access"
+            ],
+            "answer": "Are typically knowledgeable only in a narrow, specific field",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Limited Knowledge Base\" as a disadvantage implies that an ES:",
+            "options": [
+                "Can function perfectly with incomplete knowledge",
+                "Its performance is constrained by the knowledge it contains",
+                "Automatically expands its knowledge base without input",
+                "Does not require a knowledge base"
+            ],
+            "answer": "Its performance is constrained by the knowledge it contains",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Knowledge Update Challenges\" for Expert Systems mean that:",
+            "options": [
+                "Updating their knowledge is a simple, automated process",
+                "Keeping the knowledge base current and accurate can be difficult and time-consuming",
+                "Knowledge in ES never becomes outdated",
+                "Updates are not necessary for ES"
+            ],
+            "answer": "Keeping the knowledge base current and accurate can be difficult and time-consuming",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Lack of Common Sense\" is a limitation of ES because they:",
+            "options": [
+                "Possess inherent human-like common sense",
+                "Struggle with reasoning about everyday situations not explicitly programmed",
+                "Can learn common sense through interaction",
+                "Are primarily designed for common sense reasoning"
+            ],
+            "answer": "Struggle with reasoning about everyday situations not explicitly programmed",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What is a significant cost factor mentioned as a disadvantage of Expert Systems?",
+            "options": [
+                "Low hardware requirements",
+                "High Development and Maintenance Costs",
+                "Minimal need for expert input during development",
+                "Free and readily available development tools"
+            ],
+            "answer": "High Development and Maintenance Costs",
+            "difficulty": "medium"
+        },
+        {
+            "question": "According to the text, a \"Human expert\" is a person with:",
+            "options": [
+                "Basic knowledge in many fields",
+                "Extensive knowledge, skills, and experience in a particular field",
+                "Theoretical knowledge but no practical experience",
+                "Access to an expert system"
+            ],
+            "answer": "Extensive knowledge, skills, and experience in a particular field",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Human experts are recognized as authorities in their domain and are capable of:",
+            "options": [
+                "Only performing routine tasks",
+                "Solving complex problems, making informed decisions, and providing valuable insights",
+                "Learning new domains very slowly",
+                "Always agreeing with each other"
+            ],
+            "answer": "Solving complex problems, making informed decisions, and providing valuable insights",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which is NOT listed as a characteristic of a Human Expert?",
+            "options": [
+                "Extensive Knowledge Base",
+                "Experience-Driven Judgment",
+                "Infallibility in all decisions",
+                "Critical Thinking and Analytical Skills"
+            ],
+            "answer": "Infallibility in all decisions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Pattern Recognition\" as a characteristic of a human expert refers to their ability to:",
+            "options": [
+                "Only recognize visual patterns",
+                "Identify meaningful patterns in data or situations",
+                "Create new patterns randomly",
+                "Ignore patterns to remain objective"
+            ],
+            "answer": "Identify meaningful patterns in data or situations",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Adaptive Problem-Solving\" by a human expert means they can:",
+            "options": [
+                "Only solve problems they have seen before",
+                "Adjust their approach to solve novel or complex problems",
+                "Use a single, fixed method for all problems",
+                "Avoid solving problems that require adaptation"
+            ],
+            "answer": "Adjust their approach to solve novel or complex problems",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Decision-Making Under Uncertainty\" is a characteristic of human experts, indicating they can:",
+            "options": [
+                "Only make decisions with complete information",
+                "Make reasoned judgments even when faced with incomplete or uncertain data",
+                "Avoid making decisions if there is any uncertainty",
+                "Always eliminate all uncertainty before deciding"
+            ],
+            "answer": "Make reasoned judgments even when faced with incomplete or uncertain data",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Effective Communication\" is important for human experts to:",
+            "options": [
+                "Keep their knowledge to themselves",
+                "Convey their knowledge, reasoning, and advice clearly to others",
+                "Communicate only through expert systems",
+                "Use overly technical jargon to confuse non-experts"
+            ],
+            "answer": "Convey their knowledge, reasoning, and advice clearly to others",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The first step in \"How does a human expert work?\" is:",
+            "options": [
+                "Matching Process",
+                "Decision and Reporting",
+                "Information Intake",
+                "Comparison with Stored Knowledge"
+            ],
+            "answer": "Information Intake",
+            "difficulty": "medium"
+        },
+        {
+            "question": "During \"Comparison with Stored Knowledge,\" a human expert:",
+            "options": [
+                "Generates new information",
+                "Relates incoming information to their existing knowledge and experience",
+                "Immediately makes a final decision",
+                "Discards the new information"
+            ],
+            "answer": "Relates incoming information to their existing knowledge and experience",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Matching Process\" for a human expert involves:",
+            "options": [
+                "Randomly selecting a solution",
+                "Finding similarities or patterns between the current problem and stored knowledge",
+                "Ignoring stored knowledge to be creative",
+                "Intaking new information"
+            ],
+            "answer": "Finding similarities or patterns between the current problem and stored knowledge",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What follows the \"Matching Process\" in how a human expert works?",
+            "options": [
+                "Information Intake",
+                "Comparison with Stored Knowledge",
+                "Decision and Reporting",
+                "Starting over"
+            ],
+            "answer": "Decision and Reporting",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which is NOT a listed aspect of \"Translating Human Expertise into a System\"?",
+            "options": [
+                "Input Handling",
+                "Knowledge Base",
+                "Random Guessing Module",
+                "Inference Engine"
+            ],
+            "answer": "Random Guessing Module",
+            "difficulty": "medium"
+        },
+        {
+            "question": "In translating human expertise, \"Input Handling\" involves:",
+            "options": [
+                "Generating the final output",
+                "The system's ability to receive and interpret problem data",
+                "Storing the core knowledge",
+                "Applying logical rules"
+            ],
+            "answer": "The system's ability to receive and interpret problem data",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Knowledge Base\" in the context of translating expertise into a system serves to:",
+            "options": [
+                "Process user inputs",
+                "Store the expert's knowledge in a structured way",
+                "Generate system outputs",
+                "Perform reasoning"
+            ],
+            "answer": "Store the expert's knowledge in a structured way",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What function does the \"Inference Engine\" serve in translating human expertise into a system?",
+            "options": [
+                "To accept user queries",
+                "To store facts and rules",
+                "To apply reasoning mechanisms to the knowledge base to derive solutions",
+                "To display results to the user"
+            ],
+            "answer": "To apply reasoning mechanisms to the knowledge base to derive solutions",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Output Generation\" in translating expertise to a system refers to:",
+            "options": [
+                "Acquiring knowledge from the expert",
+                "The system presenting its conclusions or advice",
+                "The internal reasoning process",
+                "Storing the knowledge"
+            ],
+            "answer": "The system presenting its conclusions or advice",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is listed as a \"Role of Human Expert\"?",
+            "options": [
+                "Data Entry",
+                "Hardware Maintenance",
+                "Consultation",
+                "Software Sales"
+            ],
+            "answer": "Consultation",
+            "difficulty": "easy"
+        },
+        {
+            "question": "The \"Diagnosis\" role of a human expert involves:",
+            "options": [
+                "Training other individuals",
+                "Identifying the nature or cause of a problem",
+                "Developing new research",
+                "Providing general advice"
+            ],
+            "answer": "Identifying the nature or cause of a problem",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Training and Mentorship\" as a role of a human expert includes:",
+            "options": [
+                "Solving problems independently",
+                "Guiding and developing the skills of less experienced individuals",
+                "Conducting research",
+                "Consulting on specific cases"
+            ],
+            "answer": "Guiding and developing the skills of less experienced individuals",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Problem-Solving\" role of a human expert entails:",
+            "options": [
+                "Only diagnosing issues",
+                "Actively finding solutions to complex challenges",
+                "Only training others",
+                "Innovating new products"
+            ],
+            "answer": "Actively finding solutions to complex challenges",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Research and Innovation\" by a human expert involves:",
+            "options": [
+                "Only applying existing knowledge",
+                "Contributing to the advancement of their field through new discoveries or methods",
+                "Consulting with clients",
+                "Diagnosing routine problems"
+            ],
+            "answer": "Contributing to the advancement of their field through new discoveries or methods",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Human experts are important in \"Knowledge Acquisition\" for Expert Systems because they:",
+            "options": [
+                "Write the code for the inference engine",
+                "Provide the specialized knowledge that forms the system's core",
+                "Design the user interface",
+                "Perform routine system maintenance"
+            ],
+            "answer": "Provide the specialized knowledge that forms the system's core",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How can an Expert System operate concerning \"Information Requirements\"?",
+            "options": [
+                "Requires complete information to operate",
+                "Can operate with incomplete or uncertain information",
+                "Information requirements are identical to Conventional Systems",
+                "Focuses on data representation, not information"
+            ],
+            "answer": "Can operate with incomplete or uncertain information",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is a Conventional System effective at manipulating in \"Data/Knowledge Handling\"?",
+            "options": [
+                "Large knowledge bases (facts, rules, relationships)",
+                "Large databases",
+                "Primarily heuristic knowledge",
+                "Symbolic representations"
+            ],
+            "answer": "Large databases",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is an Expert System effective at manipulating in \"Data/Knowledge Handling\"?",
+            "options": [
+                "Large databases",
+                "Large knowledge bases (facts, rules, and relationships)",
+                "Only numerical data",
+                "Raw, unstructured data"
+            ],
+            "answer": "Large knowledge bases (facts, rules, and relationships)",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the \"Focus\" of a Conventional System?",
+            "options": [
+                "Representation and use of knowledge (domain expertise)",
+                "Representation and use of data",
+                "Heuristic reasoning",
+                "Handling uncertainty"
+            ],
+            "answer": "Representation and use of data",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the \"Focus\" of an Expert System?",
+            "options": [
+                "Representation and use of data",
+                "Representation and use of knowledge (domain expertise)",
+                "Algorithmic processing",
+                "Database manipulation"
+            ],
+            "answer": "Representation and use of knowledge (domain expertise)",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How are Conventional Systems described in the summary paragraph?",
+            "options": [
+                "Flexible, knowledge-driven, and heuristic-based",
+                "Rigid, data-driven, and algorithm-based",
+                "Suitable for decision-making in complex domains",
+                "Focused on domain expertise"
+            ],
+            "answer": "Rigid, data-driven, and algorithm-based",
+            "difficulty": "medium"
+        },
+        {
+            "question": "For what types of tasks are Conventional Systems suitable?",
+            "options": [
+                "Decision-making and problem-solving in complex domains",
+                "Structured tasks",
+                "Tasks requiring heuristic reasoning",
+                "Handling incomplete information"
+            ],
+            "answer": "Structured tasks",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How are Expert Systems described in the summary paragraph?",
+            "options": [
+                "Rigid, data-driven, and algorithm-based",
+                "Flexible, knowledge-driven, and heuristic-based",
+                "Suitable only for structured tasks",
+                "Focused on data representation"
+            ],
+            "answer": "Flexible, knowledge-driven, and heuristic-based",
+            "difficulty": "medium"
+        },
+        {
+            "question": "For what are Expert Systems designed?",
+            "options": [
+                "Structured tasks primarily",
+                "Decision-making and problem-solving in complex domains",
+                "Manipulating large databases",
+                "Algorithmic execution only"
+            ],
+            "answer": "Decision-making and problem-solving in complex domains",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the purpose of Diagnostic Systems as a category of Expert Systems?",
+            "options": [
+                "To categorize data into predefined groups",
+                "To identify the root cause of a problem or malfunction",
+                "To provide recommendations or guidance",
+                "To design a sequence of actions"
+            ],
+            "answer": "To identify the root cause of a problem or malfunction",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How do Diagnostic Systems identify the root cause of a problem?",
+            "options": [
+                "By forecasting future outcomes",
+                "By analyzing symptoms, data, and input",
+                "By sorting data into classes",
+                "By designing action plans"
+            ],
+            "answer": "By analyzing symptoms, data, and input",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which is listed as a key feature of Diagnostic Systems?",
+            "options": [
+                "Sorting and categorizing data",
+                "Use pattern recognition for sorting large datasets",
+                "Use logical reasoning and inference engines",
+                "Identifying trends and making predictions"
+            ],
+            "answer": "Use logical reasoning and inference engines",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Diagnostic Systems often integrate with what for analysis?",
+            "options": [
+                "Classification rules",
+                "User preferences for advice",
+                "Sensors or real-time data",
+                "Historical planning data"
+            ],
+            "answer": "Sensors or real-time data",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the purpose of Classification Systems?",
+            "options": [
+                "To identify the root cause of a problem",
+                "To categorize or classify data, objects, or situations into predefined groups",
+                "To observe and analyze systems in real-time",
+                "To forecast future outcomes"
+            ],
+            "answer": "To categorize or classify data, objects, or situations into predefined groups",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Classification Systems are used for sorting and categorizing data or objects based on:",
+            "options": [
+                "Real-time anomalies",
+                "Historical trends",
+                "Rules and criteria",
+                "A sequence of actions to achieve a goal"
+            ],
+            "answer": "Rules and criteria",
+            "difficulty": "medium"
+        },
+        {
+            "question": "According to the text, which of the following is a key feature of Classification Systems?",
+            "options": [
+                "Observing and analyzing systems in real-time",
+                "Use pattern recognition, rule-based reasoning, or machine learning algorithms",
+                "Designing action plans to achieve specific tasks",
+                "Identifying trends and making accurate predictions"
+            ],
+            "answer": "Use pattern recognition, rule-based reasoning, or machine learning algorithms",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Advisory Systems are designed to:",
+            "options": [
+                "Identify the root cause of a malfunction",
+                "Provide recommendations, guidance, or advice based on expert knowledge and user input",
+                "Design or develop a sequence of actions to achieve a specific goal",
+                "Forecast future outcomes or trends based on historical data"
+            ],
+            "answer": "Provide recommendations, guidance, or advice based on expert knowledge and user input",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What facility do Advisory Systems often include?",
+            "options": [
+                "Real-time anomaly detection",
+                "Explanation facilities to justify recommendations",
+                "Tools for designing action plans",
+                "Mechanisms for identifying trends"
+            ],
+            "answer": "Explanation facilities to justify recommendations",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The purpose of Planning Systems is to:",
+            "options": [
+                "Provide recommendations or guidance",
+                "Design or develop a sequence of actions to achieve a specific goal",
+                "Observe and analyze systems or processes in real-time",
+                "Forecast future outcomes or trends"
+            ],
+            "answer": "Design or develop a sequence of actions to achieve a specific goal",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What do Planning Systems design as their primary function?",
+            "options": [
+                "Justifications for recommendations",
+                "Action plans to achieve specific tasks",
+                "Methods for detecting anomalies",
+                "Predictions based on historical data"
+            ],
+            "answer": "Action plans to achieve specific tasks",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Monitoring Systems observe and analyze systems or processes in real-time to:",
+            "options": [
+                "Design action plans",
+                "Detect anomalies or deviations",
+                "Provide recommendations based on user input",
+                "Categorize data into predefined groups"
+            ],
+            "answer": "Detect anomalies or deviations",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the primary activity of Monitoring Systems?",
+            "options": [
+                "Designing action plans",
+                "Observing and analyzing systems in real-time",
+                "Justifying recommendations",
+                "Sorting large datasets"
+            ],
+            "answer": "Observing and analyzing systems in real-time",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Prediction Systems aim to:",
+            "options": [
+                "Detect anomalies in real-time",
+                "Forecast future outcomes or trends based on historical data and patterns",
+                "Provide guidance based on user input",
+                "Design a sequence of actions"
+            ],
+            "answer": "Forecast future outcomes or trends based on historical data and patterns",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The main function of Prediction Systems involves:",
+            "options": [
+                "Identifying trends and making accurate predictions",
+                "Observing and analyzing systems in real-time",
+                "Designing action plans for specific tasks",
+                "Justifying recommendations with explanations"
+            ],
+            "answer": "Identifying trends and making accurate predictions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The three main components of an expert system are listed as Knowledge Base, Inference Engine, and:",
+            "options": [
+                "Algorithm Library",
+                "User Interface",
+                "Data Warehouse",
+                "Expert Module"
+            ],
+            "answer": "User Interface",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The Knowledge Base of an expert system includes which two basic elements?",
+            "options": [
+                "Algorithms and Flowcharts",
+                "Facts and Rules",
+                "Queries and Reports",
+                "Inputs and Outputs"
+            ],
+            "answer": "Facts and Rules",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which component of an expert system is described as its \"brain\"?",
+            "options": [
+                "User Interface",
+                "Knowledge Base",
+                "Inference Engine",
+                "Explanation Module"
+            ],
+            "answer": "Inference Engine",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The inference engine is the part of the system that chooses which facts and rules to apply when trying to:",
+            "options": [
+                "Store user data",
+                "Display information to the user",
+                "Solve the user's query",
+                "Update the knowledge base"
+            ],
+            "answer": "Solve the user's query",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The inference engine uses the control structure (rule interpreter) and provides methodology for:",
+            "options": [
+                "Data storage",
+                "Reasoning",
+                "User authentication",
+                "Network communication"
+            ],
+            "answer": "Reasoning",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which component of an expert system is referred to as the \"invisible\" part?",
+            "options": [
+                "User Interface",
+                "Knowledge Base",
+                "Inference Engine",
+                "Report Generator"
+            ],
+            "answer": "Inference Engine",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which two different methods of inferencing can an expert system use?",
+            "options": [
+                "Top-down and Bottom-up Chaining",
+                "Forward Chaining and Backward Chaining",
+                "Left-to-Right and Right-to-Left Chaining",
+                "Direct Chaining and Indirect Chaining"
+            ],
+            "answer": "Forward Chaining and Backward Chaining",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Forward Chaining is described as a ____ driven system.",
+            "options": [
+                "Goal",
+                "Data",
+                "User",
+                "Expert"
+            ],
+            "answer": "Data",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Backward Chaining is described as a ____ driven system.",
+            "options": [
+                "Data",
+                "Goal",
+                "Interface",
+                "Knowledge"
+            ],
+            "answer": "Goal",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The component where the user interacts with the expert system is the:",
+            "options": [
+                "Inference Engine",
+                "Knowledge Base",
+                "User Interface",
+                "Expert System Shell"
+            ],
+            "answer": "User Interface",
+            "difficulty": "easy"
+        },
+        {
+            "question": "An Expert System Shell is a software framework that provides necessary components for building expert systems, excluding the:",
+            "options": [
+                "Inference Engine",
+                "User Interface",
+                "Domain-specific knowledge base",
+                "Explanation Module"
+            ],
+            "answer": "Domain-specific knowledge base",
+            "difficulty": "medium"
+        },
+        {
+            "question": "An Expert System Shell serves as a reusable:",
+            "options": [
+                "Source of domain knowledge",
+                "Hardware component",
+                "Template",
+                "User account"
+            ],
+            "answer": "Template",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following does an expert system shell provide?",
+            "options": [
+                "A specific set of domain knowledge",
+                "A platform for building expert systems quickly",
+                "A pre-compiled executable application",
+                "A database of expert users"
+            ],
+            "answer": "A platform for building expert systems quickly",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A shell provides a standardized structure for organizing and managing the system's:",
+            "options": [
+                "Network connections",
+                "User credentials",
+                "Components",
+                "Hardware drivers"
+            ],
+            "answer": "Components",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Tools for knowledge acquisition, representation, and reasoning are provided by:",
+            "options": [
+                "The domain expert",
+                "The end-user",
+                "The expert system shell",
+                "The operating system"
+            ],
+            "answer": "The expert system shell",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is NOT listed as a key component of an Expert System Shell?",
+            "options": [
+                "Inference Engine",
+                "Knowledge Base Development Tools",
+                "Domain-Specific Knowledge",
+                "User Interface (UI)"
+            ],
+            "answer": "Domain-Specific Knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert System Shells always include domain-specific knowledge",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Forward Chaining and Backward Chaining can be used in the same Expert System",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The User Interface is considered an optional component in Expert Systems",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert System Shells reduce development time compared to building from scratch",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Domain-specific shells are more flexible than general-purpose shells",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        }
+    ],
+    "trueFalseQuestions": [
         {
             "question": "Knowledge-Based Systems always require human intervention to function",
             "options": ["True", "False"],
@@ -1624,6 +1921,60 @@ const questionsData = {
             "options": ["True", "False"],
             "answer": "True",
             "difficulty": "hard"
+        },
+        {
+            "question": "Expert Systems can completely replace human experts in all situations",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The knowledge base and inference engine are typically separate components in an Expert System",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems can operate effectively with incomplete information",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Intelligent Tutoring Systems can adapt their teaching strategies based on student performance",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems can handle unstructured knowledge as effectively as human experts",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The knowledge base and inference engine must be separate components in an Expert System",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Human experts are no longer needed once an Expert System is fully developed",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Expert Systems can fully replicate human intuition and creativity",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "hard"
+        },
+        {
+            "question": "The effectiveness of an Expert System is limited by the quality of its knowledge base",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium"
         }
     ]
 };
