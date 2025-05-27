@@ -128,21 +128,21 @@ function validateSetup() {
     try {
         console.log('Validating setup');
         
-        const questionCount = document.getElementById('questionCount').value;
-        const questionType = document.getElementById('questionType').value;
+    const questionCount = document.getElementById('questionCount').value;
+    const questionType = document.getElementById('questionType').value;
         const difficultyLevel = document.getElementById('difficultyLevel').value;
-        const prepareButton = document.getElementById('prepare-button');
-        
+    const prepareButton = document.getElementById('prepare-button');
+    
         console.log(`Values - Count: ${questionCount}, Type: ${questionType}, Difficulty: ${difficultyLevel}`);
         
         if (questionCount && questionType && difficultyLevel) {
             console.log('All fields are filled - enabling prepare button');
-            prepareButton.classList.remove('disabled');
-            prepareButton.disabled = false;
-        } else {
+        prepareButton.classList.remove('disabled');
+        prepareButton.disabled = false;
+    } else {
             console.log('Some fields are missing - disabling prepare button');
-            prepareButton.classList.add('disabled');
-            prepareButton.disabled = true;
+        prepareButton.classList.add('disabled');
+        prepareButton.disabled = true;
         }
     } catch (error) {
         console.log('Validation error: ' + error.message);
@@ -155,11 +155,11 @@ function selectQuestions() {
     try {
         console.log('Selecting questions');
         
-        const questionCount = parseInt(document.getElementById('questionCount').value);
+        const questionCountValue = document.getElementById('questionCount').value;
         const questionType = document.getElementById('questionType').value;
         const difficultyLevel = document.getElementById('difficultyLevel').value;
         
-        console.log(`Selection criteria - Count: ${questionCount}, Type: ${questionType}, Difficulty: ${difficultyLevel}`);
+        console.log(`Selection criteria - Count: ${questionCountValue}, Type: ${questionType}, Difficulty: ${difficultyLevel}`);
         
         let selectedQuestions = [];
         
@@ -185,6 +185,9 @@ function selectQuestions() {
         
         console.log(`Available questions after filtering: ${selectedQuestions.length}`);
         
+        // Handle 'all' option for question count
+        const questionCount = questionCountValue === 'all' ? selectedQuestions.length : parseInt(questionCountValue);
+        
         if (selectedQuestions.length < questionCount) {
             throw new Error(`Not enough questions available (${selectedQuestions.length} available, ${questionCount} requested)`);
         }
@@ -198,7 +201,7 @@ function selectQuestions() {
         return finalQuestions;
     } catch (error) {
         console.log('Error selecting questions: ' + error.message);
-        showError('Error selecting questions: ' + error.message);
+        showError(error.message);
         return [];
     }
 }
@@ -208,44 +211,44 @@ function showQuestion() {
     try {
         console.log(`Showing question ${currentQuestionIndex + 1} of ${currentQuestions.length}`);
         
-        const question = currentQuestions[currentQuestionIndex];
+    const question = currentQuestions[currentQuestionIndex];
         if (!question) {
             throw new Error('Question not found');
         }
         
-        const container = document.querySelector('.question-container');
+    const container = document.querySelector('.question-container');
         if (!container) {
             throw new Error('Question container not found');
         }
         
         console.log('Question:', question);
-        
-        container.innerHTML = `
-            <div class="question-header">
-                <div class="question-info">
-                    <span class="category-badge">
+    
+    container.innerHTML = `
+        <div class="question-header">
+            <div class="question-info">
+                <span class="category-badge">
                         <i class="fas fa-question-circle"></i>
                         Question ${currentQuestionIndex + 1} of ${currentQuestions.length}
-                    </span>
+                </span>
                     <span class="difficulty-badge ${question.difficulty}">
                         ${question.difficulty.toUpperCase()}
                     </span>
-                </div>
-                <h2 class="question-text">${question.question}</h2>
             </div>
+            <h2 class="question-text">${question.question}</h2>
+        </div>
             <div class="options-container">
                 ${question.options.map((option, index) => `
                     <button class="option" onclick="selectAnswer(${index})" data-index="${index}">
                         <span class="option-letter">${String.fromCharCode(65 + index)}</span>
                         ${option}
-                    </button>
+                </button>
                 `).join('')}
             </div>
             <div class="progress-bar">
                 <div class="progress" style="width: ${((currentQuestionIndex + 1) / currentQuestions.length) * 100}%"></div>
-            </div>
-        `;
-        
+        </div>
+    `;
+    
         // Add click event listeners to options
         const options = container.querySelectorAll('.option');
         options.forEach(option => {
@@ -483,13 +486,13 @@ function showResults() {
                         Review Answers
                 </button>
                 <button class="button secondary-button" onclick="restartQuiz()">
-                    <i class="fas fa-redo"></i>
+            <i class="fas fa-redo"></i>
                         Restart Quiz
-                </button>
-            </div>
+        </button>
+        </div>
         </div>
     `;
-
+    
     document.getElementById('quiz-container').classList.add('hidden');
         resultsContainer.classList.remove('hidden');
     } catch (error) {
@@ -535,7 +538,7 @@ function showAnswerFeedback(isCorrect, selectedOption, correctAnswer) {
             feedbackDiv.classList.add('show');
         }, 10);
         
-        if (isCorrect) {
+    if (isCorrect) {
             createConfetti();
         }
         
@@ -578,21 +581,21 @@ function showAnswersReview() {
             <h2>Answers Review</h2>
             <div class="review-list">
                 ${userAnswers.map((answer, index) => `
-                    <div class="review-item ${answer.isCorrect ? 'correct' : 'incorrect'}">
+        <div class="review-item ${answer.isCorrect ? 'correct' : 'incorrect'}">
                         <div class="question-number">Question ${index + 1}</div>
                         <div class="question-text">${answer.question}</div>
                         <div class="answer-details">
-                            <div class="user-answer">
+                <div class="user-answer">
                                 Your answer: ${answer.userAnswer}
                                 <i class="fas ${answer.isCorrect ? 'fa-check' : 'fa-times'}"></i>
-                            </div>
-                            ${!answer.isCorrect ? `
-                                <div class="correct-answer">
+                </div>
+                ${!answer.isCorrect ? `
+                    <div class="correct-answer">
                                     Correct answer: ${answer.correctAnswer}
-                                </div>
-                            ` : ''}
-                        </div>
                     </div>
+                ` : ''}
+            </div>
+        </div>
                 `).join('')}
             </div>
             <button class="button secondary-button" onclick="hideAnswersReview()">
@@ -632,9 +635,9 @@ style.textContent = `
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.8);
-        background: white;
+    background: white;
         padding: 20px;
-        border-radius: 10px;
+    border-radius: 10px;
         box-shadow: 0 4px 20px rgba(0,0,0,0.2);
         opacity: 0;
         transition: all 0.3s ease;
@@ -647,8 +650,8 @@ style.textContent = `
     }
     
     .feedback-content {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
         gap: 15px;
     }
     

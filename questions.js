@@ -1889,6 +1889,1260 @@ const questionsData = {
             "options": ["True", "False"],
             "answer": "False",
             "difficulty": "medium"
+        },
+        {
+            "question": "\"Disagreement among experts\" is a challenge in Knowledge Engineering because:",
+            "options": [
+                "It simplifies knowledge acquisition",
+                "It can be difficult to reconcile conflicting expertise",
+                "Experts always agree on all aspects of a domain",
+                "Knowledge is always static"
+            ],
+            "answer": "It can be difficult to reconcile conflicting expertise",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Dynamic nature of knowledge\" poses a challenge to KE because:",
+            "options": [
+                "Knowledge in a domain rarely changes",
+                "Systems must be updated as domain knowledge evolves",
+                "There is a surplus of skilled KE professionals",
+                "Experts always agree, making updates easy"
+            ],
+            "answer": "Systems must be updated as domain knowledge evolves",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A \"Shortage of skilled professionals\" is a challenge in:",
+            "options": [
+                "The problem domain itself",
+                "Knowledge Engineering",
+                "User groups",
+                "Hardware manufacturing"
+            ],
+            "answer": "Knowledge Engineering",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How is the relationship between expert system development and knowledge engineering described?",
+            "options": [
+                "Expert system development is a subset of knowledge engineering",
+                "Knowledge Engineering is a subset of expert system development",
+                "They are completely independent processes",
+                "Knowledge engineering relies on expert system development"
+            ],
+            "answer": "Knowledge Engineering is a subset of expert system development",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Expert system development relies on ____ for acquiring, structuring, and representing expertise.",
+            "options": [
+                "User interface design principles",
+                "Hardware capabilities",
+                "Knowledge engineering",
+                "General project management"
+            ],
+            "answer": "Knowledge engineering",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge acquisition is the process of gathering, organizing, and structuring domain-specific knowledge from:",
+            "options": [
+                "Only human experts",
+                "Only documents and databases",
+                "Various sources such as human experts, documents, databases, or other systems",
+                "Only existing AI systems"
+            ],
+            "answer": "Various sources such as human experts, documents, databases, or other systems",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following can knowledge include, according to the text?",
+            "options": [
+                "Only facts",
+                "Only rules",
+                "Facts, Rules, Relationships",
+                "Only user opinions"
+            ],
+            "answer": "Facts, Rules, Relationships",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of these is NOT listed as a source of knowledge for knowledge acquisition?",
+            "options": [
+                "Human Experts",
+                "Documents",
+                "Social media trends",
+                "Data Bases"
+            ],
+            "answer": "Social media trends",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Interviews\" are listed as a method of:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Acquisition",
+                "System Implementation",
+                "Inferencing"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Questionnaires and surveys are methods used for:",
+            "options": [
+                "Knowledge Validation",
+                "Knowledge Acquisition",
+                "Explaining system reasoning",
+                "System maintenance"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "easy"
+        },
+        {
+            "question": "\"Observation\" as a method of knowledge acquisition involves:",
+            "options": [
+                "Asking experts direct questions",
+                "Analyzing written materials",
+                "Watching experts perform tasks or solve problems",
+                "Using machine learning algorithms"
+            ],
+            "answer": "Watching experts perform tasks or solve problems",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Protocol Analysis\" is a method for:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Acquisition",
+                "Uncertainty Management",
+                "System Deployment"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Analyzing reports, manuals, and textbooks is part of which knowledge acquisition method?",
+            "options": [
+                "Interviews",
+                "Observation",
+                "Documents analysis",
+                "Machine learning"
+            ],
+            "answer": "Documents analysis",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Machine learning and data mining are listed as methods for:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Acquisition",
+                "Explaining inferences",
+                "Managing project schedules"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Text mining/NLP (Natural Language Processing) is a method used in:",
+            "options": [
+                "Knowledge Acquisition",
+                "Logical knowledge representation",
+                "Managing uncertainty with fuzzy logic",
+                "The final implementation phase of ESDLC"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Tacit Knowledge\" poses a challenge in Knowledge Acquisition because it is:",
+            "options": [
+                "Easily articulated and documented",
+                "Difficult to extract as it's often intuitive and experiential",
+                "Always consistent among different experts",
+                "Static and never changes"
+            ],
+            "answer": "Difficult to extract as it's often intuitive and experiential",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Inconsistent Knowledge\" from different experts or sources is a challenge in:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Acquisition",
+                "Inferencing",
+                "System maintenance"
+            ],
+            "answer": "Knowledge Acquisition",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Why is \"Time Consuming\" a challenge in Knowledge Acquisition?",
+            "options": [
+                "The process is usually very quick",
+                "Extracting and structuring knowledge from experts can take significant time",
+                "Experts are always readily available",
+                "Automated tools make it instantaneous"
+            ],
+            "answer": "Extracting and structuring knowledge from experts can take significant time",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Dynamic Knowledge\" is a challenge for knowledge acquisition because:",
+            "options": [
+                "Domain knowledge rarely changes",
+                "Acquired knowledge may become outdated quickly as the field evolves",
+                "Experts' knowledge is always static",
+                "It is easy to update acquired knowledge"
+            ],
+            "answer": "Acquired knowledge may become outdated quickly as the field evolves",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Bias\" in experts or documentation is a challenge in knowledge acquisition as it can:",
+            "options": [
+                "Lead to more objective knowledge",
+                "Lead to skewed or inaccurate knowledge being captured",
+                "Be easily filtered out by automated tools",
+                "Simplify the acquisition process"
+            ],
+            "answer": "Lead to skewed or inaccurate knowledge being captured",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Which is a \"Best Practice for Knowledge Acquisition\"?",
+            "options": [
+                "Rely on a single expert to avoid conflicts",
+                "Use only one acquisition method for consistency",
+                "Collaborate with multiple experts",
+                "Avoid documenting the process to save time"
+            ],
+            "answer": "Collaborate with multiple experts",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Using multiple methods for knowledge acquisition is a best practice because:",
+            "options": [
+                "It makes the process more complex",
+                "It can provide a more comprehensive and validated knowledge base",
+                "It restricts the types of knowledge that can be captured",
+                "It is faster than using a single method"
+            ],
+            "answer": "It can provide a more comprehensive and validated knowledge base",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge acquisition is best approached as an \"Iterative Process,\" meaning:",
+            "options": [
+                "It is done once and never revisited",
+                "It involves cycles of elicitation, representation, and refinement",
+                "Only experts are involved, with no developer feedback",
+                "Documentation is avoided until the very end"
+            ],
+            "answer": "It involves cycles of elicitation, representation, and refinement",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Document Everything\" is a best practice in knowledge acquisition to:",
+            "options": [
+                "Make the process more difficult to track",
+                "Ensure clarity, traceability, and aid in maintenance",
+                "Keep the knowledge secret",
+                "Reduce the need for expert collaboration"
+            ],
+            "answer": "Ensure clarity, traceability, and aid in maintenance",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Leveraging technology (e.g., AI tools, recording software) is a best practice in KA to:",
+            "options": [
+                "Increase manual effort",
+                "Aid in the efficiency and accuracy of the acquisition process",
+                "Replace the need for human experts entirely",
+                "Make documentation unnecessary"
+            ],
+            "answer": "Aid in the efficiency and accuracy of the acquisition process",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The first step in the three-stage Knowledge Acquisition Process described on page 4 of \"Expert System ch 3 .pdf\" is:",
+            "options": [
+                "Intermediate Representation",
+                "Compilation into executable form",
+                "Knowledge Elicitation",
+                "Knowledge Validation"
+            ],
+            "answer": "Knowledge Elicitation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Intermediate Representation\" in the KA process involves:",
+            "options": [
+                "Directly inputting knowledge into the final system",
+                "Representing elicited knowledge in a structured format before final encoding",
+                "Extracting knowledge from experts",
+                "Converting knowledge into machine code"
+            ],
+            "answer": "Representing elicited knowledge in a structured format before final encoding",
+            "difficulty": "hard"
+        },
+        {
+            "question": "The final stage of the Knowledge Acquisition Process on page 4 of \"Expert System ch 3 .pdf\" is:",
+            "options": [
+                "Knowledge Elicitation",
+                "Intermediate Representation",
+                "Compilation into executable form",
+                "Expert identification"
+            ],
+            "answer": "Compilation into executable form",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge elicitation is described as the ____ and arguably the most critical stage in the knowledge acquisition process.",
+            "options": [
+                "Last",
+                "First",
+                "Simplest",
+                "Least important"
+            ],
+            "answer": "First",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Knowledge elicitation involves extracting knowledge from domain experts or other sources in a:",
+            "options": [
+                "Random and unstructured manner",
+                "Systematic and structured manner",
+                "Quick and informal way",
+                "Way that avoids documentation"
+            ],
+            "answer": "Systematic and structured manner",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge elicitation is often a time-intensive process, and ____ are increasingly common modern alternatives.",
+            "options": [
+                "Manual transcription methods",
+                "Lengthy expert interviews only",
+                "Automated knowledge elicitation and machine learning techniques",
+                "Relying solely on outdated documents"
+            ],
+            "answer": "Automated knowledge elicitation and machine learning techniques",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The first step in the \"Knowledge elicitation process\" is:",
+            "options": [
+                "Expert identification and collaboration",
+                "Domain and problem understanding",
+                "Characterizing problem solving tasks",
+                "Expert interviews and knowledge extraction"
+            ],
+            "answer": "Domain and problem understanding",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Characterizing problem solving tasks\" is part of the:",
+            "options": [
+                "Knowledge representation phase",
+                "Knowledge elicitation process",
+                "Uncertainty management technique",
+                "System implementation stage"
+            ],
+            "answer": "Knowledge elicitation process",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Identifying and collaborating with experts is a key step in:",
+            "options": [
+                "Compiling knowledge into executable form",
+                "The knowledge elicitation process",
+                "Logical analysis of knowledge",
+                "Implementing the user interface"
+            ],
+            "answer": "The knowledge elicitation process",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The final step listed in the knowledge elicitation process on page 4 of \"Expert System ch 3 .pdf\" is:",
+            "options": [
+                "Domain and problem understanding",
+                "Characterizing problem solving tasks",
+                "Expert identification and collaboration",
+                "Expert interviews and knowledge extraction"
+            ],
+            "answer": "Expert interviews and knowledge extraction",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of these is a knowledge elicitation technique?",
+            "options": [
+                "Forward Chaining",
+                "Repertory Grid",
+                "Decision Trees",
+                "Frames"
+            ],
+            "answer": "Repertory Grid",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The Repertory Grid technique for knowledge elicitation involves two phases: Eliciting domain Constructs and:",
+            "options": [
+                "Scoring Domain Concepts",
+                "Sorting Cards",
+                "Asking 20 Questions",
+                "Thinking Aloud"
+            ],
+            "answer": "Scoring Domain Concepts",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Laddering\" is listed as a technique for:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Elicitation",
+                "System Testing",
+                "Uncertainty Modelling"
+            ],
+            "answer": "Knowledge Elicitation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Card Sorting\" technique is used in:",
+            "options": [
+                "Knowledge Elicitation",
+                "Inferencing",
+                "Logical Analysis",
+                "Implementation Analysis"
+            ],
+            "answer": "Knowledge Elicitation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"20 Questions\" as a knowledge elicitation technique aims to:",
+            "options": [
+                "Score domain concepts",
+                "Uncover underlying knowledge structures by structured questioning",
+                "Analyze sequences of events",
+                "Formalize knowledge using logic"
+            ],
+            "answer": "Uncover underlying knowledge structures by structured questioning",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Protocol analysis, also known as the \"think-aloud method,\" is a technique for:",
+            "options": [
+                "Knowledge Representation",
+                "Knowledge Elicitation",
+                "System Implementation",
+                "Logical analysis"
+            ],
+            "answer": "Knowledge Elicitation",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Combining multiple knowledge elicitation techniques often yields:",
+            "options": [
+                "Less accurate knowledge models",
+                "Comprehensive and accurate knowledge models",
+                "A slower development process unnecessarily",
+                "Simpler but less effective expert systems"
+            ],
+            "answer": "Comprehensive and accurate knowledge models",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which is the first stage of Knowledge Acquisition listed on page 5 of \"Expert System ch 3 .pdf\"?",
+            "options": [
+                "Knowledge Conceptualization",
+                "Knowledge identification",
+                "Epistemological analysis",
+                "Logical analysis"
+            ],
+            "answer": "Knowledge identification",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Knowledge Conceptualization\" in the states of Knowledge Acquisition involves:",
+            "options": [
+                "Identifying the raw knowledge elements",
+                "Structuring the identified knowledge into concepts and relationships",
+                "Analyzing the philosophical basis of the knowledge",
+                "Formalizing knowledge using logical rules"
+            ],
+            "answer": "Structuring the identified knowledge into concepts and relationships",
+            "difficulty": "hard"
+        },
+        {
+            "question": "\"Epistemological analysis\" as a state of Knowledge Acquisition refers to:",
+            "options": [
+                "Identifying the scope and sources of knowledge",
+                "Defining key concepts and their relationships",
+                "Examining the nature, validity, and scope of the knowledge",
+                "Translating knowledge into a formal logical system"
+            ],
+            "answer": "Examining the nature, validity, and scope of the knowledge",
+            "difficulty": "hard"
+        },
+        {
+            "question": "What follows \"Epistemological analysis\" in the states of Knowledge Acquisition?",
+            "options": [
+                "Knowledge identification",
+                "Logical analysis",
+                "Knowledge Conceptualization",
+                "Implementational analysis"
+            ],
+            "answer": "Logical analysis",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The final state of Knowledge Acquisition listed on page 5 of \"Expert System ch 3 .pdf\" is:",
+            "options": [
+                "Epistemological analysis",
+                "Logical analysis",
+                "Implementational analysis",
+                "Knowledge Conceptualization"
+            ],
+            "answer": "Implementational analysis",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Level 1 of Knowledge Analysis in Expert System Development is:",
+            "options": [
+                "Knowledge Conceptualization",
+                "Knowledge identification",
+                "Epistemological analysis",
+                "Logical analysis"
+            ],
+            "answer": "Knowledge identification",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Knowledge Conceptualization\" corresponds to which level of Knowledge Analysis in ES Development?",
+            "options": [
+                "Level 1",
+                "Level 2",
+                "Level 3",
+                "Level 4"
+            ],
+            "answer": "Level 2",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Level 3 of Knowledge Analysis in ES Development is:",
+            "options": [
+                "Knowledge identification",
+                "Knowledge Conceptualization",
+                "Epistemological analysis",
+                "Implementational analysis"
+            ],
+            "answer": "Epistemological analysis",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Logical analysis\" is what level in Knowledge Analysis for ES Development?",
+            "options": [
+                "Level 2",
+                "Level 3",
+                "Level 4",
+                "Level 5"
+            ],
+            "answer": "Level 4",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Level 5 of Knowledge Analysis, the final level listed, is:",
+            "options": [
+                "Epistemological analysis",
+                "Logical analysis",
+                "Implementational analysis",
+                "Knowledge Conceptualization"
+            ],
+            "answer": "Implementational analysis",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge representation refers to the process of formalizing and encoding knowledge in a way that allows a computer system to:",
+            "options": [
+                "Only store it",
+                "Store, manipulate, and utilize it effectively",
+                "Only display it to users",
+                "Generate new knowledge independently"
+            ],
+            "answer": "Store, manipulate, and utilize it effectively",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is a key aspect of Knowledge Representation?",
+            "options": [
+                "Ambiguity",
+                "Structure",
+                "Randomness",
+                "Volatility"
+            ],
+            "answer": "Structure",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Semantic\" as a key aspect of Knowledge Representation refers to:",
+            "options": [
+                "The physical storage format of the knowledge",
+                "The meaning of the represented knowledge",
+                "The algorithms used to process the knowledge",
+                "The user interface design"
+            ],
+            "answer": "The meaning of the represented knowledge",
+            "difficulty": "hard"
+        },
+        {
+            "question": "The \"Manipulation\" aspect of Knowledge Representation concerns:",
+            "options": [
+                "How knowledge is acquired from experts",
+                "How the system can operate on or reason with the knowledge",
+                "The visual display of knowledge",
+                "The ethical implications of knowledge use"
+            ],
+            "answer": "How the system can operate on or reason with the knowledge",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A primary goal of Knowledge Representation is to:",
+            "options": [
+                "Keep knowledge abstract and informal",
+                "Capture and Store Knowledge",
+                "Limit access to knowledge",
+                "Focus only on procedural knowledge"
+            ],
+            "answer": "Capture and Store Knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge Representation aims to \"Enable Reasoning,\" which means:",
+            "options": [
+                "Allowing the system to draw inferences and make decisions",
+                "Facilitating human-to-human communication",
+                "Storing knowledge in a secure way",
+                "Capturing only factual knowledge"
+            ],
+            "answer": "Allowing the system to draw inferences and make decisions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Facilitate Communication\" is a goal of KR, implying it helps in:",
+            "options": [
+                "Making knowledge harder to understand",
+                "Sharing and understanding knowledge between humans and systems, or among systems",
+                "Restricting communication to only experts",
+                "Automating all communication tasks"
+            ],
+            "answer": "Sharing and understanding knowledge between humans and systems, or among systems",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Why is Knowledge Representation important for \"Enables Reasoning\"?",
+            "options": [
+                "It makes reasoning slower but more accurate",
+                "A well-structured representation is crucial for effective inference",
+                "It limits the types of reasoning possible",
+                "It focuses on data storage rather than reasoning"
+            ],
+            "answer": "A well-structured representation is crucial for effective inference",
+            "difficulty": "hard"
+        },
+        {
+            "question": "How does Knowledge Representation \"Facilitate Communication\"?",
+            "options": [
+                "By using obscure and technical formats",
+                "By providing a common framework for knowledge to be understood and exchanged",
+                "By restricting access to authorized personnel only",
+                "By encrypting all knowledge"
+            ],
+            "answer": "By providing a common framework for knowledge to be understood and exchanged",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge Representation is important to \"Support Problem-solving\" by:",
+            "options": [
+                "Making problems more complex",
+                "Providing the necessary knowledge in a usable form for the system to address issues",
+                "Focusing on theoretical problems only",
+                "Limiting the system's problem-solving capabilities"
+            ],
+            "answer": "Providing the necessary knowledge in a usable form for the system to address issues",
+            "difficulty": "medium"
+        },
+        {
+            "question": "KR helps \"Handles complexity\" by:",
+            "options": [
+                "Breaking down and organizing complex information into manageable structures",
+                "Adding more layers of complexity",
+                "Ignoring complex aspects of knowledge",
+                "Simplifying all knowledge to a basic level"
+            ],
+            "answer": "Breaking down and organizing complex information into manageable structures",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Logical Representation as a method of KR uses formal logic to encode knowledge, such as:",
+            "options": [
+                "Fuzzy Logic",
+                "Propositional Logic, First-Order Logic",
+                "Semantic Networks",
+                "Frames"
+            ],
+            "answer": "Propositional Logic, First-Order Logic",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Rule-Based Systems represent knowledge as:",
+            "options": [
+                "Collections of attributes and values",
+                "Graphs of nodes and edges",
+                "If-then rules",
+                "Sequences of events"
+            ],
+            "answer": "If-then rules",
+            "difficulty": "medium"
+        },
+        {
+            "question": "\"Production Rules\" are another name for:",
+            "options": [
+                "Frames",
+                "Semantic Networks",
+                "If-then rules",
+                "Ontologies"
+            ],
+            "answer": "If-then rules",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Decision Trees represent knowledge as a:",
+            "options": [
+                "Graph of nodes and edges",
+                "Collection of attributes and values",
+                "Tree of decisions",
+                "Network of concepts and relationships"
+            ],
+            "answer": "Tree of decisions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Semantic Networks represent knowledge as a graph of:",
+            "options": [
+                "If-then rules",
+                "Nodes and edges",
+                "Decision points",
+                "Attributes and values"
+            ],
+            "answer": "Nodes and edges",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Frames represent knowledge as collections of:",
+            "options": [
+                "If-then rules",
+                "Nodes and edges",
+                "Attributes and values",
+                "Concepts and relationships within a domain"
+            ],
+            "answer": "Attributes and values",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Ontologies define ____ within a domain.",
+            "options": [
+                "Only concepts and relationships",
+                "Concepts, relationships, constraints",
+                "Only if-then rules",
+                "Only sequences of events"
+            ],
+            "answer": "Concepts, relationships, constraints",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Probabilistic Representation is used to handle:",
+            "options": [
+                "Precise and complete knowledge",
+                "Uncertain, incomplete knowledge (e.g., Bayesian networks, Markov models)",
+                "Sequences of actions",
+                "Hierarchical data structures"
+            ],
+            "answer": "Uncertain, incomplete knowledge (e.g., Bayesian networks, Markov models)",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Fuzzy Systems represent imprecise or vague knowledge using:",
+            "options": [
+                "Strict true/false logic",
+                "Degrees of truth",
+                "First-Order Logic",
+                "Production rules"
+            ],
+            "answer": "Degrees of truth",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Scripts, as a KR method, represent:",
+            "options": [
+                "Hierarchical relationships",
+                "Uncertain knowledge",
+                "Sequences of events or actions in a specific context",
+                "Logical propositions"
+            ],
+            "answer": "Sequences of events or actions in a specific context",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Conceptual graphs are similar to semantic networks but with more:",
+            "options": [
+                "Informal semantics",
+                "Formal semantics",
+                "If-then rules",
+                "Fuzzy logic elements"
+            ],
+            "answer": "Formal semantics",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Neural Networks represent knowledge as a network of interconnected nodes (neurons) that:",
+            "options": [
+                "Follow predefined if-then rules",
+                "Learn patterns from data",
+                "Represent hierarchical structures explicitly",
+                "Define concepts and relationships formally"
+            ],
+            "answer": "Learn patterns from data",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A strength of Logical Representations is that they:",
+            "options": [
+                "Are easy to understand for non-technical users",
+                "Are precise and support formal reasoning",
+                "Handle uncertain knowledge well",
+                "Are highly scalable for large rule sets"
+            ],
+            "answer": "Are precise and support formal reasoning",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A weakness of Rule-Based Systems can be:",
+            "options": [
+                "Difficulty in understanding the rules",
+                "Scalability issues with large rule sets",
+                "Limited applicability in diagnostic systems",
+                "Inability to represent if-then statements"
+            ],
+            "answer": "Scalability issues with large rule sets",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Semantic Networks are intuitive and good for representing:",
+            "options": [
+                "Complex logical proofs",
+                "Hierarchical relationships",
+                "Uncertain information",
+                "Procedural knowledge"
+            ],
+            "answer": "Hierarchical relationships",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Frames are a KR method good for structured, hierarchical data, but a weakness is:",
+            "options": [
+                "Poor support for inheritance",
+                "Limited flexibility for dynamic or uncertain knowledge",
+                "Difficulty in representing object attributes",
+                "Unsuitability for object-oriented systems"
+            ],
+            "answer": "Limited flexibility for dynamic or uncertain knowledge",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Ontologies support complex relationships and interoperability, but a weakness is:",
+            "options": [
+                "They are quick and easy to build",
+                "They require significant effort to build and maintain",
+                "They cannot be used for knowledge graphs",
+                "They do not support formal reasoning"
+            ],
+            "answer": "They require significant effort to build and maintain",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which characteristic describes KBS as being guided by the knowledge they possess?",
+            "options": [
+                "Interactive",
+                "Adaptable",
+                "Knowledge-Driven",
+                "Algorithmic"
+            ],
+            "answer": "Knowledge-Driven",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Reasoning Capability\" of a KBS refers to its ability to:",
+            "options": [
+                "Store large amounts of data",
+                "Perform complex calculations quickly",
+                "Draw conclusions or make inferences",
+                "Interact with users through graphical interfaces"
+            ],
+            "answer": "Draw conclusions or make inferences",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The \"Interactive\" characteristic of KBS means they:",
+            "options": [
+                "Operate autonomously without user input",
+                "Can engage with users, often through dialogue",
+                "Automatically update their own codebase",
+                "Are difficult to modify"
+            ],
+            "answer": "Can engage with users, often through dialogue",
+            "difficulty": "medium"
+        },
+        {
+            "question": "When a KBS is described as \"Adaptable,\" it implies it can:",
+            "options": [
+                "Only run on specific hardware",
+                "Be modified or updated, for instance, by adding new knowledge",
+                "Never change once deployed",
+                "Resist all forms of user interaction"
+            ],
+            "answer": "Be modified or updated, for instance, by adding new knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "One advantage of KBS is:",
+            "options": [
+                "Increased reliance on human experts",
+                "Consistent decision-making",
+                "Knowledge acquisition is always easy",
+                "Low initial development cost"
+            ],
+            "answer": "Consistent decision-making",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is listed as an advantage of KBS?",
+            "options": [
+                "Maintenance requires no expert involvement",
+                "Performance is independent of knowledge base completeness",
+                "Reduced reliance on human experts",
+                "Knowledge acquisition is quick and inexpensive"
+            ],
+            "answer": "Reduced reliance on human experts",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A key advantage of KBS is:",
+            "options": [
+                "Difficulty in problem-solving",
+                "Efficient problem-solving",
+                "Limited to simple tasks",
+                "Resistance to updates"
+            ],
+            "answer": "Efficient problem-solving",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is a noted limitation of KBS?",
+            "options": [
+                "Decision-making is always inconsistent",
+                "They enhance reliance on human experts",
+                "Knowledge acquisition can be difficult and time-consuming",
+                "Maintenance is typically handled by end-users"
+            ],
+            "answer": "Knowledge acquisition can be difficult and time-consuming",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A limitation of KBS is that their maintenance often requires:",
+            "options": [
+                "No specific skills",
+                "Only basic computer literacy",
+                "Expert involvement",
+                "Automated systems entirely"
+            ],
+            "answer": "Expert involvement",
+            "difficulty": "medium"
+        },
+        {
+            "question": "The performance of a KBS is limited by the:",
+            "options": [
+                "Speed of the user's internet connection",
+                "Number of users accessing the system",
+                "Completeness of the knowledge base",
+                "Physical size of the server"
+            ],
+            "answer": "Completeness of the knowledge base",
+            "difficulty": "medium"
+        },
+        {
+            "question": "KBS rely on the effective representation and ____ of knowledge to solve complex problems.",
+            "options": [
+                "Deletion",
+                "Concealment",
+                "Utilization",
+                "Abstraction"
+            ],
+            "answer": "Utilization",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge that is documented, codified, and easily shared is known as:",
+            "options": [
+                "Tacit Knowledge",
+                "Explicit Knowledge",
+                "Procedural Knowledge",
+                "Meta-Knowledge"
+            ],
+            "answer": "Explicit Knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Where is Explicit Knowledge typically stored?",
+            "options": [
+                "Only in human memory",
+                "In experiences and intuitions",
+                "In books, databases, and manuals",
+                "Exclusively in procedural workflows"
+            ],
+            "answer": "In books, databases, and manuals",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Explicit Knowledge can be expressed in:",
+            "options": [
+                "Intuition and skills only",
+                "Words, numbers, or symbols",
+                "Personal experiences only",
+                "Unspoken understanding"
+            ],
+            "answer": "Words, numbers, or symbols",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How transferable is Explicit Knowledge?",
+            "options": [
+                "Difficult to transfer",
+                "Requires personal interaction to share",
+                "Easily transferable across individuals and systems",
+                "Non-transferable"
+            ],
+            "answer": "Easily transferable across individuals and systems",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is given as an example of Explicit Knowledge?",
+            "options": [
+                "Skills",
+                "Intuition",
+                "Rules, facts, Database",
+                "Experience"
+            ],
+            "answer": "Rules, facts, Database",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How is Explicit Knowledge typically used in KBS?",
+            "options": [
+                "Captured through machine learning only",
+                "Stored in the knowledge base as rules/facts",
+                "Encoded in the inference engine primarily",
+                "Used to guide the user interface design"
+            ],
+            "answer": "Stored in the knowledge base as rules/facts",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Knowledge that is personal, context-specific, and difficult to formalize is:",
+            "options": [
+                "Explicit Knowledge",
+                "Tacit Knowledge",
+                "Declarative Knowledge",
+                "Structural Knowledge"
+            ],
+            "answer": "Tacit Knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Tacit Knowledge is rooted in:",
+            "options": [
+                "Databases and manuals",
+                "Rules and facts",
+                "Experience, intuition, and skills",
+                "Formal documentation"
+            ],
+            "answer": "Experience, intuition, and skills",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Tacit Knowledge is characterized as being:",
+            "options": [
+                "Highly structured and objective",
+                "Easily documented and transferred",
+                "Unstructured and subjective",
+                "Expressed in words and numbers"
+            ],
+            "answer": "Unstructured and subjective",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Transferring Tacit Knowledge often requires:",
+            "options": [
+                "Access to a database",
+                "Reading a manual",
+                "Personal interaction or hands-on experience",
+                "Formal symbolic representation"
+            ],
+            "answer": "Personal interaction or hands-on experience",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of these is an example of Tacit Knowledge?",
+            "options": [
+                "A company's financial report",
+                "A user manual for software",
+                "A chef's intuition for seasoning a dish",
+                "A database of customer addresses"
+            ],
+            "answer": "A chef's intuition for seasoning a dish",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How is Tacit Knowledge often captured for use in KBS?",
+            "options": [
+                "By direct entry of rules and facts",
+                "Through CBR (Case-Based Reasoning) or machine learning",
+                "By documentation in manuals",
+                "By structuring it into explicit facts"
+            ],
+            "answer": "Through CBR (Case-Based Reasoning) or machine learning",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Procedural Knowledge pertains to:",
+            "options": [
+                "Facts or statements about the world",
+                "Knowledge about knowledge",
+                "How to perform tasks or procedures",
+                "Relationships between concepts"
+            ],
+            "answer": "How to perform tasks or procedures",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Procedural Knowledge often takes the form of:",
+            "options": [
+                "Static facts",
+                "Step-by-step methods or algorithms",
+                "Relationships between objects",
+                "Rules about how knowledge is organized"
+            ],
+            "answer": "Step-by-step methods or algorithms",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Procedural Knowledge focuses on:",
+            "options": [
+                "\"What is known\"",
+                "The organization and hierarchy of knowledge",
+                "Processes and actions",
+                "Facts and assertions"
+            ],
+            "answer": "Processes and actions",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How is Procedural Knowledge often represented?",
+            "options": [
+                "As facts or assertions",
+                "Using semantic networks or ontologies",
+                "As workflows, algorithms, or scripts",
+                "As rules of thumb"
+            ],
+            "answer": "As workflows, algorithms, or scripts",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Which of the following is an example of Procedural Knowledge?",
+            "options": [
+                "Water boils at 100°C at sea level",
+                "A car is a type of vehicle",
+                "Algorithms, workflows, recipes",
+                "Rule X should be applied before rule Y"
+            ],
+            "answer": "Algorithms, workflows, recipes",
+            "difficulty": "medium"
+        },
+        {
+            "question": "In a KBS, Procedural Knowledge is typically:",
+            "options": [
+                "Stored as facts in the knowledge base",
+                "Used to guide the reasoning process itself",
+                "Encoded in the inference engine",
+                "Used to build ontologies"
+            ],
+            "answer": "Encoded in the inference engine",
+            "difficulty": "hard"
+        },
+        {
+            "question": "Declarative Knowledge is also called:",
+            "options": [
+                "Procedural Knowledge",
+                "Meta-Knowledge",
+                "Factual Knowledge",
+                "Heuristic Knowledge"
+            ],
+            "answer": "Factual Knowledge",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Declarative Knowledge represents:",
+            "options": [
+                "How to do something",
+                "Rules of thumb",
+                "Facts or statements about the world",
+                "The sequence of steps in a process"
+            ],
+            "answer": "Facts or statements about the world",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Declarative Knowledge describes:",
+            "options": [
+                "\"How to do something\"",
+                "\"What is known\"",
+                "The organization of knowledge",
+                "Probabilistic rules"
+            ],
+            "answer": "\"What is known\"",
+            "difficulty": "medium"
+        },
+        {
+            "question": "Declarative Knowledge is generally:",
+            "options": [
+                "Dynamic and action-oriented",
+                "Static and descriptive",
+                "Focused on processes",
+                "Subjective and intuitive"
+            ],
+            "answer": "Static and descriptive",
+            "difficulty": "medium"
+        },
+        {
+            "question": "How is Declarative Knowledge represented?",
+            "options": [
+                "As workflows or scripts",
+                "As facts, assertions, or relationships",
+                "As step-by-step methods",
+                "As algorithms"
+            ],
+            "answer": "As facts, assertions, or relationships",
+            "difficulty": "medium"
         }
     ],
     "trueFalseQuestions": [
@@ -1918,60 +3172,6 @@ const questionsData = {
         },
         {
             "question": "Frame-Based Systems can represent hierarchical relationships between concepts",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Expert Systems can completely replace human experts in all situations",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The knowledge base and inference engine are typically separate components in an Expert System",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert Systems can operate effectively with incomplete information",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Intelligent Tutoring Systems can adapt their teaching strategies based on student performance",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert Systems can handle unstructured knowledge as effectively as human experts",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The knowledge base and inference engine must be separate components in an Expert System",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Human experts are no longer needed once an Expert System is fully developed",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert Systems can fully replicate human intuition and creativity",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "hard"
-        },
-        {
-            "question": "The effectiveness of an Expert System is limited by the quality of its knowledge base",
             "options": ["True", "False"],
             "answer": "True",
             "difficulty": "medium"
