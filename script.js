@@ -8,10 +8,10 @@ let timerInterval;
 
 // Constants
 const CATEGORIES = {
-    'fundamentals': 'Knowledge Management',
-    'systems': 'Expert Systems',
-    'components': 'System Components',
-    'knowledge': 'Knowledge Types'
+    'sorting': 'Sorting Algorithms',
+    'searching': 'Searching Algorithms',
+    'complexity': 'Time & Space Complexity',
+    'datastructures': 'Data Structures'
 };
 
 // Error handling function
@@ -153,24 +153,17 @@ function validateSetup() {
 // Select questions
 function selectQuestions() {
     try {
-        console.log('Selecting questions');
-        
         const questionCountValue = document.getElementById('questionCount').value;
         const questionType = document.getElementById('questionType').value;
         const difficultyLevel = document.getElementById('difficultyLevel').value;
         
-        console.log(`Selection criteria - Count: ${questionCountValue}, Type: ${questionType}, Difficulty: ${difficultyLevel}`);
-        
         let selectedQuestions = [];
         
         if (questionType === 'mcq') {
-            console.log('Selecting MCQ questions');
             selectedQuestions = [...questionsData.mcqQuestions];
         } else if (questionType === 'tf') {
-            console.log('Selecting True/False questions');
             selectedQuestions = [...questionsData.trueFalseQuestions];
         } else {
-            console.log('Selecting mixed questions');
             selectedQuestions = [
                 ...questionsData.mcqQuestions,
                 ...questionsData.trueFalseQuestions
@@ -179,26 +172,22 @@ function selectQuestions() {
         
         // Filter by difficulty if specified
         if (difficultyLevel && difficultyLevel !== 'all') {
-            console.log(`Filtering by difficulty: ${difficultyLevel}`);
             selectedQuestions = selectedQuestions.filter(q => q.difficulty === difficultyLevel);
         }
         
-        console.log(`Available questions after filtering: ${selectedQuestions.length}`);
-        
-        // Handle 'all' option for question count
-        const questionCount = questionCountValue === 'all' ? selectedQuestions.length : parseInt(questionCountValue);
+        const questionCount = questionCountValue === 'all' ? 
+            selectedQuestions.length : parseInt(questionCountValue);
         
         if (selectedQuestions.length < questionCount) {
             throw new Error(`Not enough questions available (${selectedQuestions.length} available, ${questionCount} requested)`);
         }
         
-        // Shuffle and select required number of questions
-        const finalQuestions = shuffleArray(selectedQuestions)
+        return shuffleArray(selectedQuestions)
             .slice(0, questionCount)
-            .map(q => shuffleOptions(q));
-            
-        console.log(`Final selected questions: ${finalQuestions.length}`);
-        return finalQuestions;
+            .map(q => ({
+                ...q,
+                options: shuffleArray([...q.options])
+            }));
     } catch (error) {
         console.log('Error selecting questions: ' + error.message);
         showError(error.message);
@@ -209,46 +198,41 @@ function selectQuestions() {
 // Show question
 function showQuestion() {
     try {
-        console.log(`Showing question ${currentQuestionIndex + 1} of ${currentQuestions.length}`);
-        
-    const question = currentQuestions[currentQuestionIndex];
+        const question = currentQuestions[currentQuestionIndex];
         if (!question) {
             throw new Error('Question not found');
         }
         
-    const container = document.querySelector('.question-container');
+        const container = document.querySelector('.question-container');
         if (!container) {
             throw new Error('Question container not found');
         }
         
-        console.log('Question:', question);
-    
-    container.innerHTML = `
-        <div class="question-header">
-            <div class="question-info">
-                <span class="category-badge">
-                        <i class="fas fa-question-circle"></i>
+        container.innerHTML = `
+            <div class="question-header">
+                <div class="question-info">
+                    <span class="question-number">
                         Question ${currentQuestionIndex + 1} of ${currentQuestions.length}
-                </span>
+                    </span>
                     <span class="difficulty-badge ${question.difficulty}">
                         ${question.difficulty.toUpperCase()}
                     </span>
+                </div>
+                <h2 class="question-text">${question.question}</h2>
             </div>
-            <h2 class="question-text">${question.question}</h2>
-        </div>
             <div class="options-container">
                 ${question.options.map((option, index) => `
                     <button class="option" onclick="selectAnswer(${index})" data-index="${index}">
-                        <span class="option-letter">${String.fromCharCode(65 + index)}</span>
-                        ${option}
-                </button>
+                        <span class="option-letter code-font">${String.fromCharCode(65 + index)}</span>
+                        <span class="option-text ${option.includes('O(') ? 'code-font' : ''}">${option}</span>
+                    </button>
                 `).join('')}
             </div>
             <div class="progress-bar">
                 <div class="progress" style="width: ${((currentQuestionIndex + 1) / currentQuestions.length) * 100}%"></div>
-        </div>
-    `;
-    
+            </div>
+        `;
+
         // Add click event listeners to options
         const options = container.querySelectorAll('.option');
         options.forEach(option => {
@@ -257,8 +241,6 @@ function showQuestion() {
                 selectAnswer(index);
             });
         });
-        
-        console.log('Question displayed successfully');
     } catch (error) {
         console.log('Error showing question: ' + error.message);
         showError('Error showing question: ' + error.message);
@@ -741,3 +723,86 @@ style.textContent = `
 `;
 
 document.head.appendChild(style);
+
+// Add visualization functions
+function visualizeArray(array, container) {
+    container.innerHTML = '';
+    array.forEach((value, index) => {
+        const node = document.createElement('div');
+        node.className = 'node';
+        node.textContent = value;
+        container.appendChild(node);
+    });
+}
+
+function visualizeComplexity(type, container) {
+    container.innerHTML = '';
+    const graph = document.createElement('div');
+    graph.className = 'complexity-graph';
+    
+    const line = document.createElement('div');
+    line.className = 'complexity-line';
+    
+    switch(type) {
+        case 'O(1)':
+            line.style.height = '20px';
+            break;
+        case 'O(log n)':
+            line.style.height = '40%';
+            line.style.transform = 'scale(1, 0.6)';
+            break;
+        case 'O(n)':
+            line.style.height = '60%';
+            line.style.transform = 'rotate(45deg)';
+            break;
+        case 'O(n log n)':
+            line.style.height = '75%';
+            line.style.transform = 'scale(1, 0.8)';
+            break;
+        case 'O(n²)':
+            line.style.height = '100%';
+            line.style.transform = 'scale(1, 1)';
+            break;
+    }
+    
+    graph.appendChild(line);
+    container.appendChild(graph);
+}
+
+// Helper function to get category icon
+function getCategoryIcon(category) {
+    switch(category) {
+        case 'sorting':
+            return 'fa-sort';
+        case 'searching':
+            return 'fa-search';
+        case 'complexity':
+            return 'fa-chart-line';
+        case 'datastructures':
+            return 'fa-project-diagram';
+        default:
+            return 'fa-code';
+    }
+}
+
+// Helper function for data structure visualization
+function getDataStructureVisualization(type) {
+    switch(type) {
+        case 'array':
+            return Array(5).fill(0).map((_, i) => `
+                <div class="node">${i}</div>
+            `).join('');
+        case 'linkedlist':
+            return Array(3).fill(0).map((_, i) => `
+                <div class="node">${i}</div>
+            `).join('');
+        case 'tree':
+            return `
+                <div class="node">1</div>
+                <div class="node">2</div>
+                <div class="node">3</div>
+            `;
+        default:
+            return '<div class="node">?</div>';
+    }
+}

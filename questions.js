@@ -2,3179 +2,1187 @@
 const questionsData = {
     "mcqQuestions": [
         {
-            "question": "Intelligent Tutoring Systems (ITS) utilize AI and knowledge-based techniques to emulate the role of a:",
+            "question": "Which of the following is typically the first step in solving computational problems?",
             "options": [
-                "Database administrator",
-                "System analyst",
-                "Human tutor",
-                "Software developer"
+                "Designing an Algorithm",
+                "Problem definition",
+                "Program testing",
+                "Documentation"
             ],
-            "answer": "Human tutor",
-            "difficulty": "easy"
+            "answer": "Problem definition",
+            "difficulty": "easy",
+            "category": "complexity"
         },
         {
-            "question": "What do Intelligent Tutoring Systems provide to learners?",
+            "question": "Which of these is NOT a characteristic of a well-defined algorithm?",
             "options": [
-                "Access to raw data only",
-                "General-purpose software tools",
-                "Customized instruction and feedback",
-                "Hardware troubleshooting assistance"
+                "It must have a unique name",
+                "It should define a set of inputs and outputs",
+                "It should ideally run for infinity to explore all solutions",
+                "Its operations must be well-ordered and unambiguous"
             ],
-            "answer": "Customized instruction and feedback",
-            "difficulty": "medium"
+            "answer": "It should ideally run for infinity to explore all solutions",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "Which is NOT listed as a component of an Intelligent Tutoring System?",
+            "question": "What is the worst-case time complexity of Insertion Sort for an array of n elements?",
             "options": [
-                "Domain Knowledge Module (Expert Module)",
-                "Student Model",
-                "Fuzzy Inference Engine",
-                "Tutoring Model (Instructional Module)"
+                "O(n)",
+                "O(nlogn)",
+                "O(n²)",
+                "O(logn)"
             ],
-            "answer": "Fuzzy Inference Engine",
-            "difficulty": "medium"
+            "answer": "O(n²)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "The Domain Knowledge Module in an ITS is also known as the:",
+            "question": "The time complexity for Bubble Sort in all cases (best, worst, average) is:",
             "options": [
-                "Student Model",
-                "Expert Module",
-                "Instructional Module",
-                "Communication Module"
+                "O(n)",
+                "O(nlogn)",
+                "O(n²)",
+                "O(1)"
             ],
-            "answer": "Expert Module",
-            "difficulty": "medium"
+            "answer": "O(n²)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "What does the Student Model in an ITS represent?",
+            "question": "The Divide-and-Conquer strategy involves which of the following phases?",
             "options": [
-                "The teaching strategies used by the system",
-                "The subject matter being taught",
-                "The learner's current understanding and progress",
-                "The interaction interface with the learner"
+                "Divide, Iterate, Combine",
+                "Initialize, Conquer, Validate",
+                "Divide, Conquer, Combine",
+                "Structure, Operate, Terminate"
             ],
-            "answer": "The learner's current understanding and progress",
-            "difficulty": "medium"
+            "answer": "Divide, Conquer, Combine",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "Expert Systems are described as intelligent computer programs and a field of:",
+            "question": "The recurrence relation T(n)=2T(n/2)+O(n) is characteristic of which algorithm?",
             "options": [
-                "Database Management",
-                "Network Security",
-                "Artificial Intelligence (AI)",
-                "Operating System Design"
+                "Binary Search",
+                "Merge Sort",
+                "Insertion Sort",
+                "Linear Search"
             ],
-            "answer": "Artificial Intelligence (AI)",
-            "difficulty": "easy"
+            "answer": "Merge Sort",
+            "difficulty": "hard",
+            "category": "sorting"
         },
         {
-            "question": "Expert Systems are designed to emulate or mimic the decision-making abilities of a:",
+            "question": "Using the Master Method for T(n)=9T(n/3)+n, what is n log_b a?",
             "options": [
-                "Computer programmer",
-                "Novice user",
-                "Human expert within a specific domain",
-                "General-purpose algorithm"
+                "n log_3 9 = n²",
+                "n log_9 3 = n^(1/2)",
+                "n",
+                "n³"
             ],
-            "answer": "Human expert within a specific domain",
-            "difficulty": "medium"
+            "answer": "n log_3 9 = n²",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Many Expert Systems are called Rule-Based Systems because they use a set of:",
+            "question": "For the recurrence T(n)=T(2n/3)+1, which case of the Master Method applies and what is the solution?",
             "options": [
-                "Frames and slots",
-                "\"If-then\" rules",
-                "Past case solutions",
-                "Neural networks"
+                "Case 1, Θ(n)",
+                "Case 2, Θ(lgn)",
+                "Case 3, Θ(1)",
+                "Case 2, Θ(nlgn)"
             ],
-            "answer": "\"If-then\" rules",
-            "difficulty": "medium"
+            "answer": "Case 2, Θ(lgn)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Expert Systems are sometimes referred to as Inference Systems because what is a core component?",
+            "question": "The Recursion Tree Method is primarily used for:",
             "options": [
-                "The User Interface",
-                "The Knowledge Base",
-                "The Inference Engine",
-                "The Database"
+                "Designing recursive algorithms",
+                "Visualizing the step-by-step execution of a recursive function",
+                "Analyzing the time complexity of recurrence relations",
+                "Converting recursive algorithms to iterative ones"
             ],
-            "answer": "The Inference Engine",
-            "difficulty": "medium"
+            "answer": "Analyzing the time complexity of recurrence relations",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "While not all Decision Support Systems (DSS) are Expert Systems, many Expert Systems function as DSS by:",
+            "question": "What is the average-case time complexity of Quick Sort?",
             "options": [
-                "Storing large volumes of data",
-                "Assisting users in making informed decisions",
-                "Managing network communications",
-                "Providing general computational tools"
+                "Θ(n²)",
+                "Θ(n)",
+                "Θ(nlgn)",
+                "Θ(lgn)"
             ],
-            "answer": "Assisting users in making informed decisions",
-            "difficulty": "medium"
+            "answer": "Θ(nlgn)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "What is the stated goal of an Expert System regarding the knowledge of a human expert?",
+            "question": "In the provided PARTITION(A, p, r) algorithm for Quick Sort, which element is selected as the pivot?",
             "options": [
-                "To replace the human expert entirely",
-                "To make the expert's knowledge available to a less experienced user",
-                "To limit access to the expert's knowledge",
-                "To convert expert knowledge into simple algorithms"
+                "The first element A[p]",
+                "The last element A[r]",
+                "The middle element A[⌊(p+r)/2⌋]",
+                "A random element"
             ],
-            "answer": "To make the expert's knowledge available to a less experienced user",
-            "difficulty": "medium"
+            "answer": "The last element A[r]",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "How do Expert Systems contribute to \"Improving Decision-Making\"?",
+            "question": "What is the time complexity of the MAX-HEAPIFY(A, i, n) operation on a heap of size n?",
             "options": [
-                "By making decisions slower but more thorough",
-                "By providing consistent and rationale-based advice",
-                "By eliminating the need for any human judgment",
-                "By always providing a single, definitive answer"
+                "O(1)",
+                "O(lgn)",
+                "O(n)",
+                "O(nlgn)"
             ],
-            "answer": "By providing consistent and rationale-based advice",
-            "difficulty": "medium"
+            "answer": "O(lgn)",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "What does \"Accessibility\" refer to in the context of why Expert Systems are important?",
+            "question": "Which data structure is typically used to implement Breadth-First Search (BFS)?",
             "options": [
-                "Making expertise available only to a select few",
-                "Making expert knowledge more widely and easily available",
-                "The physical accessibility of the computer hardware",
-                "The ease of programming the expert system"
+                "Stack",
+                "Queue",
+                "Priority Queue",
+                "Array"
             ],
-            "answer": "Making expert knowledge more widely and easily available",
-            "difficulty": "medium"
+            "answer": "Queue",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "Expert Systems perform \"Reasoning Over Representations of Human Knowledge\" and are typically composed of two distinct modules: a Knowledge Base and an:",
+            "question": "The total running time of the BFS procedure on a graph G=(V,E) represented by adjacency lists is:",
             "options": [
-                "Algorithm Unit",
-                "User Profile",
-                "Inference Engine",
-                "Data Input Module"
+                "O(V)",
+                "O(E)",
+                "O(V⋅E)",
+                "O(V+E)"
             ],
-            "answer": "Inference Engine",
-            "difficulty": "medium"
+            "answer": "O(V+E)",
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "In an Expert System, the Knowledge Base:",
+            "question": "Informed search algorithms are also known as:",
             "options": [
-                "Applies logical rules",
-                "Stores facts and rules related to the domain",
-                "Facilitates user interaction",
-                "Generates new knowledge autonomously"
+                "Blind searches",
+                "Brute-force searches",
+                "Heuristic searches",
+                "Exhaustive searches"
             ],
-            "answer": "Stores facts and rules related to the domain",
-            "difficulty": "medium"
+            "answer": "Heuristic searches",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "The Inference Engine in an Expert System:",
+            "question": "The process of analyzing an algorithm's problem-solving capability in terms of time and size is known as:",
             "options": [
-                "Stores facts and rules",
-                "Applies logical rules to the knowledge base to derive conclusions",
-                "Is the primary interface for user input",
-                "Contains the original source documents of knowledge"
+                "Algorithm Design",
+                "Algorithm Implementation",
+                "Analysis of Algorithm",
+                "Algorithm Documentation"
             ],
-            "answer": "Applies logical rules to the knowledge base to derive conclusions",
-            "difficulty": "hard"
+            "answer": "Analysis of Algorithm",
+            "difficulty": "easy",
+            "category": "complexity"
         },
         {
-            "question": "\"High-Quality Performance\" as a characteristic of Expert Systems means they:",
+            "question": "If f(n)=Θ(g(n)), it implies that for large n, f(n) is:",
             "options": [
-                "Always perform better than human experts",
-                "Are expected to perform at a competent or expert level in their specific domain",
-                "Never make mistakes",
-                "Can operate without any errors in their knowledge base"
+                "Bounded above by c₂g(n) only",
+                "Bounded below by c₁g(n) only",
+                "Bounded both above by c₂g(n) and below by c₁g(n) for positive constants c₁,c₂",
+                "Always equal to g(n)"
             ],
-            "answer": "Are expected to perform at a competent or expert level in their specific domain",
-            "difficulty": "medium"
+            "answer": "Bounded both above by c₂g(n) and below by c₁g(n) for positive constants c₁,c₂",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "What kind of knowledge is characteristic of an Expert System?",
+            "question": "What is the Big-O running time for the following code snippet: sum = 0; for(i=0; i < sqrt(n)/2; i++) sum++;?",
             "options": [
-                "General common sense knowledge",
-                "Vast Domain-Specific Knowledge",
-                "Knowledge about unrelated fields",
-                "Limited and superficial knowledge"
+                "O(n)",
+                "O(n²)",
+                "O(√n)",
+                "O(logn)"
             ],
-            "answer": "Vast Domain-Specific Knowledge",
-            "difficulty": "medium"
+            "answer": "O(√n)",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "The \"Application of Heuristics\" in Expert Systems refers to using:",
+            "question": "In Insertion Sort, what is the best-case time complexity if the input array is already sorted?",
             "options": [
-                "Formal mathematical proofs for all decisions",
-                "Rules of thumb or experiential knowledge to guide problem-solving",
-                "Only explicitly documented procedures",
-                "Random chance to explore solutions"
+                "O(n²)",
+                "O(nlogn)",
+                "O(n)",
+                "O(1)"
             ],
-            "answer": "Rules of thumb or experiential knowledge to guide problem-solving",
-            "difficulty": "hard"
+            "answer": "O(n)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "\"Adaptability and Flexibility\" in an Expert System implies it can be:",
+            "question": "Selection Sort's time complexity in all cases (best, worst, average) is:",
             "options": [
-                "Never changed after initial development",
-                "Modified or updated, for example, by adding new rules",
-                "Used for any problem domain without changes",
-                "Resistant to new data or knowledge"
+                "O(n)",
+                "O(nlogn)",
+                "O(n²)",
+                "O(n³)"
             ],
-            "answer": "Modified or updated, for example, by adding new rules",
-            "difficulty": "medium"
+            "answer": "O(n²)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "What is the primary purpose of an Expert System?",
+            "question": "The 'Combine' step in the Merge Sort algorithm involves:",
             "options": [
-                "To simulate human expert decision-making in specific domains",
-                "To replace all human experts in an organization",
-                "To store large amounts of general data",
-                "To perform basic mathematical calculations"
+                "Dividing the sequence into two subsequences",
+                "Sorting the two subsequences recursively",
+                "Merging the two sorted subsequences to produce the sorted answer",
+                "Selecting a pivot element"
             ],
-            "answer": "To simulate human expert decision-making in specific domains",
-            "difficulty": "easy"
+            "answer": "Merging the two sorted subsequences to produce the sorted answer",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Which component of an Expert System contains the domain-specific knowledge?",
+            "question": "What is the first step in solving a recurrence using the Substitution Method?",
             "options": [
-                "Knowledge Base",
-                "Inference Engine",
-                "User Interface",
-                "Database Management System"
+                "Verify the solution by using an inductive argument",
+                "Guess the form of the solution",
+                "Solve for constants",
+                "Draw a recursion tree"
             ],
-            "answer": "Knowledge Base",
-            "difficulty": "easy"
+            "answer": "Guess the form of the solution",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "What is the role of the Inference Engine in an Expert System?",
+            "question": "For the Master Theorem T(n)=aT(n/b)+f(n), if nlog_b(a) > f(n), what is the solution?",
             "options": [
-                "To process rules and facts to reach conclusions",
-                "To store expert knowledge",
-                "To interact with users",
-                "To manage system memory"
+                "T(n)=Θ(nlog_b(a)lgn)",
+                "T(n)=Θ(f(n))",
+                "T(n)=Θ(nlog_b(a))",
+                "T(n)=Θ(f(n)lgn)"
             ],
-            "answer": "To process rules and facts to reach conclusions",
-            "difficulty": "medium"
+            "answer": "T(n)=Θ(nlog_b(a))",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "What is the Knowledge Base in an Expert System?",
+            "question": "Using the Master Method, what is the solution for T(n)=2T(n/2)+O(n)?",
             "options": [
-                "A collection of facts and rules in a specific domain",
-                "A regular database",
-                "A computer program",
-                "An operating system"
+                "Θ(n)",
+                "Θ(nlgn)",
+                "Θ(n²)",
+                "Θ(lgn)"
             ],
-            "answer": "A collection of facts and rules in a specific domain",
-            "difficulty": "medium"
+            "answer": "Θ(nlgn)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "How does an Expert System differ from conventional programs?",
+            "question": "In a recursion tree for T(n)=aT(n/b)+f(n), what is the typical height of the tree when subproblems reach size 1?",
             "options": [
-                "It simulates human reasoning and decision-making",
-                "It runs faster",
-                "It runs slower",
-                "There is no difference"
+                "log_a(n)",
+                "n/b",
+                "log_b(n)",
+                "a·b"
             ],
-            "answer": "It simulates human reasoning and decision-making",
-            "difficulty": "hard"
+            "answer": "log_b(n)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "What type of problems are Expert Systems best suited for?",
+            "question": "Quick Sort's worst-case time complexity of O(n²) occurs when:",
             "options": [
-                "Well-defined problems with clear rules and boundaries",
-                "Creative and artistic problems",
-                "Physical labor tasks",
-                "General purpose computing"
+                "The pivot chosen is always the median element",
+                "The partition process always picks the greatest or smallest element as pivot",
+                "The array is completely random",
+                "The array has many duplicate elements"
             ],
-            "answer": "Well-defined problems with clear rules and boundaries",
-            "difficulty": "medium"
+            "answer": "The partition process always picks the greatest or smallest element as pivot",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "What is the purpose of the explanation facility in Expert Systems?",
+            "question": "The PARTITION algorithm in Quick Sort aims to place the pivot element such that:",
             "options": [
-                "To explain the reasoning process and justify conclusions",
-                "To create system documentation",
-                "To train new experts",
-                "To debug the system"
+                "All elements to its left are greater, and all to its right are smaller",
+                "All elements to its left are smaller or equal, and all to its right are greater",
+                "It is the first element of the array",
+                "It is the last element of the array"
             ],
-            "answer": "To explain the reasoning process and justify conclusions",
-            "difficulty": "medium"
+            "answer": "All elements to its left are smaller or equal, and all to its right are greater",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Which of these is a characteristic of a good Expert System?",
+            "question": "In a Max-Heap, the value of any node is:",
             "options": [
-                "High performance in a specific domain",
-                "Ability to solve any type of problem",
-                "Complete independence from human experts",
-                "Low maintenance requirements"
+                "Less than or equal to the value of its children",
+                "Greater than or equal to the value of its children",
+                "Equal to the average of its children's values",
+                "Randomly related to its children's values"
             ],
-            "answer": "High performance in a specific domain",
-            "difficulty": "easy"
+            "answer": "Greater than or equal to the value of its children",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "What does Knowledge Management ensure is effectively utilized to improve decision-making?",
+            "question": "The BUILD-MAX-HEAP algorithm converts an unordered array into a max-heap. What is its typical time complexity?",
             "options": [
-                "Valuable knowledge",
-                "Financial resources",
-                "Physical assets",
-                "Technological hardware"
+                "O(n)",
+                "O(nlgn)",
+                "O(lgn)",
+                "O(n²)"
             ],
-            "answer": "Valuable knowledge",
-            "difficulty": "easy"
+            "answer": "O(n)",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "Knowledge Management (KM) is defined as the systematic process of:",
+            "question": "In graph theory, an Adjacency Matrix is generally preferred for:",
             "options": [
-                "Creating, capturing, organizing, sharing, and utilizing knowledge",
-                "Solely creating and capturing knowledge",
-                "Exclusively organizing and storing knowledge",
-                "Primarily utilizing knowledge without a focus on its creation"
+                "Sparse graphs",
+                "Dense graphs",
+                "Graphs with negative edge weights",
+                "Acyclic graphs only"
             ],
-            "answer": "Creating, capturing, organizing, sharing, and utilizing knowledge",
-            "difficulty": "medium"
+            "answer": "Dense graphs",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "Which of the following is NOT listed as a key component of Knowledge Management?",
+            "question": "In the Depth-First Search (DFS) algorithm DFS-VISIT(G,u), when is the finish time u.f recorded for vertex u?",
             "options": [
-                "Knowledge Deletion",
-                "Knowledge Creation",
-                "Knowledge Capture",
-                "Knowledge Organization"
+                "When u is first discovered (becomes GRAY)",
+                "After all vertices adjacent to u have been visited",
+                "After exploring all of u's adjacency list and u becomes BLACK",
+                "Just before u becomes GRAY"
             ],
-            "answer": "Knowledge Deletion",
-            "difficulty": "easy"
+            "answer": "After exploring all of u's adjacency list and u becomes BLACK",
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "In Knowledge Management, 'Knowledge Creation' refers to:",
+            "question": "What type of edge in a DFS traversal connects a vertex u to a descendant v (that is not a tree edge)?",
             "options": [
-                "Generating new knowledge",
-                "Identifying and documenting knowledge",
-                "Structuring existing knowledge",
-                "Storing knowledge for future use"
+                "Back edge (B)",
+                "Forward edge (F)",
+                "Cross edge (C)",
+                "Sibling edge"
             ],
-            "answer": "Generating new knowledge",
-            "difficulty": "medium"
+            "answer": "Forward edge (F)",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "The component of Knowledge Management concerned with identifying and documenting knowledge is:",
+            "question": "Uninformed search strategies are also called blind searches because they:",
             "options": [
-                "Knowledge Capture",
-                "Knowledge Sharing",
-                "Knowledge Utilization",
-                "Knowledge Creation"
+                "Always find the goal state quickly",
+                "Use heuristics to guide the search",
+                "Have no information about the problem other than the definition of states and operators",
+                "Are only applicable to puzzles"
             ],
-            "answer": "Knowledge Capture",
-            "difficulty": "medium"
+            "answer": "Have no information about the problem other than the definition of states and operators",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "'Knowledge Organization' in KM involves:",
+            "question": "In the 8-Puzzle problem, if tile '7' is in the top-left (goal: middle-right) and the grid is 3x3, what's its contribution to h2 (Manhattan distance)?",
             "options": [
-                "Structuring knowledge",
-                "Generating new insights",
-                "Disseminating knowledge to relevant parties",
-                "Applying knowledge to tasks"
+                "1",
+                "2",
+                "3",
+                "4"
             ],
-            "answer": "Structuring knowledge",
-            "difficulty": "medium"
+            "answer": "3",
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "Which component of KM focuses on storing knowledge?",
+            "question": "Greedy Best-First Search expands the node that appears to be closest to the goal, meaning it selects the node n with the minimum:",
             "options": [
-                "Knowledge Storage",
-                "Knowledge Creation",
-                "Knowledge Sharing",
-                "Knowledge Utilization"
+                "g(n)",
+                "h(n)",
+                "g(n)+h(n)",
+                "g(n)−h(n)"
             ],
-            "answer": "Knowledge Storage",
-            "difficulty": "easy"
+            "answer": "h(n)",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "'Knowledge Sharing' as a key component of KM is about:",
+            "question": "Is Greedy Best-First Search always optimal and complete?",
             "options": [
-                "Disseminating knowledge",
-                "Applying knowledge",
-                "Generating knowledge",
-                "Identifying knowledge"
+                "Yes, it is both optimal and complete",
+                "It is optimal but not always complete",
+                "It is complete (if loop avoidance) but not optimal",
+                "It is neither guaranteed to be optimal nor complete"
             ],
-            "answer": "Disseminating knowledge",
-            "difficulty": "medium"
+            "answer": "It is neither guaranteed to be optimal nor complete",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "The application of knowledge is referred to as which component of Knowledge Management?",
+            "question": "A search evaluates nodes by combining g(n) and h(n). It is optimal if h(n) is:",
             "options": [
-                "Knowledge Utilization",
-                "Knowledge Creation",
-                "Knowledge Capture",
-                "Knowledge Organization"
+                "Always 0",
+                "Admissible (never overestimates the cost to goal) and consistent for graph search",
+                "Greater than the actual cost",
+                "A constant value for all nodes"
             ],
-            "answer": "Knowledge Utilization",
-            "difficulty": "medium"
+            "answer": "Admissible (never overestimates the cost to goal) and consistent for graph search",
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "Knowledge-Based Systems are described as a broad category of systems that includes:",
+            "question": "A rooted tree is a tree where one vertex is designated as the root, and every edge is directed:",
             "options": [
-                "Expert Systems",
-                "Operating Systems",
-                "Database Management Systems",
-                "Network Routers"
+                "Towards the root",
+                "Away from the root",
+                "Alternating towards and away from the root",
+                "Parallel to the root"
             ],
-            "answer": "Expert Systems",
-            "difficulty": "easy"
+            "answer": "Away from the root",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "How do Knowledge-Based Systems solve complex problems?",
+            "question": "In a rooted tree, if vertex B is a parent to vertex F, then F is called a(n) ________ of B.",
             "options": [
-                "By applying expert knowledge and reasoning mechanisms",
-                "By using only mathematical calculations",
-                "By following simple if-then rules only",
-                "By random trial and error"
+                "Ancestor",
+                "Sibling",
+                "Offspring (or child)",
+                "Root"
             ],
-            "answer": "By applying expert knowledge and reasoning mechanisms",
-            "difficulty": "medium"
+            "answer": "Offspring (or child)",
+            "difficulty": "easy",
+            "category": "datastructures"
         },
         {
-            "question": "What are the main characteristics of Knowledge-Based Systems?",
+            "question": "A walk with no repeated edges is defined as a:",
             "options": [
-                "Knowledge-Driven, Reasoning Capability, Interactive, and Adaptable",
-                "Speed, Size, Cost, and Efficiency",
-                "Input, Process, Output, and Storage",
-                "Hardware, Software, Data, and People"
+                "Path",
+                "Trail",
+                "Circuit",
+                "Cycle"
             ],
-            "answer": "Knowledge-Driven, Reasoning Capability, Interactive, and Adaptable",
-            "difficulty": "hard"
+            "answer": "Trail",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "What is Explicit Knowledge?",
+            "question": "In Huffman coding, to encode symbols A:0.08, B:0.10, C:0.12, D:0.15, E:0.20, F:0.35, which two symbols/nodes would be combined first?",
             "options": [
-                "Knowledge that can be easily documented and shared through formal language",
-                "Knowledge that cannot be documented",
-                "Knowledge that only exists in people's minds",
-                "Knowledge that requires physical demonstration"
+                "E and F",
+                "A and B",
+                "D and E",
+                "C and D"
             ],
-            "answer": "Knowledge that can be easily documented and shared through formal language",
-            "difficulty": "medium"
+            "answer": "A and B",
+            "difficulty": "hard",
+            "category": "datastructures"
         },
         {
-            "question": "What is Tacit Knowledge?",
+            "question": "Prim's algorithm for finding an MST starts with a single vertex. In each subsequent step, it adds to the current tree:",
             "options": [
-                "Personal knowledge based on experience that is difficult to formalize and communicate",
-                "Knowledge found in textbooks",
-                "Knowledge stored in databases",
-                "Knowledge shared through formal documentation"
+                "The edge of least weight anywhere in the graph that doesn't form a cycle",
+                "A nearest neighbor (least weight edge) connecting a vertex in the tree to a vertex not yet in the tree",
+                "All edges connected to the most recently added vertex",
+                "The vertex that is furthest from the current tree"
             ],
-            "answer": "Personal knowledge based on experience that is difficult to formalize and communicate",
-            "difficulty": "hard"
+            "answer": "A nearest neighbor (least weight edge) connecting a vertex in the tree to a vertex not yet in the tree",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "What is the primary goal of an Expert System?",
+            "question": "The worst-case time complexity for Linear Search on an array of size n is:",
             "options": [
-                "To capture and make available the knowledge of human experts",
-                "To replace human experts completely",
-                "To store large amounts of data",
-                "To perform basic calculations"
+                "O(1)",
+                "O(logn)",
+                "O(n)",
+                "O(n²)"
             ],
-            "answer": "To capture and make available the knowledge of human experts",
-            "difficulty": "easy"
+            "answer": "O(n)",
+            "difficulty": "easy",
+            "category": "searching"
         },
         {
-            "question": "What are the main components of an Expert System?",
+            "question": "Which of the following notations provides a tight bound (both upper and lower) on the growth rate of a function?",
             "options": [
-                "Knowledge Base, Inference Engine, and User Interface",
-                "CPU, Memory, and Storage",
-                "Input, Process, and Output",
-                "Hardware, Software, and Network"
+                "Big-O",
+                "Big-Ω (Omega)",
+                "Big-Θ (Theta)",
+                "Little-o"
             ],
-            "answer": "Knowledge Base, Inference Engine, and User Interface",
-            "difficulty": "medium"
+            "answer": "Big-Θ (Theta)",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "What is Meta-Knowledge in the context of Expert Systems?",
+            "question": "In the detailed analysis of Insertion Sort, tj represents the number of times the while loop test is executed for that value of j. In the worst case, tj is equal to:",
             "options": [
-                "Knowledge about how to use and manage other knowledge",
-                "Basic factual knowledge",
-                "Technical knowledge only",
-                "Historical data"
+                "1",
+                "j",
+                "n-j",
+                "j/2"
             ],
-            "answer": "Knowledge about how to use and manage other knowledge",
-            "difficulty": "hard"
+            "answer": "j",
+            "difficulty": "hard",
+            "category": "sorting"
         },
         {
-            "question": "What is Procedural Knowledge?",
+            "question": "The cn term in Merge Sort's recurrence T(n)=2T(n/2)+cn represents:",
             "options": [
-                "Knowledge about how to perform specific tasks or procedures",
-                "Knowledge about facts only",
-                "Knowledge about theories only",
-                "Knowledge about data structures"
+                "The time to divide the problem",
+                "The time to conquer (solve recursively)",
+                "The time to combine (merge) the solutions",
+                "The time for initial setup"
             ],
-            "answer": "Knowledge about how to perform specific tasks or procedures",
-            "difficulty": "medium"
+            "answer": "The time to combine (merge) the solutions",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "How is Declarative Knowledge represented?",
+            "question": "In a recursion tree for T(n)=3T(n/4)+Θ(n²), if the cost at the root is cn², the cost at depth 1 will be:",
             "options": [
-                "As workflows or scripts",
-                "As facts, assertions, or relationships",
-                "As step-by-step methods",
-                "As algorithms"
+                "c(n/4)²",
+                "3c(n/4)²",
+                "3cn²",
+                "c(3n/4)²"
             ],
-            "answer": "As facts, assertions, or relationships",
-            "difficulty": "medium"
+            "answer": "3c(n/4)²",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "An example of Declarative Knowledge is:",
+            "question": "What does pseudocode provide in the context of algorithms?",
             "options": [
-                "A recipe for baking a cake",
-                "The process of diagnosing an illness",
-                "\"Water boils at 100°C at sea level\"",
-                "A rule of thumb for investing"
+                "A machine-executable version of the algorithm",
+                "A high-level description of an algorithm without needing to know specific programming language syntax",
+                "A diagrammatic representation of the algorithm's flow",
+                "A mathematical proof of the algorithm's correctness"
             ],
-            "answer": "\"Water boils at 100°C at sea level\"",
-            "difficulty": "medium"
+            "answer": "A high-level description of an algorithm without needing to know specific programming language syntax",
+            "difficulty": "easy",
+            "category": "complexity"
         },
         {
-            "question": "In KBS, Declarative Knowledge is typically:",
+            "question": "In the linear search algorithm provided, what is the purpose of 'Step 1: Set i to 1'?",
             "options": [
-                "Encoded in the inference engine",
-                "Stored as facts or rules in the knowledge base",
-                "Used to capture skills and experience",
-                "Represented as algorithms"
+                "To count the number of elements in the array",
+                "To initialize the loop counter or array index",
+                "To store the value to be searched",
+                "To mark the end of the array"
             ],
-            "answer": "Stored as facts or rules in the knowledge base",
-            "difficulty": "medium"
+            "answer": "To initialize the loop counter or array index",
+            "difficulty": "easy",
+            "category": "searching"
         },
         {
-            "question": "What is Meta-Knowledge?",
+            "question": "'Analysis of algorithm is the process of analyzing the problem-solving capability of the algorithm in terms of the time and size.' This statement primarily focuses on:",
             "options": [
-                "Knowledge about performing tasks",
-                "Factual statements about the world",
-                "Knowledge about knowledge",
-                "Rules of thumb based on experience"
+                "The ease of coding the algorithm",
+                "The algorithm's performance and resource usage",
+                "The number of developers required to implement the algorithm",
+                "The algorithm's applicability to different problem domains"
             ],
-            "answer": "Knowledge about knowledge",
-            "difficulty": "hard"
+            "answer": "The algorithm's performance and resource usage",
+            "difficulty": "easy",
+            "category": "complexity"
         },
         {
-            "question": "Meta-Knowledge describes how knowledge is:",
+            "question": "If n³ ∈ O(2ⁿ), it means that for n ≥ n₀ = 10:",
             "options": [
-                "Created from scratch",
-                "Applied in procedural steps",
-                "Organized, used, or validated",
-                "Observed in the real world"
+                "n³ grows faster than 2ⁿ",
+                "2ⁿ serves as an upper bound for n³ (multiplied by a constant)",
+                "n³ is always equal to 2ⁿ",
+                "2ⁿ serves as a lower bound for n³"
             ],
-            "answer": "Organized, used, or validated",
-            "difficulty": "hard"
+            "answer": "2ⁿ serves as an upper bound for n³ (multiplied by a constant)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Meta-Knowledge often provides context or rules for:",
+            "question": "Consider the code: for(j=1; j < i*i; j++) sum++;. If this loop is inside another loop where i iterates up to n, what would be the dominant complexity contribution of this inner loop relative to i?",
             "options": [
-                "Defining basic facts",
-                "Executing algorithms",
-                "Using other types of knowledge",
-                "Storing data in databases"
+                "O(i)",
+                "O(i²)",
+                "O(logi)",
+                "O(1)"
             ],
-            "answer": "Using other types of knowledge",
-            "difficulty": "medium"
+            "answer": "O(i²)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Meta-Knowledge is often used to:",
+            "question": "In the analysis of Insertion Sort, the term c₅∑(j=2 to n)tⱼ represents the cost associated with:",
             "options": [
-                "Define explicit facts",
-                "Document tacit experiences",
-                "Guide reasoning processes",
-                "Perform routine calculations"
+                "Initializing the loop counter j",
+                "The while loop condition being tested",
+                "Assigning A[j] to key",
+                "The final placement A[i+1]←key"
             ],
-            "answer": "Guide reasoning processes",
-            "difficulty": "medium"
+            "answer": "The while loop condition being tested",
+            "difficulty": "hard",
+            "category": "sorting"
         },
         {
-            "question": "Which is an example of Meta-Knowledge?",
+            "question": "For Insertion Sort, the best-case run time T(n)=O(n) occurs when all tⱼ=1. This happens when:",
             "options": [
-                "\"A car has four wheels.\"",
-                "\"To sort a list, use the quicksort algorithm.\"",
-                "\"Rule X should be applied before rule Y.\"",
-                "\"Paris is the capital of France.\""
+                "The array is in reverse sorted order",
+                "The array is already sorted",
+                "The array contains random elements",
+                "The array contains many duplicate values"
             ],
-            "answer": "\"Rule X should be applied before rule Y.\"",
-            "difficulty": "medium"
+            "answer": "The array is already sorted",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "How is Meta-Knowledge used in KBS?",
+            "question": "The Bubble Sort algorithm performs exchanges using the line: exchange A[j] ↔ A[j-1]. This occurs if:",
             "options": [
-                "To store primary facts and rules",
-                "To perform task-specific procedures",
-                "To guide the reasoning process",
-                "To capture user interactions"
+                "A[j] > A[j−1]",
+                "A[j] < A[j−1]",
+                "A[j] = A[j−1]",
+                "A[j] is the pivot element"
             ],
-            "answer": "To guide the reasoning process",
-            "difficulty": "hard"
+            "answer": "A[j] < A[j−1]",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Heuristic Knowledge consists of:",
+            "question": "In Selection Sort, the statement smallest = j is executed at the beginning of each outer loop pass. Its purpose is to:",
             "options": [
-                "Formal, provable facts",
-                "Step-by-step procedures",
-                "Rules of thumb based on experience or intuition",
-                "Knowledge about the structure of knowledge"
+                "Store the smallest value found so far",
+                "Initialize the index of the smallest element for the current pass",
+                "Count the number of passes",
+                "Finalize the sort for element A[j]"
             ],
-            "answer": "Rules of thumb based on experience or intuition",
-            "difficulty": "medium"
+            "answer": "Initialize the index of the smallest element for the current pass",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Heuristic Knowledge is often:",
+            "question": "The 'Divide' step in the Divide-and-Conquer paradigm for Merge Sort involves dividing the n-element sequence into:",
             "options": [
-                "Exact and deterministic",
-                "Approximate or probabilistic",
-                "Easily codified and documented",
-                "Static and descriptive"
+                "n subsequences of 1 element each",
+                "Two subsequences of n/2 elements each",
+                "logn subsequences",
+                "A sorted and an unsorted subsequence"
             ],
-            "answer": "Approximate or probabilistic",
-            "difficulty": "medium"
+            "answer": "Two subsequences of n/2 elements each",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "When is Heuristic Knowledge particularly useful?",
+            "question": "The MERGESORT(A, p, r) algorithm has a base case for recursion. This occurs when:",
             "options": [
-                "When exact solutions are easy to compute",
-                "For solving problems where exact solutions are difficult to compute",
-                "For defining factual statements",
-                "For representing procedural steps"
+                "p≥r (implicitly, as the condition is if (p<r))",
+                "q=⌊(p+r)/2⌋",
+                "The array A is fully sorted",
+                "n₁=n₂"
             ],
-            "answer": "For solving problems where exact solutions are difficult to compute",
-            "difficulty": "hard"
+            "answer": "p≥r (implicitly, as the condition is if (p<r))",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "How is Heuristic Knowledge used in KBS?",
+            "question": "A recurrence is an equation defining a function f(n) recursively in terms of:",
             "options": [
-                "To define meta-knowledge",
-                "To store declarative facts",
-                "In rule-based or expert systems",
-                "To represent structural relationships"
+                "Iterative loops",
+                "Smaller values of n",
+                "Constant values only",
+                "External library functions"
             ],
-            "answer": "In rule-based or expert systems",
-            "difficulty": "medium"
+            "answer": "Smaller values of n",
+            "difficulty": "medium",
+            "category": "complexity"
         },
         {
-            "question": "Structural Knowledge represents:",
+            "question": "The Master Method provides solutions for recurrences of the form T(n)=aT(n/b)+f(n). The condition a≥1 and b>1 must hold. If b≤1, the method:",
             "options": [
-                "Step-by-step procedures",
-                "Rules of thumb",
-                "Relationships between concepts or objects in a domain",
-                "Knowledge about how other knowledge is used"
+                "Still applies with minor modifications",
+                "Implies subproblems are not getting smaller, so it's not suitable",
+                "Requires f(n) to be a constant",
+                "Can only be used for Case 1"
             ],
-            "answer": "Relationships between concepts or objects in a domain",
-            "difficulty": "medium"
+            "answer": "Implies subproblems are not getting smaller, so it's not suitable",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Structural Knowledge focuses on the:",
+            "question": "For T(n)=8T(n/2)+n³, we have a=8,b=2,f(n)=n³. nlog_b(a)=nlog_2(8)=n³. Since f(n)=Θ(nlog_b(a)), which case applies?",
             "options": [
-                "Processes and actions",
-                "Generation of new knowledge",
-                "Organization and hierarchy of knowledge",
-                "Application of rules of thumb"
+                "Case 1",
+                "Case 2",
+                "Case 3",
+                "The method is inconclusive"
             ],
-            "answer": "Organization and hierarchy of knowledge",
-            "difficulty": "medium"
+            "answer": "Case 2",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "How is Structural Knowledge often represented?",
+            "question": "In the Recursion Tree method for T(n)=aT(n/b)+f(n), the number of leaf nodes is typically:",
             "options": [
-                "As algorithms or scripts",
-                "Using semantic networks, ontologies, or taxonomies",
-                "As if-then rules",
-                "As case histories"
+                "aʰᵉⁱᵍʰᵗ (where height ≈log_b(n))",
+                "bʰᵉⁱᵍʰᵗ",
+                "f(n)·height",
+                "n/b"
             ],
-            "answer": "Using semantic networks, ontologies, or taxonomies",
-            "difficulty": "hard"
+            "answer": "aʰᵉⁱᵍʰᵗ (where height ≈log_b(n))",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "An example of Structural Knowledge is:",
+            "question": "The solution T(n)=O(n²) for T(n)=2T(n/2)+n² is derived because the sum ∑(i=0 to lgn)(1/2)ⁱ converges to 2. Thus, the total cost is dominated by:",
             "options": [
-                "\"Water boils at 100°C.\"",
-                "\"If the traffic light is red, then stop.\"",
-                "\"A car is a type of vehicle.\"",
-                "\"Rule A is more reliable than Rule B.\""
+                "The cost at the leaves",
+                "The cost at the root node (cn²)",
+                "The number of levels (lgn)",
+                "The sum of n²/2ⁱ across all levels"
             ],
-            "answer": "\"A car is a type of vehicle.\"",
-            "difficulty": "medium"
+            "answer": "The cost at the root node (cn²)",
+            "difficulty": "hard",
+            "category": "complexity"
         },
         {
-            "question": "Rule-Based Systems use what to represent knowledge and make decisions?",
+            "question": "QuickSort is described as being based on 'partitioning of array of data into smaller arrays using pivot.' The recursive calls are then made on:",
             "options": [
-                "Frames and slots",
-                "\"If-then\" rules",
-                "Past cases and solutions",
-                "Neural networks"
+                "The entire array again with a new pivot",
+                "The two resulting subarrays (one to the left of pivot, one to the right)",
+                "Only the subarray containing elements smaller than the pivot",
+                "The subarray containing elements larger than the pivot and the pivot itself"
             ],
-            "answer": "\"If-then\" rules",
-            "difficulty": "medium"
+            "answer": "The two resulting subarrays (one to the left of pivot, one to the right)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "The two main components of a Rule-Based System are a Knowledge Base and an:",
+            "question": "The PARTITION(A,p,r) algorithm returns i+1. This value represents:",
             "options": [
-                "User Interface",
-                "Expert Module",
-                "Inference Engine",
-                "Case Base"
+                "The final index of the pivot element after partitioning",
+                "The number of elements smaller than the pivot",
+                "The number of swaps performed",
+                "The middle index of the array A[p..r]"
             ],
-            "answer": "Inference Engine",
-            "difficulty": "medium"
+            "answer": "The final index of the pivot element after partitioning",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "In a Rule-Based System, the Knowledge Base is a collection of:",
+            "question": "The 'level of a node' in a tree is defined as the:",
             "options": [
-                "Algorithms",
-                "Past problem solutions",
-                "Rules (if-then statements)",
-                "User queries"
+                "Number of children of that node",
+                "Length of a path from the root to the node",
+                "Number of edges on the longest path from the node to a leaf",
+                "The depth of its deepest child"
             ],
-            "answer": "Rules (if-then statements)",
-            "difficulty": "medium"
+            "answer": "Length of a path from the root to the node",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "The Inference Engine in a Rule-Based System is a mechanism that:",
+            "question": "A heap is described as a 'nearly complete binary tree.' The structural property also specifies that all levels are full, except possibly the last one, which is:",
             "options": [
-                "Stores domain-specific facts",
-                "Applies rules to known facts to draw conclusions",
-                "Allows users to interact with the system",
-                "Represents knowledge using frames"
+                "Filled from right to left",
+                "Filled from left to right",
+                "Filled randomly",
+                "Required to be exactly half-full"
             ],
-            "answer": "Applies rules to known facts to draw conclusions",
-            "difficulty": "hard"
+            "answer": "Filled from left to right",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "Frame-Based Systems use what data structures to store information and relationships?",
+            "question": "In a Min-heap, the root element is always:",
             "options": [
-                "\"If-then\" rules",
-                "\"Frames\"",
-                "Past cases",
-                "Neural networks"
+                "The maximum element of the heap",
+                "The minimum element of the heap",
+                "The median element of the heap",
+                "An arbitrary element depending on insertion order"
             ],
-            "answer": "\"Frames\"",
-            "difficulty": "medium"
+            "answer": "The minimum element of the heap",
+            "difficulty": "easy",
+            "category": "datastructures"
         },
         {
-            "question": "In Frame-Based Systems, frames store information about an object and its:",
+            "question": "An Adjacency List representation of a graph is typically preferred for sparse graphs because its space complexity is closer to:",
             "options": [
-                "Execution history",
-                "Relationship to other objects",
-                "User access permissions",
-                "Compilation status"
+                "O(|V|²)",
+                "O(|V|+|E|)",
+                "O(|E|²)",
+                "O(|V|log|E|)"
             ],
-            "answer": "Relationship to other objects",
-            "difficulty": "medium"
+            "answer": "O(|V|+|E|)",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "Which of these is a component of Frame-Based Systems?",
+            "question": "In BFS, when a WHITE vertex v is discovered from u, v.color is set to GRAY, and v.π (parent) is set to:",
             "options": [
-                "Fuzzy Rules",
-                "Similarity Measure",
-                "Frames",
-                "Training Data"
+                "s (the source)",
+                "u (the discovering vertex)",
+                "NIL",
+                "v itself"
             ],
-            "answer": "Frames",
-            "difficulty": "medium"
+            "answer": "u (the discovering vertex)",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "In Frame-Based Systems, \"Slots\" are:",
+            "question": "The time complexity of DFS is O(V+E). The O(E) part of this complexity arises from:",
             "options": [
-                "Representations of concepts or objects",
-                "Attributes or properties of frames",
-                "Mechanisms for rule application",
-                "Methods to compare current problems with past cases"
+                "The initial loop through all vertices u∈G.V in the main DFS procedure",
+                "The sum of the work done in exploring the adjacency list of each vertex (i.e., ∑|Adj[v]| for v∈V)",
+                "Setting u.color = WHITE for all vertices",
+                "Incrementing the time variable"
             ],
-            "answer": "Attributes or properties of frames",
-            "difficulty": "hard"
+            "answer": "The sum of the work done in exploring the adjacency list of each vertex (i.e., ∑|Adj[v]| for v∈V)",
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "What does \"Inheritance\" allow in Frame-Based Systems?",
+            "question": "Which type of search makes use of problem-specific information (heuristics) to guide the search process?",
             "options": [
-                "Frames to execute procedural code",
-                "Child frames to inherit properties from parent frames",
-                "Rules to be applied in a specific sequence",
-                "Users to query the system using natural language"
+                "Uninformed Search",
+                "Blind Search",
+                "Informed Search (Heuristic Search)",
+                "Brute Force Search"
             ],
-            "answer": "Child frames to inherit properties from parent frames",
-            "difficulty": "hard"
+            "answer": "Informed Search (Heuristic Search)",
+            "difficulty": "medium",
+            "category": "searching"
         },
         {
-            "question": "Case-Based Reasoning (CBR) systems solve new problems by:",
+            "question": "Apply Quick sort on a given sequence [7, 11, 14, 6, 9, 4, 3, 12]. What is the sequence after the first phase, pivot is 7?",
             "options": [
-                "Applying a set of \"if-then\" rules",
-                "Using degrees of truth rather than binary logic",
-                "Retrieving solutions to similar past problems from a case database",
-                "Modeling complex patterns using neural networks"
+                "4, 3, 7, 6, 11, 9, 14, 12",
+                "3, 4, 6, 7, 9, 14, 11, 12",
+                "7, 6, 14, 11, 9, 4, 3, 12",
+                "7, 6, 4, 3, 9, 14, 11, 12"
             ],
-            "answer": "Retrieving solutions to similar past problems from a case database",
-            "difficulty": "medium"
+            "answer": "4, 3, 7, 6, 11, 9, 14, 12",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Which is a component of a Case-Based Reasoning (CBR) system?",
+            "question": "Which one of the following array elements represents a binary min-heap?",
             "options": [
-                "Fuzzy Inference Engine",
-                "Case Base",
-                "Neural Network",
-                "Expert Module"
+                "12, 10, 8, 25, 14, 17",
+                "8, 10, 12, 25, 14, 17",
+                "25, 17, 14, 12, 10, 8",
+                "14, 17, 25, 10, 12, 8"
             ],
-            "answer": "Case Base",
-            "difficulty": "medium"
+            "answer": "8, 10, 12, 25, 14, 17",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "The \"Case Base\" in a CBR system is a collection of:",
+            "question": "What is the time complexity of the Quick sort Algorithm if it is applied on this array [12, 16, 23, 31, 55]?",
             "options": [
-                "\"If-then\" rules",
-                "Past cases and solutions",
-                "Fuzzy terms and conditions",
-                "Interconnected nodes or neurons"
+                "O(n log n)",
+                "O(n)",
+                "O(n³)",
+                "O(n²)"
             ],
-            "answer": "Past cases and solutions",
-            "difficulty": "medium"
+            "answer": "O(n²)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "What is a \"Similarity Measure\" in a CBR system used for?",
+            "question": "What is the parent node for i=7 in this array [3, 5, 10, 20, 11, 13, 12, 31]?",
             "options": [
-                "To define the attributes of frames",
-                "To apply fuzzy rules to draw conclusions",
-                "A method to compare the current problem with previous cases",
-                "To train a neural network"
+                "10",
+                "20",
+                "5",
+                "3"
             ],
-            "answer": "A method to compare the current problem with previous cases",
-            "difficulty": "hard"
+            "answer": "5",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "Fuzzy Logic Systems handle reasoning with:",
+            "question": "Given an array of elements [5, 7, 9, 1, 3, 10, 8, 4], which of the following are the correct sequences of elements after inserting all the elements in a min-heap?",
             "options": [
-                "Absolute certainty and precision",
-                "Only binary true/false logic",
-                "Uncertainty and imprecision using degrees of truth",
-                "Structured, hierarchical data primarily"
+                "1, 3, 4, 5, 7, 8, 9, 10",
+                "1, 4, 3, 9, 8, 5, 7, 10",
+                "1, 3, 4, 5, 8, 7, 9, 10",
+                "1, 3, 7, 4, 8, 5, 9, 10"
             ],
-            "answer": "Uncertainty and imprecision using degrees of truth",
-            "difficulty": "hard"
+            "answer": "1, 3, 4, 5, 7, 8, 9, 10",
+            "difficulty": "hard",
+            "category": "datastructures"
         },
         {
-            "question": "Instead of binary true/false logic, Fuzzy Logic Systems use:",
+            "question": "In the array [52, 37, 63, 14, 17, 8, 6, 25], if we take 25 as the pivot, what will the list be after the first pass?",
             "options": [
-                "\"If-then\" rules exclusively",
-                "Degrees of truth",
-                "Past case solutions",
-                "Frames and slots"
+                "6, 8, 63, 14, 17, 25, 37, 52",
+                "6, 8, 25, 14, 17, 63, 37, 52",
+                "6, 8, 17, 14, 25, 63, 37, 52",
+                "6, 25, 63, 14, 17, 8, 37, 52"
             ],
-            "answer": "Degrees of truth",
-            "difficulty": "medium"
+            "answer": "6, 8, 17, 14, 25, 63, 37, 52",
+            "difficulty": "hard",
+            "category": "sorting"
         },
         {
-            "question": "Which is a component of Fuzzy Logic Systems?",
+            "question": "What is the time complexity of the Quick sort Algorithm if it is applied on this array [60, 56, 43, 12, 5]?",
             "options": [
-                "Case Base",
-                "Slots",
-                "Fuzzy Rules",
-                "Training Data"
+                "O(n log n)",
+                "O(n)",
+                "O(log n)",
+                "O(n²)"
             ],
-            "answer": "Fuzzy Rules",
-            "difficulty": "medium"
+            "answer": "O(n²)",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "\"Fuzzy Rules\" in Fuzzy Logic Systems are rules with:",
+            "question": "What are the children nodes for i=2 in this array [3, 5, 10, 20, 11, 13, 12, 31]?",
             "options": [
-                "Conditions expressed in precise, binary terms",
-                "Conditions expressed in fuzzy terms",
-                "Solutions retrieved from past cases",
-                "Attributes inherited from parent frames"
+                "10, 20",
+                "20, 11",
+                "13, 12",
+                "12, 31"
             ],
-            "answer": "Conditions expressed in fuzzy terms",
-            "difficulty": "hard"
+            "answer": "10, 20",
+            "difficulty": "medium",
+            "category": "datastructures"
         },
         {
-            "question": "A \"Fuzzy Inference Engine\" performs which function?",
+            "question": "How will the array elements look like after the second pass? Array: 36, 10, 66, 53, 34, 23",
             "options": [
-                "Compares current problems with previous cases",
-                "Applies fuzzy rules to draw conclusions",
-                "Allows child frames to inherit properties",
-                "Trains neural networks using data"
+                "10, 36, 66, 53, 34, 23",
+                "10, 36, 53, 66, 34, 23",
+                "10, 34, 36, 53, 66, 23",
+                "10, 23, 34, 36, 53, 66"
             ],
-            "answer": "Applies fuzzy rules to draw conclusions",
-            "difficulty": "hard"
+            "answer": "10, 23, 34, 36, 53, 66",
+            "difficulty": "hard",
+            "category": "sorting"
         },
         {
-            "question": "Hybrid Systems are characterized by:",
+            "question": "Which of the following sorting algorithms is best suited if the elements are already sorted?",
             "options": [
-                "Using only one specific KBS technique",
-                "Combining multiple KBS techniques",
-                "Focusing solely on rule-based reasoning",
-                "Exclusively employing case-based reasoning"
+                "Insertion sort",
+                "Heap sort",
+                "Merge sort",
+                "Quick sort"
             ],
-            "answer": "Combining multiple KBS techniques",
-            "difficulty": "medium"
+            "answer": "Insertion sort",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "The purpose of combining techniques in Hybrid Systems is to:",
+            "question": "Merge sort uses ______ in order to sort a given array. This is because it divides the array into two halves and applies merge sort algorithm to each half individually after which the two sorted halves are merged together.",
             "options": [
-                "Simplify the system by reducing components",
-                "Improve performance and flexibility",
-                "Adhere to a single knowledge representation method",
-                "Reduce the need for a knowledge base"
+                "Divide",
+                "Divide and Conquer",
+                "Conquer",
+                "No correct answer"
             ],
-            "answer": "Improve performance and flexibility",
-            "difficulty": "medium"
+            "answer": "Divide and Conquer",
+            "difficulty": "easy",
+            "category": "sorting"
         },
         {
-            "question": "Components of Hybrid Systems include:",
+            "question": "What is the running time of an insertion sort algorithm for the sequence [40, 70, 80, 90, 99]?",
             "options": [
-                "Only fuzzy rules and a fuzzy inference engine",
-                "Only a case base and a similarity measure",
-                "A combination of different reasoning mechanisms (e.g., rule-based and neural networks)",
-                "Only frames, slots, and inheritance"
+                "Best case",
+                "Average case",
+                "Worst case",
+                "No correct answer"
             ],
-            "answer": "A combination of different reasoning mechanisms (e.g., rule-based and neural networks)",
-            "difficulty": "hard"
+            "answer": "Best case",
+            "difficulty": "medium",
+            "category": "sorting"
         },
         {
-            "question": "Which of the following is an example of what might be integrated in a Hybrid System?",
+            "question": "What is the running time of an insertion sort algorithm for the sequence [99, 90, 80, 70, 40]?",
             "options": [
-                "Exclusively procedural knowledge",
-                "Only declarative knowledge",
-                "Integration of multiple knowledge representation methods",
-                "A single type of inference engine"
+                "Best case",
+                "Average case",
+                "Worst case",
+                "No correct answer"
             ],
-            "answer": "Integration of multiple knowledge representation methods",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Neural Network-Based Systems use what to model complex patterns and decision-making processes?",
-            "options": [
-                "\"If-then\" rules",
-                "Frames and slots",
-                "Artificial neural networks (ANNs)",
-                "Case databases"
-            ],
-            "answer": "Artificial neural networks (ANNs)",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The components of Neural Network-Based Systems are Neural Networks and:",
-            "options": [
-                "Fuzzy Rules",
-                "A Similarity Measure",
-                "Training Data",
-                "An Expert Module"
-            ],
-            "answer": "Training Data",
-            "difficulty": "medium"
-        },
-        {
-            "question": "In Neural Network-Based Systems, Neural Networks are described as:",
-            "options": [
-                "Collections of past cases and solutions",
-                "Data structures storing object attributes",
-                "Layers of interconnected nodes (neurons) that process input data",
-                "Rules with conditions expressed in fuzzy terms"
-            ],
-            "answer": "Layers of interconnected nodes (neurons) that process input data",
-            "difficulty": "hard"
-        },
-        {
-            "question": "What is \"Training Data\" used for in Neural Network-Based Systems?",
-            "options": [
-                "To define the inheritance hierarchy in frames",
-                "To teach the network to recognize patterns",
-                "To establish the rules in a rule-based system",
-                "To measure the similarity between cases in CBR"
-            ],
-            "answer": "To teach the network to recognize patterns",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Symbolic Reasoning\" as a characteristic of Expert Systems involves manipulating:",
-            "options": [
-                "Numerical data exclusively",
-                "Symbols that represent concepts and knowledge",
-                "Hardware components directly",
-                "User interface elements primarily"
-            ],
-            "answer": "Symbols that represent concepts and knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "The \"Explanation Capability\" of an Expert System allows it to:",
-            "options": [
-                "Explain its reasoning process or justify its conclusions",
-                "Automatically correct errors in its knowledge base",
-                "Translate its code into different programming languages",
-                "Generate complex graphical outputs"
-            ],
-            "answer": "Explain its reasoning process or justify its conclusions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of these is a reason for the \"Need for Expert Systems\"?",
-            "options": [
-                "Abundance of Human Expertise",
-                "Scarcity of Human Expertise",
-                "Humans never experiencing fatigue",
-                "Perfect consistency in human decision-making"
-            ],
-            "answer": "Scarcity of Human Expertise",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How does \"Fatigue from Physical or mental workload\" contribute to the need for Expert Systems?",
-            "options": [
-                "Expert systems also experience fatigue",
-                "Expert systems can perform consistently without tiring",
-                "Humans work better when fatigued",
-                "Expert systems require human experts to be fatigued to function"
-            ],
-            "answer": "Expert systems can perform consistently without tiring",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Forgetfulness of Crucial Details\" by humans is a need addressed by Expert Systems because ES can:",
-            "options": [
-                "Also forget details",
-                "Reliably store and recall vast amounts of information",
-                "Teach humans not to forget",
-                "Only handle a few details at a time"
-            ],
-            "answer": "Reliably store and recall vast amounts of information",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert Systems can address \"Inconsistency in Decision-Making\" by:",
-            "options": [
-                "Introducing more variables into decisions",
-                "Applying rules and knowledge consistently for similar inputs",
-                "Making random decisions",
-                "Relying on human intuition for consistency"
-            ],
-            "answer": "Applying rules and knowledge consistently for similar inputs",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The human limitation of \"Limited Working Memory\" supports the need for ES because ES can:",
-            "options": [
-                "Also have limited working memory",
-                "Process and hold more information than human short-term memory",
-                "Reduce the need for any memory",
-                "Train humans to have better working memory"
-            ],
-            "answer": "Process and hold more information than human short-term memory",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Inability to Comprehend Large Data Quickly\" by humans is a factor for ES development because ES can:",
-            "options": [
-                "Also struggle with large data",
-                "Analyze and process large datasets efficiently",
-                "Refuse to process large data",
-                "Simplify large data into trivial information"
-            ],
-            "answer": "Analyze and process large datasets efficiently",
-            "difficulty": "hard"
-        },
-        {
-            "question": "How do Expert Systems address the human \"Inability to Retain Large Amounts of Data\"?",
-            "options": [
-                "By having an even smaller data retention capacity",
-                "By providing persistent storage and retrieval for extensive knowledge",
-                "By forcing humans to retain more data",
-                "By deleting data frequently to save space"
-            ],
-            "answer": "By providing persistent storage and retrieval for extensive knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Recall of Information\" can be a challenge for humans, which ES can help with by:",
-            "options": [
-                "Making information harder to recall",
-                "Providing systematic and quick access to stored knowledge",
-                "Having a flawed recall mechanism",
-                "Depending on human recall primarily"
-            ],
-            "answer": "Providing systematic and quick access to stored knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Human \"Susceptibility to Bias\" is a need ES can address by:",
-            "options": [
-                "Incorporating even more biases",
-                "Making decisions based on programmed knowledge and rules, potentially reducing personal bias",
-                "Learning biases from users",
-                "Having no mechanism to avoid bias"
-            ],
-            "answer": "Making decisions based on programmed knowledge and rules, potentially reducing personal bias",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Avoidance of Decision Responsibilities\" by some humans can be mitigated by ES that:",
-            "options": [
-                "Also avoid responsibilities",
-                "Can be programmed to make decisions or recommendations based on set criteria",
-                "Require constant human oversight for every step",
-                "Refuse to make any decisions"
-            ],
-            "answer": "Can be programmed to make decisions or recommendations based on set criteria",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Human Fallibility\" contributes to the need for ES because ES:",
-            "options": [
-                "Are also inherently fallible in the same ways",
-                "Can reduce errors by consistent application of knowledge, though they are not infallible",
-                "Are designed to make mistakes to simulate humans",
-                "Have no error-checking mechanisms"
-            ],
-            "answer": "Can reduce errors by consistent application of knowledge, though they are not infallible",
-            "difficulty": "hard"
-        },
-        {
-            "question": "A limitation of Expert Systems is \"Restricted Domain Knowledge,\" meaning they:",
-            "options": [
-                "Possess common sense applicable to many areas",
-                "Are typically knowledgeable only in a narrow, specific field",
-                "Can easily acquire knowledge from any domain",
-                "Have unlimited knowledge access"
-            ],
-            "answer": "Are typically knowledgeable only in a narrow, specific field",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Limited Knowledge Base\" as a disadvantage implies that an ES:",
-            "options": [
-                "Can function perfectly with incomplete knowledge",
-                "Its performance is constrained by the knowledge it contains",
-                "Automatically expands its knowledge base without input",
-                "Does not require a knowledge base"
-            ],
-            "answer": "Its performance is constrained by the knowledge it contains",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Knowledge Update Challenges\" for Expert Systems mean that:",
-            "options": [
-                "Updating their knowledge is a simple, automated process",
-                "Keeping the knowledge base current and accurate can be difficult and time-consuming",
-                "Knowledge in ES never becomes outdated",
-                "Updates are not necessary for ES"
-            ],
-            "answer": "Keeping the knowledge base current and accurate can be difficult and time-consuming",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Lack of Common Sense\" is a limitation of ES because they:",
-            "options": [
-                "Possess inherent human-like common sense",
-                "Struggle with reasoning about everyday situations not explicitly programmed",
-                "Can learn common sense through interaction",
-                "Are primarily designed for common sense reasoning"
-            ],
-            "answer": "Struggle with reasoning about everyday situations not explicitly programmed",
-            "difficulty": "hard"
-        },
-        {
-            "question": "What is a significant cost factor mentioned as a disadvantage of Expert Systems?",
-            "options": [
-                "Low hardware requirements",
-                "High Development and Maintenance Costs",
-                "Minimal need for expert input during development",
-                "Free and readily available development tools"
-            ],
-            "answer": "High Development and Maintenance Costs",
-            "difficulty": "medium"
-        },
-        {
-            "question": "According to the text, a \"Human expert\" is a person with:",
-            "options": [
-                "Basic knowledge in many fields",
-                "Extensive knowledge, skills, and experience in a particular field",
-                "Theoretical knowledge but no practical experience",
-                "Access to an expert system"
-            ],
-            "answer": "Extensive knowledge, skills, and experience in a particular field",
-            "difficulty": "easy"
-        },
-        {
-            "question": "Human experts are recognized as authorities in their domain and are capable of:",
-            "options": [
-                "Only performing routine tasks",
-                "Solving complex problems, making informed decisions, and providing valuable insights",
-                "Learning new domains very slowly",
-                "Always agreeing with each other"
-            ],
-            "answer": "Solving complex problems, making informed decisions, and providing valuable insights",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which is NOT listed as a characteristic of a Human Expert?",
-            "options": [
-                "Extensive Knowledge Base",
-                "Experience-Driven Judgment",
-                "Infallibility in all decisions",
-                "Critical Thinking and Analytical Skills"
-            ],
-            "answer": "Infallibility in all decisions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Pattern Recognition\" as a characteristic of a human expert refers to their ability to:",
-            "options": [
-                "Only recognize visual patterns",
-                "Identify meaningful patterns in data or situations",
-                "Create new patterns randomly",
-                "Ignore patterns to remain objective"
-            ],
-            "answer": "Identify meaningful patterns in data or situations",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Adaptive Problem-Solving\" by a human expert means they can:",
-            "options": [
-                "Only solve problems they have seen before",
-                "Adjust their approach to solve novel or complex problems",
-                "Use a single, fixed method for all problems",
-                "Avoid solving problems that require adaptation"
-            ],
-            "answer": "Adjust their approach to solve novel or complex problems",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Decision-Making Under Uncertainty\" is a characteristic of human experts, indicating they can:",
-            "options": [
-                "Only make decisions with complete information",
-                "Make reasoned judgments even when faced with incomplete or uncertain data",
-                "Avoid making decisions if there is any uncertainty",
-                "Always eliminate all uncertainty before deciding"
-            ],
-            "answer": "Make reasoned judgments even when faced with incomplete or uncertain data",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Effective Communication\" is important for human experts to:",
-            "options": [
-                "Keep their knowledge to themselves",
-                "Convey their knowledge, reasoning, and advice clearly to others",
-                "Communicate only through expert systems",
-                "Use overly technical jargon to confuse non-experts"
-            ],
-            "answer": "Convey their knowledge, reasoning, and advice clearly to others",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The first step in \"How does a human expert work?\" is:",
-            "options": [
-                "Matching Process",
-                "Decision and Reporting",
-                "Information Intake",
-                "Comparison with Stored Knowledge"
-            ],
-            "answer": "Information Intake",
-            "difficulty": "medium"
-        },
-        {
-            "question": "During \"Comparison with Stored Knowledge,\" a human expert:",
-            "options": [
-                "Generates new information",
-                "Relates incoming information to their existing knowledge and experience",
-                "Immediately makes a final decision",
-                "Discards the new information"
-            ],
-            "answer": "Relates incoming information to their existing knowledge and experience",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Matching Process\" for a human expert involves:",
-            "options": [
-                "Randomly selecting a solution",
-                "Finding similarities or patterns between the current problem and stored knowledge",
-                "Ignoring stored knowledge to be creative",
-                "Intaking new information"
-            ],
-            "answer": "Finding similarities or patterns between the current problem and stored knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "What follows the \"Matching Process\" in how a human expert works?",
-            "options": [
-                "Information Intake",
-                "Comparison with Stored Knowledge",
-                "Decision and Reporting",
-                "Starting over"
-            ],
-            "answer": "Decision and Reporting",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which is NOT a listed aspect of \"Translating Human Expertise into a System\"?",
-            "options": [
-                "Input Handling",
-                "Knowledge Base",
-                "Random Guessing Module",
-                "Inference Engine"
-            ],
-            "answer": "Random Guessing Module",
-            "difficulty": "medium"
-        },
-        {
-            "question": "In translating human expertise, \"Input Handling\" involves:",
-            "options": [
-                "Generating the final output",
-                "The system's ability to receive and interpret problem data",
-                "Storing the core knowledge",
-                "Applying logical rules"
-            ],
-            "answer": "The system's ability to receive and interpret problem data",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Knowledge Base\" in the context of translating expertise into a system serves to:",
-            "options": [
-                "Process user inputs",
-                "Store the expert's knowledge in a structured way",
-                "Generate system outputs",
-                "Perform reasoning"
-            ],
-            "answer": "Store the expert's knowledge in a structured way",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What function does the \"Inference Engine\" serve in translating human expertise into a system?",
-            "options": [
-                "To accept user queries",
-                "To store facts and rules",
-                "To apply reasoning mechanisms to the knowledge base to derive solutions",
-                "To display results to the user"
-            ],
-            "answer": "To apply reasoning mechanisms to the knowledge base to derive solutions",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Output Generation\" in translating expertise to a system refers to:",
-            "options": [
-                "Acquiring knowledge from the expert",
-                "The system presenting its conclusions or advice",
-                "The internal reasoning process",
-                "Storing the knowledge"
-            ],
-            "answer": "The system presenting its conclusions or advice",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is listed as a \"Role of Human Expert\"?",
-            "options": [
-                "Data Entry",
-                "Hardware Maintenance",
-                "Consultation",
-                "Software Sales"
-            ],
-            "answer": "Consultation",
-            "difficulty": "easy"
-        },
-        {
-            "question": "The \"Diagnosis\" role of a human expert involves:",
-            "options": [
-                "Training other individuals",
-                "Identifying the nature or cause of a problem",
-                "Developing new research",
-                "Providing general advice"
-            ],
-            "answer": "Identifying the nature or cause of a problem",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Training and Mentorship\" as a role of a human expert includes:",
-            "options": [
-                "Solving problems independently",
-                "Guiding and developing the skills of less experienced individuals",
-                "Conducting research",
-                "Consulting on specific cases"
-            ],
-            "answer": "Guiding and developing the skills of less experienced individuals",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Problem-Solving\" role of a human expert entails:",
-            "options": [
-                "Only diagnosing issues",
-                "Actively finding solutions to complex challenges",
-                "Only training others",
-                "Innovating new products"
-            ],
-            "answer": "Actively finding solutions to complex challenges",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Research and Innovation\" by a human expert involves:",
-            "options": [
-                "Only applying existing knowledge",
-                "Contributing to the advancement of their field through new discoveries or methods",
-                "Consulting with clients",
-                "Diagnosing routine problems"
-            ],
-            "answer": "Contributing to the advancement of their field through new discoveries or methods",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Human experts are important in \"Knowledge Acquisition\" for Expert Systems because they:",
-            "options": [
-                "Write the code for the inference engine",
-                "Provide the specialized knowledge that forms the system's core",
-                "Design the user interface",
-                "Perform routine system maintenance"
-            ],
-            "answer": "Provide the specialized knowledge that forms the system's core",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How can an Expert System operate concerning \"Information Requirements\"?",
-            "options": [
-                "Requires complete information to operate",
-                "Can operate with incomplete or uncertain information",
-                "Information requirements are identical to Conventional Systems",
-                "Focuses on data representation, not information"
-            ],
-            "answer": "Can operate with incomplete or uncertain information",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is a Conventional System effective at manipulating in \"Data/Knowledge Handling\"?",
-            "options": [
-                "Large knowledge bases (facts, rules, relationships)",
-                "Large databases",
-                "Primarily heuristic knowledge",
-                "Symbolic representations"
-            ],
-            "answer": "Large databases",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is an Expert System effective at manipulating in \"Data/Knowledge Handling\"?",
-            "options": [
-                "Large databases",
-                "Large knowledge bases (facts, rules, and relationships)",
-                "Only numerical data",
-                "Raw, unstructured data"
-            ],
-            "answer": "Large knowledge bases (facts, rules, and relationships)",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the \"Focus\" of a Conventional System?",
-            "options": [
-                "Representation and use of knowledge (domain expertise)",
-                "Representation and use of data",
-                "Heuristic reasoning",
-                "Handling uncertainty"
-            ],
-            "answer": "Representation and use of data",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the \"Focus\" of an Expert System?",
-            "options": [
-                "Representation and use of data",
-                "Representation and use of knowledge (domain expertise)",
-                "Algorithmic processing",
-                "Database manipulation"
-            ],
-            "answer": "Representation and use of knowledge (domain expertise)",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How are Conventional Systems described in the summary paragraph?",
-            "options": [
-                "Flexible, knowledge-driven, and heuristic-based",
-                "Rigid, data-driven, and algorithm-based",
-                "Suitable for decision-making in complex domains",
-                "Focused on domain expertise"
-            ],
-            "answer": "Rigid, data-driven, and algorithm-based",
-            "difficulty": "medium"
-        },
-        {
-            "question": "For what types of tasks are Conventional Systems suitable?",
-            "options": [
-                "Decision-making and problem-solving in complex domains",
-                "Structured tasks",
-                "Tasks requiring heuristic reasoning",
-                "Handling incomplete information"
-            ],
-            "answer": "Structured tasks",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How are Expert Systems described in the summary paragraph?",
-            "options": [
-                "Rigid, data-driven, and algorithm-based",
-                "Flexible, knowledge-driven, and heuristic-based",
-                "Suitable only for structured tasks",
-                "Focused on data representation"
-            ],
-            "answer": "Flexible, knowledge-driven, and heuristic-based",
-            "difficulty": "medium"
-        },
-        {
-            "question": "For what are Expert Systems designed?",
-            "options": [
-                "Structured tasks primarily",
-                "Decision-making and problem-solving in complex domains",
-                "Manipulating large databases",
-                "Algorithmic execution only"
-            ],
-            "answer": "Decision-making and problem-solving in complex domains",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the purpose of Diagnostic Systems as a category of Expert Systems?",
-            "options": [
-                "To categorize data into predefined groups",
-                "To identify the root cause of a problem or malfunction",
-                "To provide recommendations or guidance",
-                "To design a sequence of actions"
-            ],
-            "answer": "To identify the root cause of a problem or malfunction",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How do Diagnostic Systems identify the root cause of a problem?",
-            "options": [
-                "By forecasting future outcomes",
-                "By analyzing symptoms, data, and input",
-                "By sorting data into classes",
-                "By designing action plans"
-            ],
-            "answer": "By analyzing symptoms, data, and input",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which is listed as a key feature of Diagnostic Systems?",
-            "options": [
-                "Sorting and categorizing data",
-                "Use pattern recognition for sorting large datasets",
-                "Use logical reasoning and inference engines",
-                "Identifying trends and making predictions"
-            ],
-            "answer": "Use logical reasoning and inference engines",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Diagnostic Systems often integrate with what for analysis?",
-            "options": [
-                "Classification rules",
-                "User preferences for advice",
-                "Sensors or real-time data",
-                "Historical planning data"
-            ],
-            "answer": "Sensors or real-time data",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the purpose of Classification Systems?",
-            "options": [
-                "To identify the root cause of a problem",
-                "To categorize or classify data, objects, or situations into predefined groups",
-                "To observe and analyze systems in real-time",
-                "To forecast future outcomes"
-            ],
-            "answer": "To categorize or classify data, objects, or situations into predefined groups",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Classification Systems are used for sorting and categorizing data or objects based on:",
-            "options": [
-                "Real-time anomalies",
-                "Historical trends",
-                "Rules and criteria",
-                "A sequence of actions to achieve a goal"
-            ],
-            "answer": "Rules and criteria",
-            "difficulty": "medium"
-        },
-        {
-            "question": "According to the text, which of the following is a key feature of Classification Systems?",
-            "options": [
-                "Observing and analyzing systems in real-time",
-                "Use pattern recognition, rule-based reasoning, or machine learning algorithms",
-                "Designing action plans to achieve specific tasks",
-                "Identifying trends and making accurate predictions"
-            ],
-            "answer": "Use pattern recognition, rule-based reasoning, or machine learning algorithms",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Advisory Systems are designed to:",
-            "options": [
-                "Identify the root cause of a malfunction",
-                "Provide recommendations, guidance, or advice based on expert knowledge and user input",
-                "Design or develop a sequence of actions to achieve a specific goal",
-                "Forecast future outcomes or trends based on historical data"
-            ],
-            "answer": "Provide recommendations, guidance, or advice based on expert knowledge and user input",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What facility do Advisory Systems often include?",
-            "options": [
-                "Real-time anomaly detection",
-                "Explanation facilities to justify recommendations",
-                "Tools for designing action plans",
-                "Mechanisms for identifying trends"
-            ],
-            "answer": "Explanation facilities to justify recommendations",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The purpose of Planning Systems is to:",
-            "options": [
-                "Provide recommendations or guidance",
-                "Design or develop a sequence of actions to achieve a specific goal",
-                "Observe and analyze systems or processes in real-time",
-                "Forecast future outcomes or trends"
-            ],
-            "answer": "Design or develop a sequence of actions to achieve a specific goal",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What do Planning Systems design as their primary function?",
-            "options": [
-                "Justifications for recommendations",
-                "Action plans to achieve specific tasks",
-                "Methods for detecting anomalies",
-                "Predictions based on historical data"
-            ],
-            "answer": "Action plans to achieve specific tasks",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Monitoring Systems observe and analyze systems or processes in real-time to:",
-            "options": [
-                "Design action plans",
-                "Detect anomalies or deviations",
-                "Provide recommendations based on user input",
-                "Categorize data into predefined groups"
-            ],
-            "answer": "Detect anomalies or deviations",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is the primary activity of Monitoring Systems?",
-            "options": [
-                "Designing action plans",
-                "Observing and analyzing systems in real-time",
-                "Justifying recommendations",
-                "Sorting large datasets"
-            ],
-            "answer": "Observing and analyzing systems in real-time",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Prediction Systems aim to:",
-            "options": [
-                "Detect anomalies in real-time",
-                "Forecast future outcomes or trends based on historical data and patterns",
-                "Provide guidance based on user input",
-                "Design a sequence of actions"
-            ],
-            "answer": "Forecast future outcomes or trends based on historical data and patterns",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The main function of Prediction Systems involves:",
-            "options": [
-                "Identifying trends and making accurate predictions",
-                "Observing and analyzing systems in real-time",
-                "Designing action plans for specific tasks",
-                "Justifying recommendations with explanations"
-            ],
-            "answer": "Identifying trends and making accurate predictions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The three main components of an expert system are listed as Knowledge Base, Inference Engine, and:",
-            "options": [
-                "Algorithm Library",
-                "User Interface",
-                "Data Warehouse",
-                "Expert Module"
-            ],
-            "answer": "User Interface",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The Knowledge Base of an expert system includes which two basic elements?",
-            "options": [
-                "Algorithms and Flowcharts",
-                "Facts and Rules",
-                "Queries and Reports",
-                "Inputs and Outputs"
-            ],
-            "answer": "Facts and Rules",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which component of an expert system is described as its \"brain\"?",
-            "options": [
-                "User Interface",
-                "Knowledge Base",
-                "Inference Engine",
-                "Explanation Module"
-            ],
-            "answer": "Inference Engine",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The inference engine is the part of the system that chooses which facts and rules to apply when trying to:",
-            "options": [
-                "Store user data",
-                "Display information to the user",
-                "Solve the user's query",
-                "Update the knowledge base"
-            ],
-            "answer": "Solve the user's query",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The inference engine uses the control structure (rule interpreter) and provides methodology for:",
-            "options": [
-                "Data storage",
-                "Reasoning",
-                "User authentication",
-                "Network communication"
-            ],
-            "answer": "Reasoning",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which component of an expert system is referred to as the \"invisible\" part?",
-            "options": [
-                "User Interface",
-                "Knowledge Base",
-                "Inference Engine",
-                "Report Generator"
-            ],
-            "answer": "Inference Engine",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which two different methods of inferencing can an expert system use?",
-            "options": [
-                "Top-down and Bottom-up Chaining",
-                "Forward Chaining and Backward Chaining",
-                "Left-to-Right and Right-to-Left Chaining",
-                "Direct Chaining and Indirect Chaining"
-            ],
-            "answer": "Forward Chaining and Backward Chaining",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Forward Chaining is described as a ____ driven system.",
-            "options": [
-                "Goal",
-                "Data",
-                "User",
-                "Expert"
-            ],
-            "answer": "Data",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Backward Chaining is described as a ____ driven system.",
-            "options": [
-                "Data",
-                "Goal",
-                "Interface",
-                "Knowledge"
-            ],
-            "answer": "Goal",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The component where the user interacts with the expert system is the:",
-            "options": [
-                "Inference Engine",
-                "Knowledge Base",
-                "User Interface",
-                "Expert System Shell"
-            ],
-            "answer": "User Interface",
-            "difficulty": "easy"
-        },
-        {
-            "question": "An Expert System Shell is a software framework that provides necessary components for building expert systems, excluding the:",
-            "options": [
-                "Inference Engine",
-                "User Interface",
-                "Domain-specific knowledge base",
-                "Explanation Module"
-            ],
-            "answer": "Domain-specific knowledge base",
-            "difficulty": "medium"
-        },
-        {
-            "question": "An Expert System Shell serves as a reusable:",
-            "options": [
-                "Source of domain knowledge",
-                "Hardware component",
-                "Template",
-                "User account"
-            ],
-            "answer": "Template",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following does an expert system shell provide?",
-            "options": [
-                "A specific set of domain knowledge",
-                "A platform for building expert systems quickly",
-                "A pre-compiled executable application",
-                "A database of expert users"
-            ],
-            "answer": "A platform for building expert systems quickly",
-            "difficulty": "medium"
-        },
-        {
-            "question": "A shell provides a standardized structure for organizing and managing the system's:",
-            "options": [
-                "Network connections",
-                "User credentials",
-                "Components",
-                "Hardware drivers"
-            ],
-            "answer": "Components",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Tools for knowledge acquisition, representation, and reasoning are provided by:",
-            "options": [
-                "The domain expert",
-                "The end-user",
-                "The expert system shell",
-                "The operating system"
-            ],
-            "answer": "The expert system shell",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is NOT listed as a key component of an Expert System Shell?",
-            "options": [
-                "Inference Engine",
-                "Knowledge Base Development Tools",
-                "Domain-Specific Knowledge",
-                "User Interface (UI)"
-            ],
-            "answer": "Domain-Specific Knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert System Shells always include domain-specific knowledge",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Forward Chaining and Backward Chaining can be used in the same Expert System",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The User Interface is considered an optional component in Expert Systems",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Expert System Shells reduce development time compared to building from scratch",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Domain-specific shells are more flexible than general-purpose shells",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Disagreement among experts\" is a challenge in Knowledge Engineering because:",
-            "options": [
-                "It simplifies knowledge acquisition",
-                "It can be difficult to reconcile conflicting expertise",
-                "Experts always agree on all aspects of a domain",
-                "Knowledge is always static"
-            ],
-            "answer": "It can be difficult to reconcile conflicting expertise",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Dynamic nature of knowledge\" poses a challenge to KE because:",
-            "options": [
-                "Knowledge in a domain rarely changes",
-                "Systems must be updated as domain knowledge evolves",
-                "There is a surplus of skilled KE professionals",
-                "Experts always agree, making updates easy"
-            ],
-            "answer": "Systems must be updated as domain knowledge evolves",
-            "difficulty": "medium"
-        },
-        {
-            "question": "A \"Shortage of skilled professionals\" is a challenge in:",
-            "options": [
-                "The problem domain itself",
-                "Knowledge Engineering",
-                "User groups",
-                "Hardware manufacturing"
-            ],
-            "answer": "Knowledge Engineering",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is the relationship between expert system development and knowledge engineering described?",
-            "options": [
-                "Expert system development is a subset of knowledge engineering",
-                "Knowledge Engineering is a subset of expert system development",
-                "They are completely independent processes",
-                "Knowledge engineering relies on expert system development"
-            ],
-            "answer": "Knowledge Engineering is a subset of expert system development",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Expert system development relies on ____ for acquiring, structuring, and representing expertise.",
-            "options": [
-                "User interface design principles",
-                "Hardware capabilities",
-                "Knowledge engineering",
-                "General project management"
-            ],
-            "answer": "Knowledge engineering",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge acquisition is the process of gathering, organizing, and structuring domain-specific knowledge from:",
-            "options": [
-                "Only human experts",
-                "Only documents and databases",
-                "Various sources such as human experts, documents, databases, or other systems",
-                "Only existing AI systems"
-            ],
-            "answer": "Various sources such as human experts, documents, databases, or other systems",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following can knowledge include, according to the text?",
-            "options": [
-                "Only facts",
-                "Only rules",
-                "Facts, Rules, Relationships",
-                "Only user opinions"
-            ],
-            "answer": "Facts, Rules, Relationships",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of these is NOT listed as a source of knowledge for knowledge acquisition?",
-            "options": [
-                "Human Experts",
-                "Documents",
-                "Social media trends",
-                "Data Bases"
-            ],
-            "answer": "Social media trends",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Interviews\" are listed as a method of:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Acquisition",
-                "System Implementation",
-                "Inferencing"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "easy"
-        },
-        {
-            "question": "Questionnaires and surveys are methods used for:",
-            "options": [
-                "Knowledge Validation",
-                "Knowledge Acquisition",
-                "Explaining system reasoning",
-                "System maintenance"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "easy"
-        },
-        {
-            "question": "\"Observation\" as a method of knowledge acquisition involves:",
-            "options": [
-                "Asking experts direct questions",
-                "Analyzing written materials",
-                "Watching experts perform tasks or solve problems",
-                "Using machine learning algorithms"
-            ],
-            "answer": "Watching experts perform tasks or solve problems",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Protocol Analysis\" is a method for:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Acquisition",
-                "Uncertainty Management",
-                "System Deployment"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Analyzing reports, manuals, and textbooks is part of which knowledge acquisition method?",
-            "options": [
-                "Interviews",
-                "Observation",
-                "Documents analysis",
-                "Machine learning"
-            ],
-            "answer": "Documents analysis",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Machine learning and data mining are listed as methods for:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Acquisition",
-                "Explaining inferences",
-                "Managing project schedules"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Text mining/NLP (Natural Language Processing) is a method used in:",
-            "options": [
-                "Knowledge Acquisition",
-                "Logical knowledge representation",
-                "Managing uncertainty with fuzzy logic",
-                "The final implementation phase of ESDLC"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Tacit Knowledge\" poses a challenge in Knowledge Acquisition because it is:",
-            "options": [
-                "Easily articulated and documented",
-                "Difficult to extract as it's often intuitive and experiential",
-                "Always consistent among different experts",
-                "Static and never changes"
-            ],
-            "answer": "Difficult to extract as it's often intuitive and experiential",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Inconsistent Knowledge\" from different experts or sources is a challenge in:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Acquisition",
-                "Inferencing",
-                "System maintenance"
-            ],
-            "answer": "Knowledge Acquisition",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Why is \"Time Consuming\" a challenge in Knowledge Acquisition?",
-            "options": [
-                "The process is usually very quick",
-                "Extracting and structuring knowledge from experts can take significant time",
-                "Experts are always readily available",
-                "Automated tools make it instantaneous"
-            ],
-            "answer": "Extracting and structuring knowledge from experts can take significant time",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Dynamic Knowledge\" is a challenge for knowledge acquisition because:",
-            "options": [
-                "Domain knowledge rarely changes",
-                "Acquired knowledge may become outdated quickly as the field evolves",
-                "Experts' knowledge is always static",
-                "It is easy to update acquired knowledge"
-            ],
-            "answer": "Acquired knowledge may become outdated quickly as the field evolves",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Bias\" in experts or documentation is a challenge in knowledge acquisition as it can:",
-            "options": [
-                "Lead to more objective knowledge",
-                "Lead to skewed or inaccurate knowledge being captured",
-                "Be easily filtered out by automated tools",
-                "Simplify the acquisition process"
-            ],
-            "answer": "Lead to skewed or inaccurate knowledge being captured",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Which is a \"Best Practice for Knowledge Acquisition\"?",
-            "options": [
-                "Rely on a single expert to avoid conflicts",
-                "Use only one acquisition method for consistency",
-                "Collaborate with multiple experts",
-                "Avoid documenting the process to save time"
-            ],
-            "answer": "Collaborate with multiple experts",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Using multiple methods for knowledge acquisition is a best practice because:",
-            "options": [
-                "It makes the process more complex",
-                "It can provide a more comprehensive and validated knowledge base",
-                "It restricts the types of knowledge that can be captured",
-                "It is faster than using a single method"
-            ],
-            "answer": "It can provide a more comprehensive and validated knowledge base",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge acquisition is best approached as an \"Iterative Process,\" meaning:",
-            "options": [
-                "It is done once and never revisited",
-                "It involves cycles of elicitation, representation, and refinement",
-                "Only experts are involved, with no developer feedback",
-                "Documentation is avoided until the very end"
-            ],
-            "answer": "It involves cycles of elicitation, representation, and refinement",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Document Everything\" is a best practice in knowledge acquisition to:",
-            "options": [
-                "Make the process more difficult to track",
-                "Ensure clarity, traceability, and aid in maintenance",
-                "Keep the knowledge secret",
-                "Reduce the need for expert collaboration"
-            ],
-            "answer": "Ensure clarity, traceability, and aid in maintenance",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Leveraging technology (e.g., AI tools, recording software) is a best practice in KA to:",
-            "options": [
-                "Increase manual effort",
-                "Aid in the efficiency and accuracy of the acquisition process",
-                "Replace the need for human experts entirely",
-                "Make documentation unnecessary"
-            ],
-            "answer": "Aid in the efficiency and accuracy of the acquisition process",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The first step in the three-stage Knowledge Acquisition Process described on page 4 of \"Expert System ch 3 .pdf\" is:",
-            "options": [
-                "Intermediate Representation",
-                "Compilation into executable form",
-                "Knowledge Elicitation",
-                "Knowledge Validation"
-            ],
-            "answer": "Knowledge Elicitation",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Intermediate Representation\" in the KA process involves:",
-            "options": [
-                "Directly inputting knowledge into the final system",
-                "Representing elicited knowledge in a structured format before final encoding",
-                "Extracting knowledge from experts",
-                "Converting knowledge into machine code"
-            ],
-            "answer": "Representing elicited knowledge in a structured format before final encoding",
-            "difficulty": "hard"
-        },
-        {
-            "question": "The final stage of the Knowledge Acquisition Process on page 4 of \"Expert System ch 3 .pdf\" is:",
-            "options": [
-                "Knowledge Elicitation",
-                "Intermediate Representation",
-                "Compilation into executable form",
-                "Expert identification"
-            ],
-            "answer": "Compilation into executable form",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge elicitation is described as the ____ and arguably the most critical stage in the knowledge acquisition process.",
-            "options": [
-                "Last",
-                "First",
-                "Simplest",
-                "Least important"
-            ],
-            "answer": "First",
-            "difficulty": "easy"
-        },
-        {
-            "question": "Knowledge elicitation involves extracting knowledge from domain experts or other sources in a:",
-            "options": [
-                "Random and unstructured manner",
-                "Systematic and structured manner",
-                "Quick and informal way",
-                "Way that avoids documentation"
-            ],
-            "answer": "Systematic and structured manner",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge elicitation is often a time-intensive process, and ____ are increasingly common modern alternatives.",
-            "options": [
-                "Manual transcription methods",
-                "Lengthy expert interviews only",
-                "Automated knowledge elicitation and machine learning techniques",
-                "Relying solely on outdated documents"
-            ],
-            "answer": "Automated knowledge elicitation and machine learning techniques",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The first step in the \"Knowledge elicitation process\" is:",
-            "options": [
-                "Expert identification and collaboration",
-                "Domain and problem understanding",
-                "Characterizing problem solving tasks",
-                "Expert interviews and knowledge extraction"
-            ],
-            "answer": "Domain and problem understanding",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Characterizing problem solving tasks\" is part of the:",
-            "options": [
-                "Knowledge representation phase",
-                "Knowledge elicitation process",
-                "Uncertainty management technique",
-                "System implementation stage"
-            ],
-            "answer": "Knowledge elicitation process",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Identifying and collaborating with experts is a key step in:",
-            "options": [
-                "Compiling knowledge into executable form",
-                "The knowledge elicitation process",
-                "Logical analysis of knowledge",
-                "Implementing the user interface"
-            ],
-            "answer": "The knowledge elicitation process",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The final step listed in the knowledge elicitation process on page 4 of \"Expert System ch 3 .pdf\" is:",
-            "options": [
-                "Domain and problem understanding",
-                "Characterizing problem solving tasks",
-                "Expert identification and collaboration",
-                "Expert interviews and knowledge extraction"
-            ],
-            "answer": "Expert interviews and knowledge extraction",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of these is a knowledge elicitation technique?",
-            "options": [
-                "Forward Chaining",
-                "Repertory Grid",
-                "Decision Trees",
-                "Frames"
-            ],
-            "answer": "Repertory Grid",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The Repertory Grid technique for knowledge elicitation involves two phases: Eliciting domain Constructs and:",
-            "options": [
-                "Scoring Domain Concepts",
-                "Sorting Cards",
-                "Asking 20 Questions",
-                "Thinking Aloud"
-            ],
-            "answer": "Scoring Domain Concepts",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Laddering\" is listed as a technique for:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Elicitation",
-                "System Testing",
-                "Uncertainty Modelling"
-            ],
-            "answer": "Knowledge Elicitation",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Card Sorting\" technique is used in:",
-            "options": [
-                "Knowledge Elicitation",
-                "Inferencing",
-                "Logical Analysis",
-                "Implementation Analysis"
-            ],
-            "answer": "Knowledge Elicitation",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"20 Questions\" as a knowledge elicitation technique aims to:",
-            "options": [
-                "Score domain concepts",
-                "Uncover underlying knowledge structures by structured questioning",
-                "Analyze sequences of events",
-                "Formalize knowledge using logic"
-            ],
-            "answer": "Uncover underlying knowledge structures by structured questioning",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Protocol analysis, also known as the \"think-aloud method,\" is a technique for:",
-            "options": [
-                "Knowledge Representation",
-                "Knowledge Elicitation",
-                "System Implementation",
-                "Logical analysis"
-            ],
-            "answer": "Knowledge Elicitation",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Combining multiple knowledge elicitation techniques often yields:",
-            "options": [
-                "Less accurate knowledge models",
-                "Comprehensive and accurate knowledge models",
-                "A slower development process unnecessarily",
-                "Simpler but less effective expert systems"
-            ],
-            "answer": "Comprehensive and accurate knowledge models",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which is the first stage of Knowledge Acquisition listed on page 5 of \"Expert System ch 3 .pdf\"?",
-            "options": [
-                "Knowledge Conceptualization",
-                "Knowledge identification",
-                "Epistemological analysis",
-                "Logical analysis"
-            ],
-            "answer": "Knowledge identification",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Knowledge Conceptualization\" in the states of Knowledge Acquisition involves:",
-            "options": [
-                "Identifying the raw knowledge elements",
-                "Structuring the identified knowledge into concepts and relationships",
-                "Analyzing the philosophical basis of the knowledge",
-                "Formalizing knowledge using logical rules"
-            ],
-            "answer": "Structuring the identified knowledge into concepts and relationships",
-            "difficulty": "hard"
-        },
-        {
-            "question": "\"Epistemological analysis\" as a state of Knowledge Acquisition refers to:",
-            "options": [
-                "Identifying the scope and sources of knowledge",
-                "Defining key concepts and their relationships",
-                "Examining the nature, validity, and scope of the knowledge",
-                "Translating knowledge into a formal logical system"
-            ],
-            "answer": "Examining the nature, validity, and scope of the knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "What follows \"Epistemological analysis\" in the states of Knowledge Acquisition?",
-            "options": [
-                "Knowledge identification",
-                "Logical analysis",
-                "Knowledge Conceptualization",
-                "Implementational analysis"
-            ],
-            "answer": "Logical analysis",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The final state of Knowledge Acquisition listed on page 5 of \"Expert System ch 3 .pdf\" is:",
-            "options": [
-                "Epistemological analysis",
-                "Logical analysis",
-                "Implementational analysis",
-                "Knowledge Conceptualization"
-            ],
-            "answer": "Implementational analysis",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Level 1 of Knowledge Analysis in Expert System Development is:",
-            "options": [
-                "Knowledge Conceptualization",
-                "Knowledge identification",
-                "Epistemological analysis",
-                "Logical analysis"
-            ],
-            "answer": "Knowledge identification",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Knowledge Conceptualization\" corresponds to which level of Knowledge Analysis in ES Development?",
-            "options": [
-                "Level 1",
-                "Level 2",
-                "Level 3",
-                "Level 4"
-            ],
-            "answer": "Level 2",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Level 3 of Knowledge Analysis in ES Development is:",
-            "options": [
-                "Knowledge identification",
-                "Knowledge Conceptualization",
-                "Epistemological analysis",
-                "Implementational analysis"
-            ],
-            "answer": "Epistemological analysis",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Logical analysis\" is what level in Knowledge Analysis for ES Development?",
-            "options": [
-                "Level 2",
-                "Level 3",
-                "Level 4",
-                "Level 5"
-            ],
-            "answer": "Level 4",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Level 5 of Knowledge Analysis, the final level listed, is:",
-            "options": [
-                "Epistemological analysis",
-                "Logical analysis",
-                "Implementational analysis",
-                "Knowledge Conceptualization"
-            ],
-            "answer": "Implementational analysis",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge representation refers to the process of formalizing and encoding knowledge in a way that allows a computer system to:",
-            "options": [
-                "Only store it",
-                "Store, manipulate, and utilize it effectively",
-                "Only display it to users",
-                "Generate new knowledge independently"
-            ],
-            "answer": "Store, manipulate, and utilize it effectively",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is a key aspect of Knowledge Representation?",
-            "options": [
-                "Ambiguity",
-                "Structure",
-                "Randomness",
-                "Volatility"
-            ],
-            "answer": "Structure",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Semantic\" as a key aspect of Knowledge Representation refers to:",
-            "options": [
-                "The physical storage format of the knowledge",
-                "The meaning of the represented knowledge",
-                "The algorithms used to process the knowledge",
-                "The user interface design"
-            ],
-            "answer": "The meaning of the represented knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "The \"Manipulation\" aspect of Knowledge Representation concerns:",
-            "options": [
-                "How knowledge is acquired from experts",
-                "How the system can operate on or reason with the knowledge",
-                "The visual display of knowledge",
-                "The ethical implications of knowledge use"
-            ],
-            "answer": "How the system can operate on or reason with the knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "A primary goal of Knowledge Representation is to:",
-            "options": [
-                "Keep knowledge abstract and informal",
-                "Capture and Store Knowledge",
-                "Limit access to knowledge",
-                "Focus only on procedural knowledge"
-            ],
-            "answer": "Capture and Store Knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge Representation aims to \"Enable Reasoning,\" which means:",
-            "options": [
-                "Allowing the system to draw inferences and make decisions",
-                "Facilitating human-to-human communication",
-                "Storing knowledge in a secure way",
-                "Capturing only factual knowledge"
-            ],
-            "answer": "Allowing the system to draw inferences and make decisions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Facilitate Communication\" is a goal of KR, implying it helps in:",
-            "options": [
-                "Making knowledge harder to understand",
-                "Sharing and understanding knowledge between humans and systems, or among systems",
-                "Restricting communication to only experts",
-                "Automating all communication tasks"
-            ],
-            "answer": "Sharing and understanding knowledge between humans and systems, or among systems",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Why is Knowledge Representation important for \"Enables Reasoning\"?",
-            "options": [
-                "It makes reasoning slower but more accurate",
-                "A well-structured representation is crucial for effective inference",
-                "It limits the types of reasoning possible",
-                "It focuses on data storage rather than reasoning"
-            ],
-            "answer": "A well-structured representation is crucial for effective inference",
-            "difficulty": "hard"
-        },
-        {
-            "question": "How does Knowledge Representation \"Facilitate Communication\"?",
-            "options": [
-                "By using obscure and technical formats",
-                "By providing a common framework for knowledge to be understood and exchanged",
-                "By restricting access to authorized personnel only",
-                "By encrypting all knowledge"
-            ],
-            "answer": "By providing a common framework for knowledge to be understood and exchanged",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge Representation is important to \"Support Problem-solving\" by:",
-            "options": [
-                "Making problems more complex",
-                "Providing the necessary knowledge in a usable form for the system to address issues",
-                "Focusing on theoretical problems only",
-                "Limiting the system's problem-solving capabilities"
-            ],
-            "answer": "Providing the necessary knowledge in a usable form for the system to address issues",
-            "difficulty": "medium"
-        },
-        {
-            "question": "KR helps \"Handles complexity\" by:",
-            "options": [
-                "Breaking down and organizing complex information into manageable structures",
-                "Adding more layers of complexity",
-                "Ignoring complex aspects of knowledge",
-                "Simplifying all knowledge to a basic level"
-            ],
-            "answer": "Breaking down and organizing complex information into manageable structures",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Logical Representation as a method of KR uses formal logic to encode knowledge, such as:",
-            "options": [
-                "Fuzzy Logic",
-                "Propositional Logic, First-Order Logic",
-                "Semantic Networks",
-                "Frames"
-            ],
-            "answer": "Propositional Logic, First-Order Logic",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Rule-Based Systems represent knowledge as:",
-            "options": [
-                "Collections of attributes and values",
-                "Graphs of nodes and edges",
-                "If-then rules",
-                "Sequences of events"
-            ],
-            "answer": "If-then rules",
-            "difficulty": "medium"
-        },
-        {
-            "question": "\"Production Rules\" are another name for:",
-            "options": [
-                "Frames",
-                "Semantic Networks",
-                "If-then rules",
-                "Ontologies"
-            ],
-            "answer": "If-then rules",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Decision Trees represent knowledge as a:",
-            "options": [
-                "Graph of nodes and edges",
-                "Collection of attributes and values",
-                "Tree of decisions",
-                "Network of concepts and relationships"
-            ],
-            "answer": "Tree of decisions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Semantic Networks represent knowledge as a graph of:",
-            "options": [
-                "If-then rules",
-                "Nodes and edges",
-                "Decision points",
-                "Attributes and values"
-            ],
-            "answer": "Nodes and edges",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Frames represent knowledge as collections of:",
-            "options": [
-                "If-then rules",
-                "Nodes and edges",
-                "Attributes and values",
-                "Concepts and relationships within a domain"
-            ],
-            "answer": "Attributes and values",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Ontologies define ____ within a domain.",
-            "options": [
-                "Only concepts and relationships",
-                "Concepts, relationships, constraints",
-                "Only if-then rules",
-                "Only sequences of events"
-            ],
-            "answer": "Concepts, relationships, constraints",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Probabilistic Representation is used to handle:",
-            "options": [
-                "Precise and complete knowledge",
-                "Uncertain, incomplete knowledge (e.g., Bayesian networks, Markov models)",
-                "Sequences of actions",
-                "Hierarchical data structures"
-            ],
-            "answer": "Uncertain, incomplete knowledge (e.g., Bayesian networks, Markov models)",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Fuzzy Systems represent imprecise or vague knowledge using:",
-            "options": [
-                "Strict true/false logic",
-                "Degrees of truth",
-                "First-Order Logic",
-                "Production rules"
-            ],
-            "answer": "Degrees of truth",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Scripts, as a KR method, represent:",
-            "options": [
-                "Hierarchical relationships",
-                "Uncertain knowledge",
-                "Sequences of events or actions in a specific context",
-                "Logical propositions"
-            ],
-            "answer": "Sequences of events or actions in a specific context",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Conceptual graphs are similar to semantic networks but with more:",
-            "options": [
-                "Informal semantics",
-                "Formal semantics",
-                "If-then rules",
-                "Fuzzy logic elements"
-            ],
-            "answer": "Formal semantics",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Neural Networks represent knowledge as a network of interconnected nodes (neurons) that:",
-            "options": [
-                "Follow predefined if-then rules",
-                "Learn patterns from data",
-                "Represent hierarchical structures explicitly",
-                "Define concepts and relationships formally"
-            ],
-            "answer": "Learn patterns from data",
-            "difficulty": "hard"
-        },
-        {
-            "question": "A strength of Logical Representations is that they:",
-            "options": [
-                "Are easy to understand for non-technical users",
-                "Are precise and support formal reasoning",
-                "Handle uncertain knowledge well",
-                "Are highly scalable for large rule sets"
-            ],
-            "answer": "Are precise and support formal reasoning",
-            "difficulty": "hard"
-        },
-        {
-            "question": "A weakness of Rule-Based Systems can be:",
-            "options": [
-                "Difficulty in understanding the rules",
-                "Scalability issues with large rule sets",
-                "Limited applicability in diagnostic systems",
-                "Inability to represent if-then statements"
-            ],
-            "answer": "Scalability issues with large rule sets",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Semantic Networks are intuitive and good for representing:",
-            "options": [
-                "Complex logical proofs",
-                "Hierarchical relationships",
-                "Uncertain information",
-                "Procedural knowledge"
-            ],
-            "answer": "Hierarchical relationships",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Frames are a KR method good for structured, hierarchical data, but a weakness is:",
-            "options": [
-                "Poor support for inheritance",
-                "Limited flexibility for dynamic or uncertain knowledge",
-                "Difficulty in representing object attributes",
-                "Unsuitability for object-oriented systems"
-            ],
-            "answer": "Limited flexibility for dynamic or uncertain knowledge",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Ontologies support complex relationships and interoperability, but a weakness is:",
-            "options": [
-                "They are quick and easy to build",
-                "They require significant effort to build and maintain",
-                "They cannot be used for knowledge graphs",
-                "They do not support formal reasoning"
-            ],
-            "answer": "They require significant effort to build and maintain",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which characteristic describes KBS as being guided by the knowledge they possess?",
-            "options": [
-                "Interactive",
-                "Adaptable",
-                "Knowledge-Driven",
-                "Algorithmic"
-            ],
-            "answer": "Knowledge-Driven",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Reasoning Capability\" of a KBS refers to its ability to:",
-            "options": [
-                "Store large amounts of data",
-                "Perform complex calculations quickly",
-                "Draw conclusions or make inferences",
-                "Interact with users through graphical interfaces"
-            ],
-            "answer": "Draw conclusions or make inferences",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The \"Interactive\" characteristic of KBS means they:",
-            "options": [
-                "Operate autonomously without user input",
-                "Can engage with users, often through dialogue",
-                "Automatically update their own codebase",
-                "Are difficult to modify"
-            ],
-            "answer": "Can engage with users, often through dialogue",
-            "difficulty": "medium"
-        },
-        {
-            "question": "When a KBS is described as \"Adaptable,\" it implies it can:",
-            "options": [
-                "Only run on specific hardware",
-                "Be modified or updated, for instance, by adding new knowledge",
-                "Never change once deployed",
-                "Resist all forms of user interaction"
-            ],
-            "answer": "Be modified or updated, for instance, by adding new knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "One advantage of KBS is:",
-            "options": [
-                "Increased reliance on human experts",
-                "Consistent decision-making",
-                "Knowledge acquisition is always easy",
-                "Low initial development cost"
-            ],
-            "answer": "Consistent decision-making",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is listed as an advantage of KBS?",
-            "options": [
-                "Maintenance requires no expert involvement",
-                "Performance is independent of knowledge base completeness",
-                "Reduced reliance on human experts",
-                "Knowledge acquisition is quick and inexpensive"
-            ],
-            "answer": "Reduced reliance on human experts",
-            "difficulty": "medium"
-        },
-        {
-            "question": "A key advantage of KBS is:",
-            "options": [
-                "Difficulty in problem-solving",
-                "Efficient problem-solving",
-                "Limited to simple tasks",
-                "Resistance to updates"
-            ],
-            "answer": "Efficient problem-solving",
-            "difficulty": "medium"
-        },
-        {
-            "question": "What is a noted limitation of KBS?",
-            "options": [
-                "Decision-making is always inconsistent",
-                "They enhance reliance on human experts",
-                "Knowledge acquisition can be difficult and time-consuming",
-                "Maintenance is typically handled by end-users"
-            ],
-            "answer": "Knowledge acquisition can be difficult and time-consuming",
-            "difficulty": "medium"
-        },
-        {
-            "question": "A limitation of KBS is that their maintenance often requires:",
-            "options": [
-                "No specific skills",
-                "Only basic computer literacy",
-                "Expert involvement",
-                "Automated systems entirely"
-            ],
-            "answer": "Expert involvement",
-            "difficulty": "medium"
-        },
-        {
-            "question": "The performance of a KBS is limited by the:",
-            "options": [
-                "Speed of the user's internet connection",
-                "Number of users accessing the system",
-                "Completeness of the knowledge base",
-                "Physical size of the server"
-            ],
-            "answer": "Completeness of the knowledge base",
-            "difficulty": "medium"
-        },
-        {
-            "question": "KBS rely on the effective representation and ____ of knowledge to solve complex problems.",
-            "options": [
-                "Deletion",
-                "Concealment",
-                "Utilization",
-                "Abstraction"
-            ],
-            "answer": "Utilization",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge that is documented, codified, and easily shared is known as:",
-            "options": [
-                "Tacit Knowledge",
-                "Explicit Knowledge",
-                "Procedural Knowledge",
-                "Meta-Knowledge"
-            ],
-            "answer": "Explicit Knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Where is Explicit Knowledge typically stored?",
-            "options": [
-                "Only in human memory",
-                "In experiences and intuitions",
-                "In books, databases, and manuals",
-                "Exclusively in procedural workflows"
-            ],
-            "answer": "In books, databases, and manuals",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Explicit Knowledge can be expressed in:",
-            "options": [
-                "Intuition and skills only",
-                "Words, numbers, or symbols",
-                "Personal experiences only",
-                "Unspoken understanding"
-            ],
-            "answer": "Words, numbers, or symbols",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How transferable is Explicit Knowledge?",
-            "options": [
-                "Difficult to transfer",
-                "Requires personal interaction to share",
-                "Easily transferable across individuals and systems",
-                "Non-transferable"
-            ],
-            "answer": "Easily transferable across individuals and systems",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is given as an example of Explicit Knowledge?",
-            "options": [
-                "Skills",
-                "Intuition",
-                "Rules, facts, Database",
-                "Experience"
-            ],
-            "answer": "Rules, facts, Database",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is Explicit Knowledge typically used in KBS?",
-            "options": [
-                "Captured through machine learning only",
-                "Stored in the knowledge base as rules/facts",
-                "Encoded in the inference engine primarily",
-                "Used to guide the user interface design"
-            ],
-            "answer": "Stored in the knowledge base as rules/facts",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Knowledge that is personal, context-specific, and difficult to formalize is:",
-            "options": [
-                "Explicit Knowledge",
-                "Tacit Knowledge",
-                "Declarative Knowledge",
-                "Structural Knowledge"
-            ],
-            "answer": "Tacit Knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Tacit Knowledge is rooted in:",
-            "options": [
-                "Databases and manuals",
-                "Rules and facts",
-                "Experience, intuition, and skills",
-                "Formal documentation"
-            ],
-            "answer": "Experience, intuition, and skills",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Tacit Knowledge is characterized as being:",
-            "options": [
-                "Highly structured and objective",
-                "Easily documented and transferred",
-                "Unstructured and subjective",
-                "Expressed in words and numbers"
-            ],
-            "answer": "Unstructured and subjective",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Transferring Tacit Knowledge often requires:",
-            "options": [
-                "Access to a database",
-                "Reading a manual",
-                "Personal interaction or hands-on experience",
-                "Formal symbolic representation"
-            ],
-            "answer": "Personal interaction or hands-on experience",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of these is an example of Tacit Knowledge?",
-            "options": [
-                "A company's financial report",
-                "A user manual for software",
-                "A chef's intuition for seasoning a dish",
-                "A database of customer addresses"
-            ],
-            "answer": "A chef's intuition for seasoning a dish",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is Tacit Knowledge often captured for use in KBS?",
-            "options": [
-                "By direct entry of rules and facts",
-                "Through CBR (Case-Based Reasoning) or machine learning",
-                "By documentation in manuals",
-                "By structuring it into explicit facts"
-            ],
-            "answer": "Through CBR (Case-Based Reasoning) or machine learning",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Procedural Knowledge pertains to:",
-            "options": [
-                "Facts or statements about the world",
-                "Knowledge about knowledge",
-                "How to perform tasks or procedures",
-                "Relationships between concepts"
-            ],
-            "answer": "How to perform tasks or procedures",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Procedural Knowledge often takes the form of:",
-            "options": [
-                "Static facts",
-                "Step-by-step methods or algorithms",
-                "Relationships between objects",
-                "Rules about how knowledge is organized"
-            ],
-            "answer": "Step-by-step methods or algorithms",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Procedural Knowledge focuses on:",
-            "options": [
-                "\"What is known\"",
-                "The organization and hierarchy of knowledge",
-                "Processes and actions",
-                "Facts and assertions"
-            ],
-            "answer": "Processes and actions",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is Procedural Knowledge often represented?",
-            "options": [
-                "As facts or assertions",
-                "Using semantic networks or ontologies",
-                "As workflows, algorithms, or scripts",
-                "As rules of thumb"
-            ],
-            "answer": "As workflows, algorithms, or scripts",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Which of the following is an example of Procedural Knowledge?",
-            "options": [
-                "Water boils at 100°C at sea level",
-                "A car is a type of vehicle",
-                "Algorithms, workflows, recipes",
-                "Rule X should be applied before rule Y"
-            ],
-            "answer": "Algorithms, workflows, recipes",
-            "difficulty": "medium"
-        },
-        {
-            "question": "In a KBS, Procedural Knowledge is typically:",
-            "options": [
-                "Stored as facts in the knowledge base",
-                "Used to guide the reasoning process itself",
-                "Encoded in the inference engine",
-                "Used to build ontologies"
-            ],
-            "answer": "Encoded in the inference engine",
-            "difficulty": "hard"
-        },
-        {
-            "question": "Declarative Knowledge is also called:",
-            "options": [
-                "Procedural Knowledge",
-                "Meta-Knowledge",
-                "Factual Knowledge",
-                "Heuristic Knowledge"
-            ],
-            "answer": "Factual Knowledge",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Declarative Knowledge represents:",
-            "options": [
-                "How to do something",
-                "Rules of thumb",
-                "Facts or statements about the world",
-                "The sequence of steps in a process"
-            ],
-            "answer": "Facts or statements about the world",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Declarative Knowledge describes:",
-            "options": [
-                "\"How to do something\"",
-                "\"What is known\"",
-                "The organization of knowledge",
-                "Probabilistic rules"
-            ],
-            "answer": "\"What is known\"",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Declarative Knowledge is generally:",
-            "options": [
-                "Dynamic and action-oriented",
-                "Static and descriptive",
-                "Focused on processes",
-                "Subjective and intuitive"
-            ],
-            "answer": "Static and descriptive",
-            "difficulty": "medium"
-        },
-        {
-            "question": "How is Declarative Knowledge represented?",
-            "options": [
-                "As workflows or scripts",
-                "As facts, assertions, or relationships",
-                "As step-by-step methods",
-                "As algorithms"
-            ],
-            "answer": "As facts, assertions, or relationships",
-            "difficulty": "medium"
+            "answer": "Worst case",
+            "difficulty": "medium",
+            "category": "sorting"
         }
     ],
     "trueFalseQuestions": [
         {
-            "question": "Knowledge-Based Systems always require human intervention to function",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Tacit knowledge is easier to document than explicit knowledge",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Neural Network-Based Systems require training data to function effectively",
+            "question": "A search is optimal if its heuristic function h(n) is admissible (never overestimates the cost to the goal)",
             "options": ["True", "False"],
             "answer": "True",
-            "difficulty": "medium"
+            "difficulty": "hard",
+            "category": "searching"
         },
         {
-            "question": "Case-Based Reasoning systems can only solve problems that are exactly like previous cases",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium"
-        },
-        {
-            "question": "Frame-Based Systems can represent hierarchical relationships between concepts",
+            "question": "In Huffman coding, a prefix code means the codeword for one symbol is never the prefix of another symbol's codeword",
             "options": ["True", "False"],
             "answer": "True",
-            "difficulty": "medium"
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Prim's algorithm for finding a Minimum Spanning Tree (MST) is an example of a Greedy Algorithm",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Kruskal's algorithm for MST adds edges to the MST if they don't form a cycle",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "A connected undirected graph with n vertices has n-1 edges in its spanning tree",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Breadth-First Search (BFS) explores level by level, guaranteeing discovery of the shortest path first in unweighted graphs",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "searching"
+        },
+        {
+            "question": "Depth-First Search (DFS) primarily uses a stack data structure (either implicitly through recursion or explicitly)",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "searching"
+        },
+        {
+            "question": "In DFS, an edge connecting a vertex u to an ancestor v (excluding parent) in the DFS tree is called a back edge",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "searching"
+        },
+        {
+            "question": "The evaluation function F(n)=g(n)+h(n) in A* search uses h(n) as a heuristic estimate of the cost from node n to the goal node",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "hard",
+            "category": "searching"
+        },
+        {
+            "question": "A tree is defined as a connected undirected graph with no simple circuits",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Huffman Coding is used for data compression by creating optimal prefix codes",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Both Prim's algorithm and Kruskal's algorithm are used to find the Minimal Spanning Tree (MST) of a weighted graph",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "In A* search, if h(n) is always 0, the algorithm behaves like Dijkstra's Algorithm",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "hard",
+            "category": "searching"
+        },
+        {
+            "question": "In Kruskal's MST algorithm, if adding the next cheapest edge creates a cycle, that edge is discarded",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "A complete binary tree has all levels full except possibly the last level, which is filled from left to right",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Quicksort is a divide-and-conquer algorithm in which the pivot element is chosen, and this pivot element reduces the given problem into two smaller sets",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "easy",
+            "category": "sorting"
+        },
+        {
+            "question": "The best case input for an insertion sort algorithm runs in linear time and is given by O(N^N)",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "medium",
+            "category": "sorting"
+        },
+        {
+            "question": "The largest element in a min-heap is stored at the root",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "easy",
+            "category": "datastructures"
+        },
+        {
+            "question": "The smallest element in a max-heap is at the root",
+            "options": ["True", "False"],
+            "answer": "False",
+            "difficulty": "easy",
+            "category": "datastructures"
+        },
+        {
+            "question": "The (binary) heap data structure is an array object that we can view as a nearly complete binary tree",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "datastructures"
+        },
+        {
+            "question": "Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "medium",
+            "category": "sorting"
+        },
+        {
+            "question": "Quick sort is a highly efficient sorting algorithm and is based on partitioning an array of data into smaller arrays",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "easy",
+            "category": "sorting"
+        },
+        {
+            "question": "The following is considered a min-heap: 5, 10, 20",
+            "options": ["True", "False"],
+            "answer": "True",
+            "difficulty": "easy",
+            "category": "datastructures"
         }
     ]
 };

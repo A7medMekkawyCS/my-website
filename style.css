@@ -1,26 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Primary colors - AI/Tech theme */
-    --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-    --primary-color: #2563eb;
-    --primary-dark: #2563eb;
+    /* Category Colors */
+    --sorting-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    --searching-gradient: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+    --complexity-gradient: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    --datastructures-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    
+    /* Theme Colors */
+    --primary-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    --primary-color: #4f46e5;
+    --primary-dark: #4338ca;
     --primary-light: #818cf8;
     
-    /* Interface colors */
+    /* Interface Colors */
     --background-color: #f8fafc;
     --surface-color: #ffffff;
     --border-color: #e2e8f0;
     
-    /* Text colors */
+    /* Text Colors */
     --text-primary: #1e293b;
     --text-secondary: #64748b;
     --text-light: #94a3b8;
     
+    /* Code-friendly colors */
+    --code-bg: #1e293b;
+    --code-text: #e2e8f0;
+    --code-comment: #94a3b8;
+    
+    /* Algorithm category colors */
+    --sorting-color: #0891b2;
+    --searching-color: #0d9488;
+    --complexity-color: #0284c7;
+    --datastructure-color: #0369a1;
+    
     /* Status colors */
     --success-gradient: linear-gradient(135deg, #059669 0%, #10b981 100%);
-    --error-gradient: linear-gradient(135deg, #be123c 0%, #e11d48 100%);
-    --warning-gradient: linear-gradient(135deg, #b45309 0%, #f59e0b 100%);
+    --error-gradient: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    --warning-gradient: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
     
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -33,10 +50,10 @@
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 
-    --secondary-color: #4f46e5;
-    --success-color: #22c55e;
-    --error-color: #ef4444;
-    --warning-color: #f59e0b;
+    --secondary-color: #1d4ed8;
+    --success-color: #059669;
+    --error-color: #dc2626;
+    --warning-color: #d97706;
     --background: #f8fafc;
     --border-radius: 12px;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -50,7 +67,8 @@
 }
 
 body {
-    background: var(--background);
+    font-family: 'Poppins', sans-serif;
+    background: var(--background-color);
     color: var(--text-primary);
     line-height: 1.5;
     min-height: 100vh;
@@ -578,13 +596,25 @@ footer {
 
 /* Quiz Header */
 .quiz-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 3rem 2rem;
-    border-radius: var(--border-radius);
     text-align: center;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow);
+    padding: 3rem 2rem;
+    background: var(--primary-gradient);
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 3rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-header::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(-3deg);
 }
 
 .quiz-header h1 {
@@ -602,33 +632,37 @@ footer {
 
 /* Question Container */
 .question-container {
-    background: white;
-    border-radius: var(--border-radius);
+    background: var(--surface-color);
+    border-radius: 20px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
-.question-header {
+.question-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #e2e8f0;
 }
 
 .question-number {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
+    font-family: 'Fira Code', monospace;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background: var(--primary-gradient);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .question-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
     line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
 }
 
 /* Options */
@@ -638,10 +672,11 @@ footer {
 }
 
 .option {
-    background: white;
-    border: 2px solid #e2e8f0;
-    border-radius: var(--border-radius);
-    padding: 1.25rem;
+    background: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -651,31 +686,33 @@ footer {
 
 .option:hover {
     border-color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
-}
-
-.option.correct {
-    background: var(--success-color);
-    border-color: var(--success-color);
-    color: white;
-}
-
-.option.incorrect {
-    background: var(--error-color);
-    border-color: var(--error-color);
-    color: white;
+    background: rgba(79, 70, 229, 0.05);
+    transform: translateX(5px);
 }
 
 .option-letter {
-    background: rgba(0, 0, 0, 0.1);
     width: 32px;
     height: 32px;
     border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    font-family: 'Fira Code', monospace;
+}
+
+.option.correct {
+    background: var(--datastructures-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.option.incorrect {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    border-color: transparent;
+    color: white;
 }
 
 /* Progress Bar */
@@ -686,14 +723,14 @@ footer {
 .progress-bar {
     width: 100%;
     height: 8px;
-    background: #e2e8f0;
+    background: var(--border-color);
     border-radius: 4px;
     overflow: hidden;
 }
 
 .progress {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    background: var(--primary-gradient);
     transition: width 0.3s ease;
 }
 
@@ -716,9 +753,26 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    position: relative;
+    background: rgba(79, 70, 229, 0.05);
+}
+
+.score-circle .percentage {
+    font-size: 3.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.score-circle .text {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: center;
+    max-width: 80%;
+    line-height: 1.2;
 }
 
 .stats-grid {
@@ -772,4 +826,445 @@ footer {
 
 .question-container {
     animation: slideIn 0.5s ease;
+}
+
+/* Algorithm-specific styles */
+.code-font {
+    font-family: 'Fira Code', monospace;
+}
+
+.complexity-badge {
+    font-family: 'Fira Code', monospace;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background: var(--code-bg);
+    color: var(--code-text);
+    font-size: 0.9rem;
+}
+
+.category-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.category-badge.sorting {
+    background: var(--sorting-color);
+    color: white;
+}
+
+.category-badge.searching {
+    background: var(--searching-color);
+    color: white;
+}
+
+.category-badge.complexity {
+    background: var(--complexity-color);
+    color: white;
+}
+
+.category-badge.datastructures {
+    background: var(--datastructure-color);
+    color: white;
+}
+
+/* Question container with algorithm visualization space */
+.question-container {
+    position: relative;
+    background: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.visualization-space {
+    background: var(--code-bg);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--code-text);
+    font-family: 'Fira Code', monospace;
+}
+
+/* Code block styling */
+.code-block {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    color: var(--code-text);
+    margin: 1rem 0;
+    position: relative;
+}
+
+.code-block::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px 0 0 4px;
+}
+
+/* Algorithm step visualization */
+.algorithm-steps {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+    margin: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--border-color);
+}
+
+.step-card {
+    flex: 0 0 200px;
+    background: var(--surface-color);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Update existing styles */
+.option {
+    font-family: 'Inter', sans-serif;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.option:hover {
+    border-color: var(--primary-color);
+    background: rgba(8, 145, 178, 0.05);
+    transform: translateY(-2px);
+}
+
+.option.correct {
+    background: var(--success-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.option.incorrect {
+    background: var(--error-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.option-letter {
+    background: rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Complexity visualization */
+.complexity-graph {
+    width: 100%;
+    height: 200px;
+    background: var(--code-bg);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.complexity-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: var(--primary-color);
+    transition: height 0.5s ease;
+}
+
+/* Data structure visualization */
+.data-structure-viz {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.node {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    position: relative;
+}
+
+.node::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--primary-color);
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.node:last-child::after {
+    display: none;
+}
+
+/* Algorithm-specific styles */
+.difficulty-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.difficulty-badge.easy {
+    background: var(--success-gradient);
+}
+
+.difficulty-badge.medium {
+    background: var(--warning-gradient);
+}
+
+.difficulty-badge.hard {
+    background: var(--error-gradient);
+}
+
+/* Question container */
+.question-container {
+    position: relative;
+    background: var(--surface-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+/* Code block styling */
+.code-block {
+    background: var(--code-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    color: var(--code-text);
+    margin: 1rem 0;
+    position: relative;
+}
+
+.code-block::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 4px 0 0 4px;
+}
+
+/* Update existing styles */
+.option {
+    font-family: 'Inter', sans-serif;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.option:hover {
+    border-color: var(--primary-color);
+    background: rgba(8, 145, 178, 0.05);
+    transform: translateY(-2px);
+}
+
+.option.correct {
+    background: var(--success-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.option.incorrect {
+    background: var(--error-gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.option-letter {
+    background: rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Question number */
+.question-number {
+    font-family: 'Fira Code', monospace;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: var(--primary-gradient);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Category Cards Grid */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.category-card {
+    background: var(--surface-color);
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.category-card.sorting::before {
+    background: var(--sorting-gradient);
+}
+
+.category-card.searching::before {
+    background: var(--searching-gradient);
+}
+
+.category-card.complexity::before {
+    background: var(--complexity-gradient);
+}
+
+.category-card.datastructures::before {
+    background: var(--datastructures-gradient);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.category-card.sorting .category-icon {
+    background: var(--sorting-gradient);
+}
+
+.category-card.searching .category-icon {
+    background: var(--searching-gradient);
+}
+
+.category-card.complexity .category-icon {
+    background: var(--complexity-gradient);
+}
+
+.category-card.datastructures .category-icon {
+    background: var(--datastructures-gradient);
+}
+
+.category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.category-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.category-card {
+    animation: slideIn 0.5s ease forwards;
+}
+
+.category-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.category-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.category-card:nth-child(4) {
+    animation-delay: 0.3s;
 } 
