@@ -23,7 +23,7 @@ function showError(message) {
         errorDiv.classList.add('show');
         setTimeout(() => {
             errorDiv.classList.remove('show');
-        }, 15000);
+        }, 30000);
     }
 }
 
