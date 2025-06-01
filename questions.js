@@ -2,1187 +2,941 @@
 const questionsData = {
     "mcqQuestions": [
         {
-            "question": "Which of the following is typically the first step in solving computational problems?",
+            "question": "تناول محاضرات تاريخ العرب الحديث السيطرة العثمانية على أقطار الوطن العربي، وذلك فيما يتعلق بتاريخ:",
             "options": [
-                "Designing an Algorithm",
-                "Problem definition",
-                "Program testing",
-                "Documentation"
+                "أوروبا الحديث",
+                "العرب القديم",
+                "العرب الحديث",
+                "العرب الوسيط"
             ],
-            "answer": "Problem definition",
-            "difficulty": "easy",
-            "category": "complexity"
+            "answer": "العرب الحديث",
+            "difficulty": "medium"
         },
         {
-            "question": "Which of these is NOT a characteristic of a well-defined algorithm?",
+            "question": "من الحركات الاستقلالية التي ظهرت في الوطن العربي نتيجة ضعف الدولة العثمانية حركة ظاهر العمر في:",
             "options": [
-                "It must have a unique name",
-                "It should define a set of inputs and outputs",
-                "It should ideally run for infinity to explore all solutions",
-                "Its operations must be well-ordered and unambiguous"
+                "نجد",
+                "ليبيا",
+                "فلسطين",
+                "العراق"
             ],
-            "answer": "It should ideally run for infinity to explore all solutions",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "فلسطين",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the worst-case time complexity of Insertion Sort for an array of n elements?",
+            "question": "خضع الريف المراكشي للاحتلال:",
             "options": [
-                "O(n)",
-                "O(nlogn)",
-                "O(n²)",
-                "O(logn)"
+                "الفرنسي",
+                "الإيطالي",
+                "البريطاني",
+                "الإسباني"
             ],
-            "answer": "O(n²)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "الإسباني",
+            "difficulty": "medium"
         },
         {
-            "question": "The time complexity for Bubble Sort in all cases (best, worst, average) is:",
+            "question": "يتناول تاريخ العرب المعاصر أحداثًا مثل الثورة العربية عام ١٩١٦ واتفاقية سايكس بيكو عام ١٩١٦، وذلك ضمن أحداث:",
             "options": [
-                "O(n)",
-                "O(nlogn)",
-                "O(n²)",
-                "O(1)"
+                "الحرب العالمية الثانية",
+                "الحرب العالمية الأولى",
+                "فترة ما بين الحربين",
+                "فترة الاستعمار الإيطالي لليبيا"
             ],
-            "answer": "O(n²)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "الحرب العالمية الأولى",
+            "difficulty": "medium"
         },
         {
-            "question": "The Divide-and-Conquer strategy involves which of the following phases?",
+            "question": "الرأي الأرجح لبداية تاريخ العرب الحديث، والذي يتزامن مع بداية التاريخ الأوروبي الحديث، هو:",
             "options": [
-                "Divide, Iterate, Combine",
-                "Initialize, Conquer, Validate",
-                "Divide, Conquer, Combine",
-                "Structure, Operate, Terminate"
+                "ولاية محمد علي لمصر عام ١٨٠٥م",
+                "السيطرة العثمانية على المنطقة العربية بداية من عام ١٥١٦م",
+                "منتصف القرن التاسع عشر",
+                "الحملة الفرنسية على مصر عام ١٧٩٨م"
             ],
-            "answer": "Divide, Conquer, Combine",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "السيطرة العثمانية على المنطقة العربية بداية من عام ١٥١٦م",
+            "difficulty": "hard"
         },
         {
-            "question": "The recurrence relation T(n)=2T(n/2)+O(n) is characteristic of which algorithm?",
+            "question": "يرى الفريق الثاني من المؤرخين أن تاريخ العرب الحديث يبدأ بولاية محمد علي لمصر عام ١٨٠٥م، وذلك بسبب:",
             "options": [
-                "Binary Search",
-                "Merge Sort",
-                "Insertion Sort",
-                "Linear Search"
+                "توسعاته في الحجاز وبلاد الشام",
+                "تحالفه مع الدولة العثمانية",
+                "مقاومته للحملة الفرنسية",
+                "إعلانه استقلال مصر عن الدولة العثمانية"
             ],
-            "answer": "Merge Sort",
-            "difficulty": "hard",
-            "category": "sorting"
+            "answer": "توسعاته في الحجاز وبلاد الشام",
+            "difficulty": "medium"
         },
         {
-            "question": "Using the Master Method for T(n)=9T(n/3)+n, what is n log_b a?",
+            "question": "الرأي الأرجح لبداية تاريخ العرب المعاصر، وفقًا للمقرر، هو:",
             "options": [
-                "n log_3 9 = n²",
-                "n log_9 3 = n^(1/2)",
-                "n",
-                "n³"
+                "الحملة الفرنسية على مصر",
+                "قيام الحرب العالمية الثانية",
+                "اندلاع الحرب العالمية الأولى",
+                "تأسيس جامعة الدول العربية"
             ],
-            "answer": "n log_3 9 = n²",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "اندلاع الحرب العالمية الأولى",
+            "difficulty": "medium"
         },
         {
-            "question": "For the recurrence T(n)=T(2n/3)+1, which case of the Master Method applies and what is the solution?",
+            "question": "أُعلن عن توحيد مناطق نجد والحجاز وملحقاتها تحت اسم المملكة العربية السعودية في عام:",
             "options": [
-                "Case 1, Θ(n)",
-                "Case 2, Θ(lgn)",
-                "Case 3, Θ(1)",
-                "Case 2, Θ(nlgn)"
+                "١٩٢٥م",
+                "١٩٢٧م",
+                "١٩٣٢م",
+                "١٩٣٤م"
             ],
-            "answer": "Case 2, Θ(lgn)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "١٩٣٢م",
+            "difficulty": "medium"
         },
         {
-            "question": "The Recursion Tree Method is primarily used for:",
+            "question": "القبيلة التركمانية التي ينتمي إليها سليمان جد العثمانيين هي قبيلة:",
             "options": [
-                "Designing recursive algorithms",
-                "Visualizing the step-by-step execution of a recursive function",
-                "Analyzing the time complexity of recurrence relations",
-                "Converting recursive algorithms to iterative ones"
+                "سكود",
+                "قونية",
+                "قابي",
+                "إرزنجان"
             ],
-            "answer": "Analyzing the time complexity of recurrence relations",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "قابي",
+            "difficulty": "hard"
         },
         {
-            "question": "What is the average-case time complexity of Quick Sort?",
+            "question": "كافأ السلطان السلجوقي أرطغرل بأن أقطع عشيرته أراضي قرب مدينة:",
             "options": [
-                "Θ(n²)",
-                "Θ(n)",
-                "Θ(nlgn)",
-                "Θ(lgn)"
+                "إرزنجان",
+                "قونية",
+                "أنقرة",
+                "أسكي شهر"
             ],
-            "answer": "Θ(nlgn)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "أسكي شهر",
+            "difficulty": "medium"
         },
         {
-            "question": "In the provided PARTITION(A, p, r) algorithm for Quick Sort, which element is selected as the pivot?",
+            "question": "اللقب الذي خُلع على أرطغرل اعترافًا بعظم أمره وكفاءته القتالية هو:",
             "options": [
-                "The first element A[p]",
-                "The last element A[r]",
-                "The middle element A[⌊(p+r)/2⌋]",
-                "A random element"
+                "غازي",
+                "أوج بكي",
+                "سلطان",
+                "أمير الأمراء"
             ],
-            "answer": "The last element A[r]",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "أوج بكي",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the time complexity of the MAX-HEAPIFY(A, i, n) operation on a heap of size n?",
+            "question": "حملت الأسرة العثمانية والدولة اسمها نسبة إلى:",
             "options": [
-                "O(1)",
-                "O(lgn)",
-                "O(n)",
-                "O(nlgn)"
+                "أرطغرل",
+                "سليمان",
+                "عثمان بن أرطغرل",
+                "علاء الدين السلجوقي"
             ],
-            "answer": "O(lgn)",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "عثمان بن أرطغرل",
+            "difficulty": "medium"
         },
         {
-            "question": "Which data structure is typically used to implement Breadth-First Search (BFS)?",
+            "question": "السلطان العثماني الذي استطاع فتح القسطنطينية عام ١٤٥٣م هو:",
             "options": [
-                "Stack",
-                "Queue",
-                "Priority Queue",
-                "Array"
+                "مراد الثاني",
+                "بايزيد الأول",
+                "محمد الفاتح",
+                "سليم الأول"
             ],
-            "answer": "Queue",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "محمد الفاتح",
+            "difficulty": "medium"
         },
         {
-            "question": "The total running time of the BFS procedure on a graph G=(V,E) represented by adjacency lists is:",
+            "question": "المؤرخ التركي الذي رفض الروايات الخيالية حول نشأة الدولة العثمانية وشكك في كون قبيلة عثمان كانت على الوثنية هو:",
             "options": [
-                "O(V)",
-                "O(E)",
-                "O(V⋅E)",
-                "O(V+E)"
+                "جيبونز",
+                "جيزة",
+                "محمد فؤاد كوبريلي",
+                "أرنولد توينبي"
             ],
-            "answer": "O(V+E)",
-            "difficulty": "hard",
-            "category": "searching"
+            "answer": "محمد فؤاد كوبريلي",
+            "difficulty": "hard"
         },
         {
-            "question": "Informed search algorithms are also known as:",
+            "question": "خضعت بلاد الشام ومصر قبيل مجيء العثمانيين لحكم:",
             "options": [
-                "Blind searches",
-                "Brute-force searches",
-                "Heuristic searches",
-                "Exhaustive searches"
+                "الصفويين",
+                "الأيوبيين",
+                "المماليك",
+                "السلاجقة"
             ],
-            "answer": "Heuristic searches",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "المماليك",
+            "difficulty": "medium"
         },
         {
-            "question": "The process of analyzing an algorithm's problem-solving capability in terms of time and size is known as:",
+            "question": "قبل الفتح العثماني، كانت منطقة الخليج العربي تشهد تنافسًا بين القوى المحلية وإمارة هرمز التي كانت تسيطر على:",
             "options": [
-                "Algorithm Design",
-                "Algorithm Implementation",
-                "Analysis of Algorithm",
-                "Algorithm Documentation"
+                "البحر الأحمر بالكامل",
+                "سواحل عمان واليمن",
+                "تجارة التوابل مع الهند",
+                "الجزر الواقعة عند مدخل الخليج وطرق التجارة فيه"
             ],
-            "answer": "Analysis of Algorithm",
-            "difficulty": "easy",
-            "category": "complexity"
+            "answer": "الجزر الواقعة عند مدخل الخليج وطرق التجارة فيه",
+            "difficulty": "medium"
         },
         {
-            "question": "If f(n)=Θ(g(n)), it implies that for large n, f(n) is:",
+            "question": "كانت نجد قبل التوسع العثماني الكبير، مقسمة إلى عدة إمارات صغيرة تتنازع فيما بينها، أبرزها إمارة:",
             "options": [
-                "Bounded above by c₂g(n) only",
-                "Bounded below by c₁g(n) only",
-                "Bounded both above by c₂g(n) and below by c₁g(n) for positive constants c₁,c₂",
-                "Always equal to g(n)"
+                "آل سعود في الدرعية",
+                "آل رشيد في حائل",
+                "الجبور وبني خالد في الأحساء",
+                "الأشراف في الحجاز"
             ],
-            "answer": "Bounded both above by c₂g(n) and below by c₁g(n) for positive constants c₁,c₂",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "آل سعود في الدرعية",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the Big-O running time for the following code snippet: sum = 0; for(i=0; i < sqrt(n)/2; i++) sum++;?",
+            "question": "كان من أسباب عدم خضوع مراكش (المغرب الأقصى) للحكم العثماني المباشر:",
             "options": [
-                "O(n)",
-                "O(n²)",
-                "O(√n)",
-                "O(logn)"
+                "تحالفها القوي مع الدولة الصفوية",
+                "بعدها الجغرافي وقوة السلاطين السعديين ثم العلويين",
+                "عدم أهميتها الاستراتيجية للعثمانيين",
+                "خضوعها الكامل للاحتلال الإسباني المبكر"
             ],
-            "answer": "O(√n)",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "بعدها الجغرافي وقوة السلاطين السعديين ثم العلويين",
+            "difficulty": "hard"
         },
         {
-            "question": "In Insertion Sort, what is the best-case time complexity if the input array is already sorted?",
+            "question": "من أبرز العوامل الاقتصادية التي دفعت العثمانيين للسيطرة على المنطقة العربية:",
             "options": [
-                "O(n²)",
-                "O(nlogn)",
-                "O(n)",
-                "O(1)"
+                "البحث عن أسواق جديدة للمنتجات الصناعية العثمانية",
+                "الرغبة في السيطرة على طرق التجارة العالمية القديمة وثروات الشرق",
+                "الحاجة إلى الأيدي العاملة من البلاد العربية",
+                "استغلال مناجم الذهب والفضة في الجزيرة العربية"
             ],
-            "answer": "O(n)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "الرغبة في السيطرة على طرق التجارة العالمية القديمة وثروات الشرق",
+            "difficulty": "medium"
         },
         {
-            "question": "Selection Sort's time complexity in all cases (best, worst, average) is:",
+            "question": "العامل الديني الذي استغله العثمانيون لتبرير توسعهم في البلاد العربية كان يتمثل في:",
             "options": [
-                "O(n)",
-                "O(nlogn)",
-                "O(n²)",
-                "O(n³)"
+                "نشر المذهب الحنفي في جميع الأقطار العربية",
+                "حماية الأماكن المقدسة الإسلامية والدفاع عن المسلمين ضد الأخطار الخارجية",
+                "القضاء على جميع المذاهب الإسلامية الأخرى",
+                "إجبار المسيحيين واليهود في البلاد العربية على اعتناق الإسلام"
             ],
-            "answer": "O(n²)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "حماية الأماكن المقدسة الإسلامية والدفاع عن المسلمين ضد الأخطار الخارجية",
+            "difficulty": "medium"
         },
         {
-            "question": "The 'Combine' step in the Merge Sort algorithm involves:",
+            "question": "مصطلح الشرق الأدنى (Near East) كان يستخدمه الأوروبيون للإشارة إلى:",
             "options": [
-                "Dividing the sequence into two subsequences",
-                "Sorting the two subsequences recursively",
-                "Merging the two sorted subsequences to produce the sorted answer",
-                "Selecting a pivot element"
+                "منطقة الصين واليابان",
+                "منطقة الهند وجنوب شرق آسيا",
+                "المناطق الخاضعة للدولة العثمانية والقريبة من أوروبا",
+                "منطقة أمريكا اللاتينية"
             ],
-            "answer": "Merging the two sorted subsequences to produce the sorted answer",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "المناطق الخاضعة للدولة العثمانية والقريبة من أوروبا",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the first step in solving a recurrence using the Substitution Method?",
+            "question": "من الأسباب المباشرة لدخول الدولة العثمانية الحرب العالمية الأولى إلى جانب دول المركز:",
             "options": [
-                "Verify the solution by using an inductive argument",
-                "Guess the form of the solution",
-                "Solve for constants",
-                "Draw a recursion tree"
+                "الضغط الشعبي الداخلي",
+                "التحالف التقليدي مع بريطانيا وفرنسا",
+                "تأثير جمعية الاتحاد والترقي الموالية لألمانيا، والعداء لروسيا",
+                "الرغبة في استعادة مصر وشمال أفريقيا"
             ],
-            "answer": "Guess the form of the solution",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "تأثير جمعية الاتحاد والترقي الموالية لألمانيا، والعداء لروسيا",
+            "difficulty": "hard"
         },
         {
-            "question": "For the Master Theorem T(n)=aT(n/b)+f(n), if nlog_b(a) > f(n), what is the solution?",
+            "question": "جمال باشا، قائد الجيش الرابع العثماني في سوريا، عُرف بسياساته القمعية تجاه العرب، ولُقب بـ:",
             "options": [
-                "T(n)=Θ(nlog_b(a)lgn)",
-                "T(n)=Θ(f(n))",
-                "T(n)=Θ(nlog_b(a))",
-                "T(n)=Θ(f(n)lgn)"
+                "الفاتح",
+                "المنقذ",
+                "السفاح",
+                "العادل"
             ],
-            "answer": "T(n)=Θ(nlog_b(a))",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "السفاح",
+            "difficulty": "medium"
         },
         {
-            "question": "Using the Master Method, what is the solution for T(n)=2T(n/2)+O(n)?",
+            "question": "اللجنة الملكية البريطانية التي أوصت بتقسيم فلسطين عام ١٩٣٧ عُرفت باسم:",
             "options": [
-                "Θ(n)",
-                "Θ(nlgn)",
-                "Θ(n²)",
-                "Θ(lgn)"
+                "لجنة شو",
+                "لجنة بيل (Peel)",
+                "لجنة وودهيد",
+                "لجنة موريسون جرادي"
             ],
-            "answer": "Θ(nlgn)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "لجنة بيل (Peel)",
+            "difficulty": "medium"
         },
         {
-            "question": "In a recursion tree for T(n)=aT(n/b)+f(n), what is the typical height of the tree when subproblems reach size 1?",
+            "question": "مشروع تقسيم فلسطين الذي اقترحته لجنة بيل عام ١٩٣٧ نص على إقامة دولة عربية تشمل:",
             "options": [
-                "log_a(n)",
-                "n/b",
-                "log_b(n)",
-                "a·b"
+                "كل فلسطين ما عدا القدس",
+                "شرق الأردن والجزء الشرقي من فلسطين",
+                "الجليل والساحل الشمالي",
+                "النقب والقدس"
             ],
-            "answer": "log_b(n)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "شرق الأردن والجزء الشرقي من فلسطين",
+            "difficulty": "hard"
         },
         {
-            "question": "Quick Sort's worst-case time complexity of O(n²) occurs when:",
+            "question": "قامت الدولة السعودية الأولى عام ١٧٤٥م واتخذت من ........ عاصمة لها",
             "options": [
-                "The pivot chosen is always the median element",
-                "The partition process always picks the greatest or smallest element as pivot",
-                "The array is completely random",
-                "The array has many duplicate elements"
+                "الرياض",
+                "مكة المكرمة",
+                "الدرعية",
+                "حائل"
             ],
-            "answer": "The partition process always picks the greatest or smallest element as pivot",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "الدرعية",
+            "difficulty": "medium"
         },
         {
-            "question": "The PARTITION algorithm in Quick Sort aims to place the pivot element such that:",
+            "question": "استعاد الملك عبد العزيز آل سعود مدينة الرياض عام:",
             "options": [
-                "All elements to its left are greater, and all to its right are smaller",
-                "All elements to its left are smaller or equal, and all to its right are greater",
-                "It is the first element of the array",
-                "It is the last element of the array"
+                "١٨٩١م",
+                "١٩٠٠م",
+                "١٩٠٢م",
+                "١٩١٢م"
             ],
-            "answer": "All elements to its left are smaller or equal, and all to its right are greater",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "١٩٠٢م",
+            "difficulty": "medium"
         },
         {
-            "question": "In a Max-Heap, the value of any node is:",
+            "question": "أُعلن عن توحيد مناطق نجد والحجاز وملحقاتها تحت اسم المملكة العربية السعودية في عام:",
             "options": [
-                "Less than or equal to the value of its children",
-                "Greater than or equal to the value of its children",
-                "Equal to the average of its children's values",
-                "Randomly related to its children's values"
+                "١٩٢٥م",
+                "١٩٢٧م",
+                "١٩٣٢م",
+                "١٩٣٤م"
             ],
-            "answer": "Greater than or equal to the value of its children",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "١٩٣٢م",
+            "difficulty": "medium"
         },
         {
-            "question": "The BUILD-MAX-HEAP algorithm converts an unordered array into a max-heap. What is its typical time complexity?",
+            "question": "قرار الجمعية العامة للأمم المتحدة رقم ١٨١ الصادر في ٢٩ نوفمبر ١٩٤٧ أوصى بـ:",
             "options": [
-                "O(n)",
-                "O(nlgn)",
-                "O(lgn)",
-                "O(n²)"
+                "إنهاء الانتداب البريطاني وإقامة دولة فلسطينية موحدة",
+                "تقسيم فلسطين إلى دولة عربية ودولة يهودية وتدويل القدس",
+                "وضع فلسطين تحت وصاية دولية",
+                "منح الاستقلال الذاتي للفلسطينيين تحت الانتداب"
             ],
-            "answer": "O(n)",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "تقسيم فلسطين إلى دولة عربية ودولة يهودية وتدويل القدس",
+            "difficulty": "medium"
         },
         {
-            "question": "In graph theory, an Adjacency Matrix is generally preferred for:",
+            "question": "برنامج بيلتمور الذي أقرته المنظمات الصهيونية في نيويورك عام ١٩٤٢ طالب بـ:",
             "options": [
-                "Sparse graphs",
-                "Dense graphs",
-                "Graphs with negative edge weights",
-                "Acyclic graphs only"
+                "قبول الكتاب الأبيض لعام ١٩٣٩",
+                "فتح أبواب فلسطين للهجرة اليهودية غير المحدودة وتحويل فلسطين إلى كومنولث يهودي",
+                "إقامة دولة ثنائية القومية",
+                "التفاوض مع العرب"
             ],
-            "answer": "Dense graphs",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "فتح أبواب فلسطين للهجرة اليهودية غير المحدودة وتحويل فلسطين إلى كومنولث يهودي",
+            "difficulty": "hard"
         },
         {
-            "question": "In the Depth-First Search (DFS) algorithm DFS-VISIT(G,u), when is the finish time u.f recorded for vertex u?",
+            "question": "الخط الأخضر يشير إلى:",
             "options": [
-                "When u is first discovered (becomes GRAY)",
-                "After all vertices adjacent to u have been visited",
-                "After exploring all of u's adjacency list and u becomes BLACK",
-                "Just before u becomes GRAY"
+                "حدود قرار التقسيم لعام ١٩٤٧",
+                "الحدود التي احتلتها إسرائيل قبل حرب ١٩٦٧ (خطوط الهدنة لعام ١٩٤٩)",
+                "الحدود المقترحة في مشروع لجنة بيل",
+                "الشريط الحدودي مع لبنان"
             ],
-            "answer": "After exploring all of u's adjacency list and u becomes BLACK",
-            "difficulty": "hard",
-            "category": "searching"
+            "answer": "الحدود التي احتلتها إسرائيل قبل حرب ١٩٦٧ (خطوط الهدنة لعام ١٩٤٩)",
+            "difficulty": "medium"
         },
         {
-            "question": "What type of edge in a DFS traversal connects a vertex u to a descendant v (that is not a tree edge)?",
+            "question": "حرب يونيو ١٩٦٧ (النكسة) أدت إلى احتلال إسرائيل لـ:",
             "options": [
-                "Back edge (B)",
-                "Forward edge (F)",
-                "Cross edge (C)",
-                "Sibling edge"
+                "قطاع غزة فقط",
+                "سيناء وقطاع غزة والضفة الغربية والجولان",
+                "الضفة الغربية والجولان فقط",
+                "جنوب لبنان"
             ],
-            "answer": "Forward edge (F)",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "سيناء وقطاع غزة والضفة الغربية والجولان",
+            "difficulty": "medium"
         },
         {
-            "question": "Uninformed search strategies are also called blind searches because they:",
+            "question": "قرار مجلس الأمن رقم ٢٤٢ الصادر عام ١٩٦٧ دعا إلى:",
             "options": [
-                "Always find the goal state quickly",
-                "Use heuristics to guide the search",
-                "Have no information about the problem other than the definition of states and operators",
-                "Are only applicable to puzzles"
+                "الاعتراف بإسرائيل مقابل قيام دولة فلسطينية",
+                "انسحاب القوات الإسرائيلية من الأراضي التي احتلتها في نزاع ١٩٦٧، وإنهاء حالة الحرب، واحترام سيادة دول المنطقة",
+                "فرض عقوبات اقتصادية على إسرائيل",
+                "إرسال قوات دولية إلى القدس"
             ],
-            "answer": "Have no information about the problem other than the definition of states and operators",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "الانسحاب الإسرائيلي من الأراضي التي احتلتها في نزاع ١٩٦٧، وإنهاء حالة الحرب، واحترام سيادة دول المنطقة",
+            "difficulty": "hard"
         },
         {
-            "question": "In the 8-Puzzle problem, if tile '7' is in the top-left (goal: middle-right) and the grid is 3x3, what's its contribution to h2 (Manhattan distance)?",
+            "question": "أول من دعا إلى الإصلاح وتأسيس الدولة السعودية الأولى، متحالفًا مع الإمام محمد بن سعود، هو:",
             "options": [
-                "1",
-                "2",
-                "3",
-                "4"
+                "الشريف حسين بن علي",
+                "الإمام محمد بن عبد الوهاب",
+                "ظاهر العمر",
+                "أحمد باشا الجزار"
             ],
-            "answer": "3",
-            "difficulty": "hard",
-            "category": "searching"
+            "answer": "الإمام محمد بن عبد الوهاب",
+            "difficulty": "medium"
         },
         {
-            "question": "Greedy Best-First Search expands the node that appears to be closest to the goal, meaning it selects the node n with the minimum:",
+            "question": "انتهت الدولة السعودية الأولى عام ١٨١٨م على يد حملة قادها:",
             "options": [
-                "g(n)",
-                "h(n)",
-                "g(n)+h(n)",
-                "g(n)−h(n)"
+                "خورشيد باشا",
+                "إبراهيم باشا بن محمد علي والي مصر",
+                "مدحت باشا والي بغداد",
+                "سليمان باشا والي الشام"
             ],
-            "answer": "h(n)",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "إبراهيم باشا بن محمد علي والي مصر",
+            "difficulty": "medium"
         },
         {
-            "question": "Is Greedy Best-First Search always optimal and complete?",
+            "question": "مؤسس الدولة السعودية الثانية (١٨٢٤-١٨٩١) هو الإمام:",
             "options": [
-                "Yes, it is both optimal and complete",
-                "It is optimal but not always complete",
-                "It is complete (if loop avoidance) but not optimal",
-                "It is neither guaranteed to be optimal nor complete"
+                "عبد العزيز بن محمد",
+                "تركي بن عبد الله آل سعود",
+                "فيصل بن تركي",
+                "عبد الرحمن بن فيصل"
             ],
-            "answer": "It is neither guaranteed to be optimal nor complete",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "تركي بن عبد الله آل سعود",
+            "difficulty": "hard"
         },
         {
-            "question": "A search evaluates nodes by combining g(n) and h(n). It is optimal if h(n) is:",
+            "question": "اللجنة الفنية التي أرسلتها بريطانيا عام ١٩٣٨ لدراسة تنفيذ توصيات لجنة بيل عُرفت باسم:",
             "options": [
-                "Always 0",
-                "Admissible (never overestimates the cost to goal) and consistent for graph search",
-                "Greater than the actual cost",
-                "A constant value for all nodes"
+                "لجنة شو",
+                "لجنة وودهيد (Woodhead)",
+                "لجنة التحقيق الأنجلو أمريكية",
+                "لجنة باسفيلد"
             ],
-            "answer": "Admissible (never overestimates the cost to goal) and consistent for graph search",
-            "difficulty": "hard",
-            "category": "searching"
+            "answer": "لجنة وودهيد (Woodhead)",
+            "difficulty": "medium"
         },
         {
-            "question": "A rooted tree is a tree where one vertex is designated as the root, and every edge is directed:",
+            "question": "الكتاب الأبيض البريطاني الصادر عام ١٩٣٩ نص على:",
             "options": [
-                "Towards the root",
-                "Away from the root",
-                "Alternating towards and away from the root",
-                "Parallel to the root"
+                "إقامة دولة يهودية فورية في فلسطين",
+                "تقسيم فلسطين إلى دولتين عربية ويهودية",
+                "إنشاء دولة فلسطينية مستقلة خلال ١٠ سنوات، وتقييد الهجرة اليهودية وانتقال الأراضي",
+                "استمرار الانتداب البريطاني إلى أجل غير مسمى"
             ],
-            "answer": "Away from the root",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "إنشاء دولة فلسطينية مستقلة خلال ١٠ سنوات، وتقييد الهجرة اليهودية وانتقال الأراضي",
+            "difficulty": "hard"
         },
         {
-            "question": "In a rooted tree, if vertex B is a parent to vertex F, then F is called a(n) ________ of B.",
-            "options": [
-                "Ancestor",
-                "Sibling",
-                "Offspring (or child)",
-                "Root"
-            ],
-            "answer": "Offspring (or child)",
-            "difficulty": "easy",
-            "category": "datastructures"
+            "question": "خلصت لجنة وودهيد في تقريرها إلى أن مشروع التقسيم الذي اقترحته لجنة بيل غير عملي ويصعب تنفيذه على أرض الواقع",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "A walk with no repeated edges is defined as a:",
-            "options": [
-                "Path",
-                "Trail",
-                "Circuit",
-                "Cycle"
-            ],
-            "answer": "Trail",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "موقف الصهاينة من الكتاب الأبيض لعام ١٩٣٩ كان الرفض المطلق واعتباره خيانة لتصريح بلفور",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "In Huffman coding, to encode symbols A:0.08, B:0.10, C:0.12, D:0.15, E:0.20, F:0.35, which two symbols/nodes would be combined first?",
-            "options": [
-                "E and F",
-                "A and B",
-                "D and E",
-                "C and D"
-            ],
-            "answer": "A and B",
-            "difficulty": "hard",
-            "category": "datastructures"
+            "question": "خلال الحرب العالمية الثانية، علّق عرب فلسطين ثورتهم بشكل كبير بسبب انشغال العالم بالحرب الكبرى، والخشية من انتصار دول المحور",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "Prim's algorithm for finding an MST starts with a single vertex. In each subsequent step, it adds to the current tree:",
-            "options": [
-                "The edge of least weight anywhere in the graph that doesn't form a cycle",
-                "A nearest neighbor (least weight edge) connecting a vertex in the tree to a vertex not yet in the tree",
-                "All edges connected to the most recently added vertex",
-                "The vertex that is furthest from the current tree"
-            ],
-            "answer": "A nearest neighbor (least weight edge) connecting a vertex in the tree to a vertex not yet in the tree",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "المنظمة الصهيونية التي قامت بتفجير فندق الملك داود في القدس عام ١٩٤٦ كانت الإرغون تسفاي ليئومي",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "The worst-case time complexity for Linear Search on an array of size n is:",
-            "options": [
-                "O(1)",
-                "O(logn)",
-                "O(n)",
-                "O(n²)"
-            ],
-            "answer": "O(n)",
-            "difficulty": "easy",
-            "category": "searching"
+            "question": "من أبرز نتائج حرب ١٩٤٨ (النكسة) قيام دولة إسرائيل على جزء أكبر مما خصصه قرار التقسيم، وتشريد مئات الآلاف من الفلسطينيين",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "Which of the following notations provides a tight bound (both upper and lower) on the growth rate of a function?",
+            "question": "مؤتمر المائدة المستديرة الذي عقد في لندن عام ١٩٣٩ دعا إليه:",
             "options": [
-                "Big-O",
-                "Big-Ω (Omega)",
-                "Big-Θ (Theta)",
-                "Little-o"
+                "ممثلو عرب فلسطين واليهود فقط",
+                "ممثلو عرب فلسطين واليهود والدول العربية المجاورة",
+                "ممثلو الدول العربية فقط",
+                "ممثلو المنظمات الصهيونية فقط"
             ],
-            "answer": "Big-Θ (Theta)",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "ممثلو عرب فلسطين واليهود والدول العربية المجاورة",
+            "difficulty": "medium"
         },
         {
-            "question": "In the detailed analysis of Insertion Sort, tj represents the number of times the while loop test is executed for that value of j. In the worst case, tj is equal to:",
+            "question": "أعلنت بريطانيا إنهاء انتدابها على فلسطين وانسحاب قواتها في:",
             "options": [
-                "1",
-                "j",
-                "n-j",
-                "j/2"
+                "٢٩ نوفمبر ١٩٤٧م",
+                "١٤ مايو ١٩٤٨م",
+                "٧ يونيو ١٩٤٨م",
+                "١ يناير ١٩٤٩م"
             ],
-            "answer": "j",
-            "difficulty": "hard",
-            "category": "sorting"
+            "answer": "١٤ مايو ١٩٤٨م",
+            "difficulty": "medium"
         },
         {
-            "question": "The cn term in Merge Sort's recurrence T(n)=2T(n/2)+cn represents:",
+            "question": "اتفاقيات الهدنة التي وقعت عام ١٩٤٩ كانت بين إسرائيل وكل من:",
             "options": [
-                "The time to divide the problem",
-                "The time to conquer (solve recursively)",
-                "The time to combine (merge) the solutions",
-                "The time for initial setup"
+                "جميع الدول العربية مجتمعة",
+                "مصر والأردن وسوريا ولبنان بشكل منفصل",
+                "منظمة التحرير الفلسطينية",
+                "السعودية والعراق"
             ],
-            "answer": "The time to combine (merge) the solutions",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "مصر والأردن وسوريا ولبنان بشكل منفصل",
+            "difficulty": "medium"
         },
         {
-            "question": "In a recursion tree for T(n)=3T(n/4)+Θ(n²), if the cost at the root is cn², the cost at depth 1 will be:",
+            "question": "حرب أكتوبر ١٩٧٣ (حرب رمضان) كان من أبرز نتائجها على الصعيد الفلسطيني:",
             "options": [
-                "c(n/4)²",
-                "3c(n/4)²",
-                "3cn²",
-                "c(3n/4)²"
+                "تحرير كامل فلسطين",
+                "اعتراف الأمم المتحدة بمنظمة التحرير الفلسطينية كممثل شرعي وحيد للشعب الفلسطيني",
+                "توقيع اتفاقية سلام شامل",
+                "تراجع الدعم العربي للقضية الفلسطينية"
             ],
-            "answer": "3c(n/4)²",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "اعتراف الأمم المتحدة بمنظمة التحرير الفلسطينية كممثل شرعي وحيد للشعب الفلسطيني",
+            "difficulty": "hard"
         },
         {
-            "question": "What does pseudocode provide in the context of algorithms?",
+            "question": "إعلان قيام دولة فلسطين من جانب المجلس الوطني الفلسطيني تم في الجزائر عام:",
             "options": [
-                "A machine-executable version of the algorithm",
-                "A high-level description of an algorithm without needing to know specific programming language syntax",
-                "A diagrammatic representation of the algorithm's flow",
-                "A mathematical proof of the algorithm's correctness"
+                "١٩٦٤م",
+                "١٩٧٤م",
+                "١٩٨٨م",
+                "١٩٩٣م"
             ],
-            "answer": "A high-level description of an algorithm without needing to know specific programming language syntax",
-            "difficulty": "easy",
-            "category": "complexity"
+            "answer": "١٩٨٨م",
+            "difficulty": "medium"
         },
         {
-            "question": "In the linear search algorithm provided, what is the purpose of 'Step 1: Set i to 1'?",
+            "question": "فلسطين كوحدة سياسية قبل عام ١٩١٤ كانت تتألف في العهد العثماني من ثلاث سنجقيات، منها متصرفية مستقلة تتبع الأستانة مباشرة هي:",
             "options": [
-                "To count the number of elements in the array",
-                "To initialize the loop counter or array index",
-                "To store the value to be searched",
-                "To mark the end of the array"
+                "عكا",
+                "نابلس",
+                "القدس الشريف",
+                "يافا"
             ],
-            "answer": "To initialize the loop counter or array index",
-            "difficulty": "easy",
-            "category": "searching"
+            "answer": "القدس الشريف",
+            "difficulty": "medium"
         },
         {
-            "question": "'Analysis of algorithm is the process of analyzing the problem-solving capability of the algorithm in terms of the time and size.' This statement primarily focuses on:",
+            "question": "أكد مؤتمر سان ريمو عام ١٩٢٠ بشكل رسمي الانتداب البريطاني على فلسطين، وعُين أول مندوب سامي بريطاني في فلسطين وهو:",
             "options": [
-                "The ease of coding the algorithm",
-                "The algorithm's performance and resource usage",
-                "The number of developers required to implement the algorithm",
-                "The algorithm's applicability to different problem domains"
+                "اللورد بلفور",
+                "السير مارك سايكس",
+                "السير هربرت صمويل",
+                "اللورد اللنبي"
             ],
-            "answer": "The algorithm's performance and resource usage",
-            "difficulty": "easy",
-            "category": "complexity"
+            "answer": "السير هربرت صمويل",
+            "difficulty": "medium"
         },
         {
-            "question": "If n³ ∈ O(2ⁿ), it means that for n ≥ n₀ = 10:",
+            "question": "عند اندلاع الحرب العالمية الأولى، كانت الدولة العثمانية تستطيع تهديد مصالح بريطانيا في منطقة قناة السويس ومنطقة:",
             "options": [
-                "n³ grows faster than 2ⁿ",
-                "2ⁿ serves as an upper bound for n³ (multiplied by a constant)",
-                "n³ is always equal to 2ⁿ",
-                "2ⁿ serves as a lower bound for n³"
+                "البلقان",
+                "شمال أفريقيا",
+                "الخليج الغنية بآبار النفط",
+                "الأناضول"
             ],
-            "answer": "2ⁿ serves as an upper bound for n³ (multiplied by a constant)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "الخليج الغنية بآبار النفط",
+            "difficulty": "medium"
         },
         {
-            "question": "Consider the code: for(j=1; j < i*i; j++) sum++;. If this loop is inside another loop where i iterates up to n, what would be the dominant complexity contribution of this inner loop relative to i?",
+            "question": "نص بروتوكول دمشق عام ١٩١٥م على اعتراف بريطانيا باستقلال البلاد العربية الواقعة ضمن حدود معينة تشمل:",
             "options": [
-                "O(i)",
-                "O(i²)",
-                "O(logi)",
-                "O(1)"
+                "الحجاز ونجد فقط",
+                "الشام كله والعراق والجزيرة العربية",
+                "مصر والسودان",
+                "شمال أفريقيا"
             ],
-            "answer": "O(i²)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "الشام كله والعراق والجزيرة العربية",
+            "difficulty": "hard"
         },
         {
-            "question": "In the analysis of Insertion Sort, the term c₅∑(j=2 to n)tⱼ represents the cost associated with:",
+            "question": "في مراسلات الحسين – مكماهون، استثنى مكماهون من حدود الدولة العربية المقترحة ولايتي مرسين والإسكندرونة زاعمًا أنهما:",
             "options": [
-                "Initializing the loop counter j",
-                "The while loop condition being tested",
-                "Assigning A[j] to key",
-                "The final placement A[i+1]←key"
+                "تابعتان للدولة العثمانية",
+                "تحت النفوذ الفرنسي",
+                "ليستا عربيتين خالصتين",
+                "منطقتان استراتيجيتان"
             ],
-            "answer": "The while loop condition being tested",
-            "difficulty": "hard",
-            "category": "sorting"
+            "answer": "ليستا عربيتين خالصتين",
+            "difficulty": "hard"
         },
         {
-            "question": "For Insertion Sort, the best-case run time T(n)=O(n) occurs when all tⱼ=1. This happens when:",
+            "question": "أعلن الشريف حسين الثورة العربية رسميًا في:",
             "options": [
-                "The array is in reverse sorted order",
-                "The array is already sorted",
-                "The array contains random elements",
-                "The array contains many duplicate values"
+                "٣٠ أكتوبر ١٩١٦م",
+                "٥ يونيو ١٩١٦م",
+                "١٠ يونيو ١٩١٦م",
+                "يناير ١٩١٧م"
             ],
-            "answer": "The array is already sorted",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "٥ يونيو ١٩١٦م",
+            "difficulty": "medium"
         },
         {
-            "question": "The Bubble Sort algorithm performs exchanges using the line: exchange A[j] ↔ A[j-1]. This occurs if:",
+            "question": "اتفاقية سايكس – بيكو عام ١٩١٦م كانت تهدف إلى تقسيم مناطق النفوذ في الدولة العثمانية بين:",
             "options": [
-                "A[j] > A[j−1]",
-                "A[j] < A[j−1]",
-                "A[j] = A[j−1]",
-                "A[j] is the pivot element"
+                "بريطانيا وألمانيا وإيطاليا",
+                "بريطانيا وفرنسا وروسيا",
+                "بريطانيا وفرنسا وأمريكا",
+                "بريطانيا وروسيا وألمانيا"
             ],
-            "answer": "A[j] < A[j−1]",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "بريطانيا وفرنسا وروسيا",
+            "difficulty": "medium"
         },
         {
-            "question": "In Selection Sort, the statement smallest = j is executed at the beginning of each outer loop pass. Its purpose is to:",
+            "question": "انطلقت أول محاولة فدائية منظمة ضد البريطانيين والصهيونية في شمال فلسطين بقيادة:",
             "options": [
-                "Store the smallest value found so far",
-                "Initialize the index of the smallest element for the current pass",
-                "Count the number of passes",
-                "Finalize the sort for element A[j]"
+                "الحاج أمين الحسيني",
+                "فوزي القاوقجي",
+                "عز الدين القسام",
+                "راغب النشاشيبي"
             ],
-            "answer": "Initialize the index of the smallest element for the current pass",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "عز الدين القسام",
+            "difficulty": "medium"
         },
         {
-            "question": "The 'Divide' step in the Divide-and-Conquer paradigm for Merge Sort involves dividing the n-element sequence into:",
+            "question": "اللجنة الملكية التي شكلتها بريطانيا عام ١٩٣٦ للتحقيق في أسباب الثورة وأوصت بتقسيم فلسطين، كانت برئاسة:",
             "options": [
-                "n subsequences of 1 element each",
-                "Two subsequences of n/2 elements each",
-                "logn subsequences",
-                "A sorted and an unsorted subsequence"
+                "شو",
+                "وودهيد",
+                "اللورد بيل",
+                "باسفيلد"
             ],
-            "answer": "Two subsequences of n/2 elements each",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "اللورد بيل",
+            "difficulty": "medium"
         },
         {
-            "question": "The MERGESORT(A, p, r) algorithm has a base case for recursion. This occurs when:",
+            "question": "برنامج بالتيمور الذي دعا إليه الصهاينة عام ١٩٤٢ في الولايات المتحدة، طالب بـ:",
             "options": [
-                "p≥r (implicitly, as the condition is if (p<r))",
-                "q=⌊(p+r)/2⌋",
-                "The array A is fully sorted",
-                "n₁=n₂"
+                "قبول الكتاب الأبيض لعام ١٩٣٩",
+                "إقامة دولة ثنائية القومية في فلسطين",
+                "شجب السياسة البريطانية تجاه فلسطين وإدخال ألوف المهاجرين اليهود",
+                "التفاوض المباشر مع الزعماء العرب"
             ],
-            "answer": "p≥r (implicitly, as the condition is if (p<r))",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "شجب السياسة البريطانية تجاه فلسطين وإدخال ألوف المهاجرين اليهود",
+            "difficulty": "hard"
         },
         {
-            "question": "A recurrence is an equation defining a function f(n) recursively in terms of:",
+            "question": "قرار تقسيم فلسطين الصادر عن الأمم المتحدة عام ١٩٤٧ أوصى بـ:",
             "options": [
-                "Iterative loops",
-                "Smaller values of n",
-                "Constant values only",
-                "External library functions"
+                "إقامة دولة عربية واحدة مع ضمان حقوق الأقلية اليهودية",
+                "وضع فلسطين بالكامل تحت إدارة دولية",
+                "تقسيم فلسطين إلى دولتين عربية ويهودية مع بقاء القدس منطقة دولية",
+                "استمرار الانتداب البريطاني مع زيادة الحكم الذاتي للسكان"
             ],
-            "answer": "Smaller values of n",
-            "difficulty": "medium",
-            "category": "complexity"
+            "answer": "تقسيم فلسطين إلى دولتين عربية ويهودية مع بقاء القدس منطقة دولية",
+            "difficulty": "medium"
         },
         {
-            "question": "The Master Method provides solutions for recurrences of the form T(n)=aT(n/b)+f(n). The condition a≥1 and b>1 must hold. If b≤1, the method:",
+            "question": "بعد حرب عام ١٩٦٧، أصدر مجلس الأمن القرار رقم ٢٤٢ الذي وضع مبادئ السلام العادل والدائم، بما في ذلك:",
             "options": [
-                "Still applies with minor modifications",
-                "Implies subproblems are not getting smaller, so it's not suitable",
-                "Requires f(n) to be a constant",
-                "Can only be used for Case 1"
+                "إقامة دولة فلسطينية مستقلة",
+                "عودة اللاجئين الفلسطينيين",
+                "الانسحاب الإسرائيلي من الأراضي المحتلة",
+                "تدويل مدينة القدس"
             ],
-            "answer": "Implies subproblems are not getting smaller, so it's not suitable",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "الانسحاب الإسرائيلي من الأراضي المحتلة",
+            "difficulty": "medium"
         },
         {
-            "question": "For T(n)=8T(n/2)+n³, we have a=8,b=2,f(n)=n³. nlog_b(a)=nlog_2(8)=n³. Since f(n)=Θ(nlog_b(a)), which case applies?",
+            "question": "نص مشروع لجنة بيل على أن تكون منطقة القدس وبيت لحم وممر إلى يافا:",
             "options": [
-                "Case 1",
-                "Case 2",
-                "Case 3",
-                "The method is inconclusive"
+                "جزءًا من الدولة اليهودية",
+                "جزءًا من الدولة العربية",
+                "منطقة تحت الانتداب البريطاني الدائم",
+                "منطقة منزوعة السلاح بإدارة دولية"
             ],
-            "answer": "Case 2",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "منطقة تحت الانتداب البريطاني الدائم",
+            "difficulty": "hard"
         },
         {
-            "question": "In the Recursion Tree method for T(n)=aT(n/b)+f(n), the number of leaf nodes is typically:",
+            "question": "رفض العرب مشروع تقسيم فلسطين الصادر عن لجنة بيل لأنه:",
             "options": [
-                "aʰᵉⁱᵍʰᵗ (where height ≈log_b(n))",
-                "bʰᵉⁱᵍʰᵗ",
-                "f(n)·height",
-                "n/b"
+                "يعطي مساحة أكبر للدولة اليهودية",
+                "يتجاهل حقوق عرب فلسطين في كامل أرضهم ويقتطع جزءًا منها لإقامة دولة يهودية",
+                "يقترح تبادل للسكان",
+                "ب و ج معاً"
             ],
-            "answer": "aʰᵉⁱᵍʰᵗ (where height ≈log_b(n))",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "ب و ج معاً",
+            "difficulty": "medium"
         },
         {
-            "question": "The solution T(n)=O(n²) for T(n)=2T(n/2)+n² is derived because the sum ∑(i=0 to lgn)(1/2)ⁱ converges to 2. Thus, the total cost is dominated by:",
+            "question": "تأسست منظمة التحرير الفلسطينية عام ١٩٦٤ في:",
             "options": [
-                "The cost at the leaves",
-                "The cost at the root node (cn²)",
-                "The number of levels (lgn)",
-                "The sum of n²/2ⁱ across all levels"
+                "القاهرة",
+                "القدس",
+                "عمان",
+                "بيروت"
             ],
-            "answer": "The cost at the root node (cn²)",
-            "difficulty": "hard",
-            "category": "complexity"
+            "answer": "القاهرة",
+            "difficulty": "medium"
         },
         {
-            "question": "QuickSort is described as being based on 'partitioning of array of data into smaller arrays using pivot.' The recursive calls are then made on:",
+            "question": "مجزرة صبرا وشاتيلا وقعت عام ١٩٨٢ في لبنان ضد اللاجئين الفلسطينيين على يد:",
             "options": [
-                "The entire array again with a new pivot",
-                "The two resulting subarrays (one to the left of pivot, one to the right)",
-                "Only the subarray containing elements smaller than the pivot",
-                "The subarray containing elements larger than the pivot and the pivot itself"
+                "الجيش الإسرائيلي مباشرة",
+                "ميليشيات لبنانية متحالفة مع إسرائيل وبغطاء من الجيش الإسرائيلي",
+                "القوات السورية",
+                "فصائل فلسطينية متناحرة"
             ],
-            "answer": "The two resulting subarrays (one to the left of pivot, one to the right)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "ميليشيات لبنانية متحالفة مع إسرائيل وبغطاء من الجيش الإسرائيلي",
+            "difficulty": "hard"
         },
         {
-            "question": "The PARTITION(A,p,r) algorithm returns i+1. This value represents:",
+            "question": "الانتفاضة الفلسطينية الأولى (انتفاضة الحجارة) اندلعت عام:",
             "options": [
-                "The final index of the pivot element after partitioning",
-                "The number of elements smaller than the pivot",
-                "The number of swaps performed",
-                "The middle index of the array A[p..r]"
+                "١٩٦٧م",
+                "١٩٧٣م",
+                "١٩٨٢م",
+                "١٩٨٧م"
             ],
-            "answer": "The final index of the pivot element after partitioning",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "١٩٨٧م",
+            "difficulty": "medium"
         },
         {
-            "question": "The 'level of a node' in a tree is defined as the:",
-            "options": [
-                "Number of children of that node",
-                "Length of a path from the root to the node",
-                "Number of edges on the longest path from the node to a leaf",
-                "The depth of its deepest child"
-            ],
-            "answer": "Length of a path from the root to the node",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "مؤتمر مدريد للسلام عام ١٩٩١ كان أول مفاوضات مباشرة متعددة الأطراف بين إسرائيل وكل من سوريا ولبنان والأردن ووفد فلسطيني",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "A heap is described as a 'nearly complete binary tree.' The structural property also specifies that all levels are full, except possibly the last one, which is:",
-            "options": [
-                "Filled from right to left",
-                "Filled from left to right",
-                "Filled randomly",
-                "Required to be exactly half-full"
-            ],
-            "answer": "Filled from left to right",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "اتفاق أوسلو عام ١٩٩٣ نص على ترتيبات للحكم الذاتي الفلسطيني المرحلي في الضفة الغربية وقطاع غزة",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "In a Min-heap, the root element is always:",
+            "question": "تمكن الملك عبد العزيز من ضم منطقة الحجاز إلى حكمه بعد حروب مع:",
             "options": [
-                "The maximum element of the heap",
-                "The minimum element of the heap",
-                "The median element of the heap",
-                "An arbitrary element depending on insertion order"
+                "آل رشيد في حائل",
+                "الأدارسة في عسير",
+                "الأشراف بقيادة الشريف حسين وأبنائه",
+                "إمام اليمن"
             ],
-            "answer": "The minimum element of the heap",
-            "difficulty": "easy",
-            "category": "datastructures"
+            "answer": "الأشراف بقيادة الشريف حسين وأبنائه",
+            "difficulty": "medium"
         },
         {
-            "question": "An Adjacency List representation of a graph is typically preferred for sparse graphs because its space complexity is closer to:",
+            "question": "اعتمد الملك عبد العزيز في توحيد البلاد وتأسيس المملكة على قوة:",
             "options": [
-                "O(|V|²)",
-                "O(|V|+|E|)",
-                "O(|E|²)",
-                "O(|V|log|E|)"
+                "الجيش النظامي المدرب من قبل بريطانيا",
+                "الإخوان الذين هبوا لنصرة دعوته",
+                "التحالفات مع القوى الأوروبية",
+                "المساعدات المالية من الدولة العثمانية"
             ],
-            "answer": "O(|V|+|E|)",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "الإخوان الذين هبوا لنصرة دعوته",
+            "difficulty": "medium"
         },
         {
-            "question": "In BFS, when a WHITE vertex v is discovered from u, v.color is set to GRAY, and v.π (parent) is set to:",
+            "question": "من أبرز التحديات التي واجهت الملك عبد العزيز بعد توحيد المملكة:",
             "options": [
-                "s (the source)",
-                "u (the discovering vertex)",
-                "NIL",
-                "v itself"
+                "التدخل العسكري المصري المباشر",
+                "تمرد بعض القبائل وحركة الإخوان",
+                "الأطماع الإيطالية في الساحل الشرقي",
+                "الصراع مع الدولة الصفوية"
             ],
-            "answer": "u (the discovering vertex)",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "تمرد بعض القبائل وحركة الإخوان",
+            "difficulty": "hard"
         },
         {
-            "question": "The time complexity of DFS is O(V+E). The O(E) part of this complexity arises from:",
+            "question": "المعاهدة التي أنهت الحرب السعودية اليمنية عام ١٩٣٤ وعينت الحدود بين البلدين هي معاهدة:",
             "options": [
-                "The initial loop through all vertices u∈G.V in the main DFS procedure",
-                "The sum of the work done in exploring the adjacency list of each vertex (i.e., ∑|Adj[v]| for v∈V)",
-                "Setting u.color = WHITE for all vertices",
-                "Incrementing the time variable"
+                "جدة",
+                "الطائف",
+                "دارين",
+                "العقير"
             ],
-            "answer": "The sum of the work done in exploring the adjacency list of each vertex (i.e., ∑|Adj[v]| for v∈V)",
-            "difficulty": "hard",
-            "category": "searching"
+            "answer": "الطائف",
+            "difficulty": "medium"
         },
         {
-            "question": "Which type of search makes use of problem-specific information (heuristics) to guide the search process?",
+            "question": "بدأ التنقيب عن النفط بشكل تجاري في المملكة العربية السعودية خلال عهد الملك عبد العزيز بالتعاون مع شركات:",
             "options": [
-                "Uninformed Search",
-                "Blind Search",
-                "Informed Search (Heuristic Search)",
-                "Brute Force Search"
+                "بريطانية",
+                "فرنسية",
+                "ألمانية",
+                "أمريكية"
             ],
-            "answer": "Informed Search (Heuristic Search)",
-            "difficulty": "medium",
-            "category": "searching"
+            "answer": "أمريكية",
+            "difficulty": "medium"
         },
         {
-            "question": "Apply Quick sort on a given sequence [7, 11, 14, 6, 9, 4, 3, 12]. What is the sequence after the first phase, pivot is 7?",
+            "question": "من الناحية السياسية، اتسم عهد الملك عبد العزيز بـ:",
             "options": [
-                "4, 3, 7, 6, 11, 9, 14, 12",
-                "3, 4, 6, 7, 9, 14, 11, 12",
-                "7, 6, 14, 11, 9, 4, 3, 12",
-                "7, 6, 4, 3, 9, 14, 11, 12"
+                "إقامة نظام برلماني ديمقراطي كامل",
+                "ترسيخ أسس الدولة الحديثة وإقامة علاقات دولية متوازنة",
+                "الاعتماد الكلي على التحالف مع بريطانيا",
+                "الانعزال عن العالم الخارجي"
             ],
-            "answer": "4, 3, 7, 6, 11, 9, 14, 12",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "ترسيخ أسس الدولة الحديثة وإقامة علاقات دولية متوازنة",
+            "difficulty": "medium"
         },
         {
-            "question": "Which one of the following array elements represents a binary min-heap?",
+            "question": "خلف الملك عبد العزيز في حكم المملكة العربية السعودية ابنه الملك:",
             "options": [
-                "12, 10, 8, 25, 14, 17",
-                "8, 10, 12, 25, 14, 17",
-                "25, 17, 14, 12, 10, 8",
-                "14, 17, 25, 10, 12, 8"
+                "فيصل",
+                "خالد",
+                "سعود",
+                "فهد"
             ],
-            "answer": "8, 10, 12, 25, 14, 17",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "سعود",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the time complexity of the Quick sort Algorithm if it is applied on this array [12, 16, 23, 31, 55]?",
+            "question": "من أبرز إنجازات الملك سعود بن عبد العزيز في المجالات التنموية:",
             "options": [
-                "O(n log n)",
-                "O(n)",
-                "O(n³)",
-                "O(n²)"
+                "اكتشاف النفط بكميات تجارية",
+                "تأسيس جامعة الدول العربية",
+                "التوسع في إنشاء المدارس والجامعات والمستشفيات وتطوير البنية التحتية",
+                "قيادة الجيوش العربية في حرب ١٩٤٨"
             ],
-            "answer": "O(n²)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "التوسع في إنشاء المدارس والجامعات والمستشفيات وتطوير البنية التحتية",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the parent node for i=7 in this array [3, 5, 10, 20, 11, 13, 12, 31]?",
-            "options": [
-                "10",
-                "20",
-                "5",
-                "3"
-            ],
-            "answer": "5",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "شهد عهد الملك فيصل بن عبد العزيز تطورًا ملحوظًا في السياسة الخارجية النشطة ودعم القضايا العربية والإسلامية",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "Given an array of elements [5, 7, 9, 1, 3, 10, 8, 4], which of the following are the correct sequences of elements after inserting all the elements in a min-heap?",
-            "options": [
-                "1, 3, 4, 5, 7, 8, 9, 10",
-                "1, 4, 3, 9, 8, 5, 7, 10",
-                "1, 3, 4, 5, 8, 7, 9, 10",
-                "1, 3, 7, 4, 8, 5, 9, 10"
-            ],
-            "answer": "1, 3, 4, 5, 7, 8, 9, 10",
-            "difficulty": "hard",
-            "category": "datastructures"
+            "question": "استخدم الملك فيصل سلاح النفط خلال حرب أكتوبر ١٩٧٣ لدعم الموقف العربي",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "In the array [52, 37, 63, 14, 17, 8, 6, 25], if we take 25 as the pivot, what will the list be after the first pass?",
-            "options": [
-                "6, 8, 63, 14, 17, 25, 37, 52",
-                "6, 8, 25, 14, 17, 63, 37, 52",
-                "6, 8, 17, 14, 25, 63, 37, 52",
-                "6, 25, 63, 14, 17, 8, 37, 52"
-            ],
-            "answer": "6, 8, 17, 14, 25, 63, 37, 52",
-            "difficulty": "hard",
-            "category": "sorting"
+            "question": "نظام الولايات الذي طبقه الملك عبد العزيز كان يهدف إلى تحقيق التوازن بين الإدارة المركزية ومنح صلاحيات للأمراء المحليين",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the time complexity of the Quick sort Algorithm if it is applied on this array [60, 56, 43, 12, 5]?",
+            "question": "على الصعيد الاجتماعي والثقافي، اهتم الملك عبد العزيز بـ:",
             "options": [
-                "O(n log n)",
-                "O(n)",
-                "O(log n)",
-                "O(n²)"
+                "تشجيع الانفتاح غير المحدود على الثقافات الغربية",
+                "توطين البدو ونشر التعليم مع الحفاظ على القيم الإسلامية والتقاليد العربية",
+                "منع تعليم المرأة بشكل كامل",
+                "تبني القوانين الوضعية الأوروبية"
             ],
-            "answer": "O(n²)",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "توطين البدو ونشر التعليم مع الحفاظ على القيم الإسلامية والتقاليد العربية",
+            "difficulty": "medium"
         },
         {
-            "question": "What are the children nodes for i=2 in this array [3, 5, 10, 20, 11, 13, 12, 31]?",
+            "question": "مجلس الوكلاء الذي أُسس في عهد الملك عبد العزيز كان بمثابة نواة لـ:",
             "options": [
-                "10, 20",
-                "20, 11",
-                "13, 12",
-                "12, 31"
+                "البرلمان السعودي",
+                "مجلس الوزراء",
+                "المحكمة العليا",
+                "الهيئة الدينية العليا"
             ],
-            "answer": "10, 20",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "answer": "مجلس الوزراء",
+            "difficulty": "medium"
         },
         {
-            "question": "How will the array elements look like after the second pass? Array: 36, 10, 66, 53, 34, 23",
+            "question": "توفي الملك عبد العزيز آل سعود عام:",
             "options": [
-                "10, 36, 66, 53, 34, 23",
-                "10, 36, 53, 66, 34, 23",
-                "10, 34, 36, 53, 66, 23",
-                "10, 23, 34, 36, 53, 66"
+                "١٩٤٨م",
+                "١٩٥٣م",
+                "١٩٦٤م",
+                "١٩٧٥م"
             ],
-            "answer": "10, 23, 34, 36, 53, 66",
-            "difficulty": "hard",
-            "category": "sorting"
+            "answer": "١٩٥٣م",
+            "difficulty": "medium"
         },
         {
-            "question": "Which of the following sorting algorithms is best suited if the elements are already sorted?",
+            "question": "اتفاقية كامب ديفيد عام ١٩٧٨ كانت بين:",
             "options": [
-                "Insertion sort",
-                "Heap sort",
-                "Merge sort",
-                "Quick sort"
+                "إسرائيل ومنظمة التحرير الفلسطينية",
+                "مصر وإسرائيل برعاية أمريكية",
+                "سوريا وإسرائيل",
+                "الأردن وإسرائيل"
             ],
-            "answer": "Insertion sort",
-            "difficulty": "medium",
-            "category": "sorting"
+            "answer": "مصر وإسرائيل برعاية أمريكية",
+            "difficulty": "medium"
         },
         {
-            "question": "Merge sort uses ______ in order to sort a given array. This is because it divides the array into two halves and applies merge sort algorithm to each half individually after which the two sorted halves are merged together.",
+            "question": "الاجتياح الإسرائيلي للبنان عام ١٩٨٢ كان يهدف بشكل رئيسي إلى:",
             "options": [
-                "Divide",
-                "Divide and Conquer",
-                "Conquer",
-                "No correct answer"
+                "مساعدة الحكومة اللبنانية",
+                "القضاء على قواعد منظمة التحرير الفلسطينية في لبنان",
+                "احتلال بيروت بشكل دائم",
+                "إنشاء منطقة عازلة فقط"
             ],
-            "answer": "Divide and Conquer",
-            "difficulty": "easy",
-            "category": "sorting"
+            "answer": "القضاء على قواعد منظمة التحرير الفلسطينية في لبنان",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the running time of an insertion sort algorithm for the sequence [40, 70, 80, 90, 99]?",
-            "options": [
-                "Best case",
-                "Average case",
-                "Worst case",
-                "No correct answer"
-            ],
-            "answer": "Best case",
-            "difficulty": "medium",
-            "category": "sorting"
+            "question": "مجلس الوكلاء في عهد الملك عبد العزيز تحول لاحقاً إلى مجلس الوزراء في عهد الملك سعود",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "What is the running time of an insertion sort algorithm for the sequence [99, 90, 80, 70, 40]?",
-            "options": [
-                "Best case",
-                "Average case",
-                "Worst case",
-                "No correct answer"
-            ],
-            "answer": "Worst case",
-            "difficulty": "medium",
-            "category": "sorting"
+            "question": "اهتم الملك عبد العزيز بتوطين البدو وتحويلهم من حياة الترحال إلى الاستقرار في الهجر",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         }
     ],
     "trueFalseQuestions": [
         {
-            "question": "A search is optimal if its heuristic function h(n) is admissible (never overestimates the cost to the goal)",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "hard",
-            "category": "searching"
+            "question": "انتهت دولة المماليك البحرية عام ١٣٨٢م وقامت بعدها دولة المماليك البرجية (الجراكسة)",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "In Huffman coding, a prefix code means the codeword for one symbol is never the prefix of another symbol's codeword",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "خضع العراق عام ١٥٠٨م للدولة الصفوية الشيعية",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "Prim's algorithm for finding a Minimum Spanning Tree (MST) is an example of a Greedy Algorithm",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "كانت عمان من أكثر مناطق الخليج تنظيمًا سياسيًا لخضوعها للمذهب الأباضي",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "Kruskal's algorithm for MST adds edges to the MST if they don't form a cycle",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "نص صك الانتداب البريطاني على فلسطين في مادته الثانية والعشرين على أن اللغات الرسمية لفلسطين هي الإنجليزية والعربية والعبرية",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "A connected undirected graph with n vertices has n-1 edges in its spanning tree",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
+            "question": "الكتاب الأبيض الذي أصدرته الحكومة البريطانية عام ١٩٢٢ جاء عقب ثورة يافا عام ١٩٢١م",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         },
         {
-            "question": "Breadth-First Search (BFS) explores level by level, guaranteeing discovery of the shortest path first in unweighted graphs",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "searching"
+            "question": "اضطرابات عام ١٩٢٩ في فلسطين المعروفة عند العرب بحادث البراق أدت إلى تشكيل لجنة تحقيق برئاسة شو",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "Depth-First Search (DFS) primarily uses a stack data structure (either implicitly through recursion or explicitly)",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "searching"
+            "question": "علم الشريف حسين بأمر اتفاقية سايكس – بيكو لأول مرة عن طريق الأتراك بعد نشرها من قبل الشيوعيين في روسيا",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "In DFS, an edge connecting a vertex u to an ancestor v (excluding parent) in the DFS tree is called a back edge",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "searching"
+            "question": "كان السبب الرئيسي لإصدار بريطانيا تصريح بلفور هو الأهمية الاستراتيجية لفلسطين للدفاع عن المصالح البريطانية في مصر وقناة السويس",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "The evaluation function F(n)=g(n)+h(n) in A* search uses h(n) as a heuristic estimate of the cost from node n to the goal node",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "hard",
-            "category": "searching"
+            "question": "مؤتمر لندن عام ١٩٣٩ جاء نتيجة لاشتداد قلق الحكومة البريطانية بسبب الثورة الفلسطينية والموقف السياسي المنذر بحرب عالمية في أوروبا",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "hard"
         },
         {
-            "question": "A tree is defined as a connected undirected graph with no simple circuits",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "Huffman Coding is used for data compression by creating optimal prefix codes",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "Both Prim's algorithm and Kruskal's algorithm are used to find the Minimal Spanning Tree (MST) of a weighted graph",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "In A* search, if h(n) is always 0, the algorithm behaves like Dijkstra's Algorithm",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "hard",
-            "category": "searching"
-        },
-        {
-            "question": "In Kruskal's MST algorithm, if adding the next cheapest edge creates a cycle, that edge is discarded",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "A complete binary tree has all levels full except possibly the last level, which is filled from left to right",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "Quicksort is a divide-and-conquer algorithm in which the pivot element is chosen, and this pivot element reduces the given problem into two smaller sets",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "easy",
-            "category": "sorting"
-        },
-        {
-            "question": "The best case input for an insertion sort algorithm runs in linear time and is given by O(N^N)",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "medium",
-            "category": "sorting"
-        },
-        {
-            "question": "The largest element in a min-heap is stored at the root",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "easy",
-            "category": "datastructures"
-        },
-        {
-            "question": "The smallest element in a max-heap is at the root",
-            "options": ["True", "False"],
-            "answer": "False",
-            "difficulty": "easy",
-            "category": "datastructures"
-        },
-        {
-            "question": "The (binary) heap data structure is an array object that we can view as a nearly complete binary tree",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "datastructures"
-        },
-        {
-            "question": "Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "medium",
-            "category": "sorting"
-        },
-        {
-            "question": "Quick sort is a highly efficient sorting algorithm and is based on partitioning an array of data into smaller arrays",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "easy",
-            "category": "sorting"
-        },
-        {
-            "question": "The following is considered a min-heap: 5, 10, 20",
-            "options": ["True", "False"],
-            "answer": "True",
-            "difficulty": "easy",
-            "category": "datastructures"
+            "question": "الكتاب الأبيض الثاني الذي أصدرته الحكومة البريطانية عام ١٩٣٠ نص على عدم وجود أراضي حرة خالية في فلسطين للاستيطان اليهودي",
+            "options": ["صح", "خطأ"],
+            "answer": "صح",
+            "difficulty": "medium"
         }
     ]
 };

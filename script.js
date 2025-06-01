@@ -154,7 +154,7 @@ function validateSetup() {
 function selectQuestions() {
     try {
         const questionCountValue = document.getElementById('questionCount').value;
-        const questionType = document.getElementById('questionType').value;
+    const questionType = document.getElementById('questionType').value;
         const difficultyLevel = document.getElementById('difficultyLevel').value;
         
         let selectedQuestions = [];
@@ -182,11 +182,13 @@ function selectQuestions() {
             throw new Error(`Not enough questions available (${selectedQuestions.length} available, ${questionCount} requested)`);
         }
         
-        return shuffleArray(selectedQuestions)
+        // Take first N questions without shuffling
+        return selectedQuestions
             .slice(0, questionCount)
             .map(q => ({
                 ...q,
-                options: shuffleArray([...q.options])
+                // Keep options in original order
+                options: [...q.options]
             }));
     } catch (error) {
         console.log('Error selecting questions: ' + error.message);
@@ -198,41 +200,41 @@ function selectQuestions() {
 // Show question
 function showQuestion() {
     try {
-        const question = currentQuestions[currentQuestionIndex];
+    const question = currentQuestions[currentQuestionIndex];
         if (!question) {
             throw new Error('Question not found');
         }
         
-        const container = document.querySelector('.question-container');
+    const container = document.querySelector('.question-container');
         if (!container) {
             throw new Error('Question container not found');
         }
-        
-        container.innerHTML = `
-            <div class="question-header">
-                <div class="question-info">
+    
+    container.innerHTML = `
+        <div class="question-header">
+            <div class="question-info">
                     <span class="question-number">
                         Question ${currentQuestionIndex + 1} of ${currentQuestions.length}
-                    </span>
+                </span>
                     <span class="difficulty-badge ${question.difficulty}">
                         ${question.difficulty.toUpperCase()}
                     </span>
-                </div>
-                <h2 class="question-text">${question.question}</h2>
             </div>
+            <h2 class="question-text">${question.question}</h2>
+        </div>
             <div class="options-container">
                 ${question.options.map((option, index) => `
                     <button class="option" onclick="selectAnswer(${index})" data-index="${index}">
                         <span class="option-letter code-font">${String.fromCharCode(65 + index)}</span>
                         <span class="option-text ${option.includes('O(') ? 'code-font' : ''}">${option}</span>
-                    </button>
+                </button>
                 `).join('')}
             </div>
             <div class="progress-bar">
                 <div class="progress" style="width: ${((currentQuestionIndex + 1) / currentQuestions.length) * 100}%"></div>
-            </div>
-        `;
-
+        </div>
+    `;
+    
         // Add click event listeners to options
         const options = container.querySelectorAll('.option');
         options.forEach(option => {
@@ -667,7 +669,7 @@ style.textContent = `
         padding: 5px 10px;
         border-radius: 15px;
         font-size: 0.8rem;
-        font-weight: bold;
+    font-weight: bold;
     }
     
     .difficulty-badge.easy {
